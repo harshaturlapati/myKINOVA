@@ -9,7 +9,7 @@
 
 int main()
 {
-	int CTRL_MODE = 4;
+	int CTRL_MODE = 8; // teleoperation with UDP
 	int DURATION = 1000;
 
 	std::string MASTER_IP = "192.180.0.108";
@@ -22,9 +22,9 @@ int main()
 	myPARAMS master_PARAMS = setPARAMS(master_model, MASTER_IP, CTRL_MODE, 27015, 27016, "127.0.0.1", "127.0.0.1", DURATION, TRUE);
 	myPARAMS slave_PARAMS = setPARAMS(slave_model, SLAVE_IP, CTRL_MODE, 27017, 27018, "127.0.0.1", "127.0.0.1", DURATION, TRUE);
 
-	myTELEOP TELEOP(master_PARAMS,slave_PARAMS,80);
+	float my_ext_tau_limit[7] = { 25.0f, 25.0f, 25.0f, 25.0f, 25.0f, 25.0f, 25.0f };
 
-	//myTELEOP TELEOP(master_PARAMS, slave_PARAMS, 80);
+	myTELEOP TELEOP(master_PARAMS, slave_PARAMS, {80.0f, 80.0f, 80.0f, 80.0f, 80.0f, 80.0f, 80.0f}, { 80.0f, 80.0f, 80.0f, 80.0f, 80.0f, 80.0f, 0.0f }, 3, my_ext_tau_limit);
 
 	std::cout << TELEOP.MASTER.ROB_PARAMS.ROBOT_IP << std::endl;
 

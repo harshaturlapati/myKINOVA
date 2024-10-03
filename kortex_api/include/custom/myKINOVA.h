@@ -59,6 +59,8 @@ public:
 	k_api::ActuatorConfig::ControlModeInformation control_mode_message;
 	int role;
 	float myK = 10, myB = 6;
+	float myK_VEC[7] = { 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f };
+	float myK_HIGH_VEC[7] = { 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f }; // alternate stiffness
 	float tau_ext_limit_input[7] = { 3.0f, 2.0f, 2.0f, 5.0f, 4.0f, 3.0f, 6.0f };
 	
 
@@ -147,7 +149,8 @@ public:
 		//B << 5.5220, 5.7140, 5.2075, 5.4825, 4.7267, 4.7631, 7.6092;
 		B << myB, myB, myB, myB, myB, myB, myB;
 		
-		K << myK, myK, myK, myK, myK, myK, myK;
+		K << myK_VEC[0], myK_VEC[1], myK_VEC[2], myK_VEC[3], myK_VEC[4], myK_VEC[5], myK_VEC[6];
+		//K << myK, myK, myK, myK, myK, myK, myK;
 
 
 		std::cout << "im here3" << std::endl;
@@ -696,6 +699,11 @@ public:
 			//Realtime control loop. Press "Q" key to exit loop.
 			while (!(GetKeyState('Q') & 0x8000))
 			{
+				if (GetKeyState('L') & 0x8000)
+				{
+					K << myK_HIGH_VEC[0], myK_HIGH_VEC[1], myK_HIGH_VEC[2], myK_HIGH_VEC[3], myK_HIGH_VEC[4], myK_HIGH_VEC[5], myK_HIGH_VEC[6];
+				}
+
 				ROB_LOG.now = ROB_LOG.GetTickUs();
 				if (ROB_LOG.now - ROB_LOG.last >= 1000)
 				{
@@ -728,14 +736,24 @@ public:
 		return return_status;
 	}
 
+	void set_myK_VEC(float myK_in)
+	{
+		for (int i = 0; i < ACTUATOR_COUNT; i++)
+		{
+			myK_VEC[i] = myK_in;
+		}
+	}
+
 	myKINOVA() {// default constructor
 		myK = 10;
+		set_myK_VEC(myK);
 	}
 
 	myKINOVA(std::string robot_model_in, std::string ROBOT_IP_in, int CTRL_MODE_IN, u_short SEND_PORT_IN, u_short RECV_PORT_IN, const char* SEND_IP_ADDRESS_IN, const char* RECV_IP_ADDRESS_IN, int DURATION_IN, bool gripper_val) {
 		ROB_CMD = set_ROB_CMD(CTRL_MODE_IN);		
 		ROB_PARAMS = set_ROB_PARAMS(setPARAMS(robot_model_in, ROBOT_IP_in, CTRL_MODE_IN, SEND_PORT_IN, RECV_PORT_IN, SEND_IP_ADDRESS_IN, RECV_IP_ADDRESS_IN, DURATION_IN, gripper_val));
 		myK = 10;
+		set_myK_VEC(myK);
 	}
 
 	myKINOVA(std::string robot_model_in, std::string ROBOT_IP_in, int CTRL_MODE_IN, u_short SEND_PORT_IN, u_short RECV_PORT_IN, const char* SEND_IP_ADDRESS_IN, const char* RECV_IP_ADDRESS_IN, int DURATION_IN, bool gripper_val, int role_in) {
@@ -743,18 +761,21 @@ public:
 		ROB_PARAMS = set_ROB_PARAMS(setPARAMS(robot_model_in, ROBOT_IP_in, CTRL_MODE_IN, SEND_PORT_IN, RECV_PORT_IN, SEND_IP_ADDRESS_IN, RECV_IP_ADDRESS_IN, DURATION_IN, gripper_val));
 		role = role_in;
 		myK = 10;
+		set_myK_VEC(myK);
 	}
 
 	myKINOVA(myPARAMS PARAMS_IN) {
 		ROB_CMD = set_ROB_CMD(PARAMS_IN.CTRL_MODE);
 		ROB_PARAMS = set_ROB_PARAMS(PARAMS_IN);
 		myK = 10;
+		set_myK_VEC(myK);
 	}
 
 	myKINOVA(myPARAMS PARAMS_IN, float k_in) {
 		ROB_CMD = set_ROB_CMD(PARAMS_IN.CTRL_MODE);
 		ROB_PARAMS = set_ROB_PARAMS(PARAMS_IN);
 		myK = k_in;
+		set_myK_VEC(myK);
 	}
 
 	myKINOVA(myPARAMS PARAMS_IN, float k_in, float b_in) {
@@ -762,6 +783,7 @@ public:
 		ROB_PARAMS = set_ROB_PARAMS(PARAMS_IN);
 		myK = k_in;
 		myB = b_in;
+		set_myK_VEC(myK);
 	}
 
 	myKINOVA(myPARAMS PARAMS_IN, int role_in) {
@@ -769,6 +791,7 @@ public:
 		ROB_PARAMS = set_ROB_PARAMS(PARAMS_IN);
 		role = role_in;
 		myK = 10;
+		set_myK_VEC(myK);
 	}
 
 	myKINOVA(myPARAMS PARAMS_IN, int role_in, float k_in) {
@@ -776,12 +799,30 @@ public:
 		ROB_PARAMS = set_ROB_PARAMS(PARAMS_IN);
 		role = role_in;
 		myK = k_in;
+		set_myK_VEC(myK);
 	}
 
 	myKINOVA(myPARAMS PARAMS_IN, float k_in, float b_in, float tau_ext_limit_in[7]) {
 		ROB_CMD = set_ROB_CMD(PARAMS_IN.CTRL_MODE);
 		ROB_PARAMS = set_ROB_PARAMS(PARAMS_IN);
 		myK = k_in;
+		myB = b_in;
+		set_myK_VEC(myK);
+		for (int j = 0; j < 7; j++) {
+			tau_ext_limit_input[j] = tau_ext_limit_in[j];
+		}
+	}
+
+	myKINOVA(myPARAMS PARAMS_IN, int role_in, float k_LOW_in[7], float k_HIGH_in[7], float b_in, float tau_ext_limit_in[7]) {
+		ROB_CMD = set_ROB_CMD(PARAMS_IN.CTRL_MODE);
+		ROB_PARAMS = set_ROB_PARAMS(PARAMS_IN);
+		role = role_in;
+		for (int i = 0; i < ACTUATOR_COUNT; i++)
+		{
+			myK_VEC[i] = k_LOW_in[i];
+			myK_HIGH_VEC[i] = k_HIGH_in[i];
+		}
+
 		myB = b_in;
 		for (int j = 0; j < 7; j++) {
 			tau_ext_limit_input[j] = tau_ext_limit_in[j];
