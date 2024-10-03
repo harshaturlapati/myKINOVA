@@ -57,5 +57,8 @@ The UDP need not operate at a high frequency, the low-level torque controller of
 
 Note: Kinematic calibration is needed to ensure no drift.
 
-## Mode 5 - Impedance, torque and gripper control
-<img src="media/mode5_impedance_and_torque_and_gripper.jpg" height="240">
+## Mode 5 - Impedance and gripper control
+<img src="media/mode5_impedance_and_gripper.jpg" height="240">
+
+## Mode 6 - Impedance, torque and gripper control
+<img src="media/mode6_impedance_and_torque_and_gripper.jpg" height="240">
