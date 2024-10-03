@@ -57,7 +57,7 @@ public:
 	k_api::ActuatorConfig::ActuatorConfigClient* actuator_config;
 	//bool gripper;
 	k_api::ActuatorConfig::ControlModeInformation control_mode_message;
-	int role;
+	int role = 1; // default role should be 1 - corresponding to a slave robot for any control mode in general
 	float myK = 10, myB = 6;
 	float myK_VEC[7] = { 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f };
 	float myK_HIGH_VEC[7] = { 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f }; // alternate stiffness
@@ -666,24 +666,23 @@ public:
 			for (i = 0; i < ACTUATOR_COUNT; ++i)
 			{
 				ROB_CMD.q_des[i] = ROB_UDP.UDP_q[i];
+			}
+			ROB_CMD.d_G_CMD = ROB_UDP.UDP_gripper;
+			std::cout << "ROB_UDP gripper value is : " << ROB_UDP.UDP_gripper << std::endl;
+		}
+
+		if (ROB_PARAMS.CTRL_MODE == 6) { // real time control with gripper input from MATLAB v4
+			for (i = 0; i < ACTUATOR_COUNT; ++i)
+			{
+				ROB_CMD.q_des[i] = ROB_UDP.UDP_q[i];
 				ROB_CMD.tau_ctrl[i] = ROB_UDP.UDP_tau[i];
 			}
 			ROB_CMD.d_G_CMD = ROB_UDP.UDP_gripper;
 			std::cout << "ROB_UDP gripper value is : " << ROB_UDP.UDP_gripper << std::endl;
 		}
 
-		//if (ROB_PARAMS.CTRL_MODE == 4) { // only for teleoperation
-		//	for (i = 0; i < ACTUATOR_COUNT; ++i)
-		//	{
-		//		if (role == 0) {
-		//			ROB_CMD.tau_ctrl[i] = cmd_input[i]; // master expects a torque feedback from slave
-		//		}
-		//		else if (role == 1) {
-		//			ROB_CMD.q_des[i] = cmd_input[i]; // slave expects a position command from master
-		//			ROB_CMD.tau_ctrl[i] = 0;
-		//		}
-		//	}
-		//}
+
+		
 
 	}
 
@@ -699,11 +698,7 @@ public:
 			//Realtime control loop. Press "Q" key to exit loop.
 			while (!(GetKeyState('Q') & 0x8000))
 			{
-				if (GetKeyState('L') & 0x8000)
-				{
-					K << myK_HIGH_VEC[0], myK_HIGH_VEC[1], myK_HIGH_VEC[2], myK_HIGH_VEC[3], myK_HIGH_VEC[4], myK_HIGH_VEC[5], myK_HIGH_VEC[6];
-				}
-
+				
 				ROB_LOG.now = ROB_LOG.GetTickUs();
 				if (ROB_LOG.now - ROB_LOG.last >= 1000)
 				{
@@ -803,6 +798,7 @@ public:
 	}
 
 	myKINOVA(myPARAMS PARAMS_IN, float k_in, float b_in, float tau_ext_limit_in[7]) {
+		// adding a constructor that allows to arbitrarily change the joint torque command limit
 		ROB_CMD = set_ROB_CMD(PARAMS_IN.CTRL_MODE);
 		ROB_PARAMS = set_ROB_PARAMS(PARAMS_IN);
 		myK = k_in;
@@ -814,6 +810,7 @@ public:
 	}
 
 	myKINOVA(myPARAMS PARAMS_IN, int role_in, float k_LOW_in[7], float k_HIGH_in[7], float b_in, float tau_ext_limit_in[7]) {
+		// adding a constructor that allows to set two stiffness arrays to choose Kinova impedance control from - to allow for experiments that stiffen up or loosen down depending on the situation
 		ROB_CMD = set_ROB_CMD(PARAMS_IN.CTRL_MODE);
 		ROB_PARAMS = set_ROB_PARAMS(PARAMS_IN);
 		role = role_in;
@@ -829,14 +826,4 @@ public:
 		}
 	}
 
-	//myKINOVA(myPARAMS PARAMS_IN, int role_in, float k_in, float tau_ext_limit_in[7]) {
-	//	ROB_CMD = set_ROB_CMD(PARAMS_IN.CTRL_MODE);
-	//	ROB_PARAMS = set_ROB_PARAMS(PARAMS_IN);
-	//	role = role_in;
-	//	myK = k_in;
-	//	for (int j = 0; j < 7; j++) {
-	//		tau_ext_limit_input[j] = tau_ext_limit_in[j];
-	//	}
-	//	//std::cout << tau_ext_limit_input[0] << std::endl;
-	//}
 };

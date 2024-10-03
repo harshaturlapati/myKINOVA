@@ -256,11 +256,11 @@ public:
             while ((STRINGpos = myMATLAB_DATA.find(delimiter)) != std::string::npos) {
                 token = myMATLAB_DATA.substr(0, STRINGpos);
                 num_float = std::stof(token);
-                if ((CTRL_MODE == 0 || CTRL_MODE == 1 || CTRL_MODE == 5 || CTRL_MODE == 6 || CTRL_MODE == 8) && delimiter_idx <= 6) {
+                if ((CTRL_MODE == 0 || CTRL_MODE == 1 || CTRL_MODE == 5 || CTRL_MODE == 6) && delimiter_idx <= 6) {
                     UDP_q[delimiter_idx] = num_float;
                 }
 
-                if ((CTRL_MODE == 1 || CTRL_MODE ==2 || CTRL_MODE == 6 || CTRL_MODE == 8) && delimiter_idx <= 13) {
+                if ((CTRL_MODE == 1 || CTRL_MODE ==2 || CTRL_MODE == 6) && delimiter_idx <= 13) {
                     UDP_tau[delimiter_idx-7] = num_float; 
                     // note that CTRL_MODE 2 as per the diagrams on Github, DOES NOT send q_des, but in the C++ implementation it seems, tau_ctrl is received after a 7-string.... some updating needs to be done.
                 }
@@ -269,7 +269,7 @@ public:
                     UDP_gripper = num_float;
                 }
 
-                if ((CTRL_MODE == 6 || CTRL_MODE == 8) && delimiter_idx == 14) {
+                if ((CTRL_MODE == 6) && delimiter_idx == 14) {
                     UDP_gripper = num_float;
                 }
 
@@ -287,7 +287,7 @@ public:
                     {
                         break;
                     }
-                    if ((CTRL_MODE == 6 || CTRL_MODE == 8) && delimiter_idx > 14)
+                    if ((CTRL_MODE == 6) && delimiter_idx > 14)
                     {
                         break;
                     }

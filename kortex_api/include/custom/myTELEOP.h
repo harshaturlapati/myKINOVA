@@ -238,7 +238,7 @@ public:
 	myTELEOP(myPARAMS M_PARAMS_IN, myPARAMS S_PARAMS_IN, float k_LOW_in[7], float k_HIGH_in[7], float b_in, float tau_ext_limit_in[7]) {
 		master_PARAMS = M_PARAMS_IN;
 		slave_PARAMS = S_PARAMS_IN;
-		MASTER = getROB_OBJ_K(master_PARAMS, 0, k_HIGH_in, k_LOW_in, b_in, tau_ext_limit_in);
-		SLAVE = getROB_OBJ_K(slave_PARAMS, 1, k_HIGH_in, k_LOW_in, b_in, tau_ext_limit_in);
+		MASTER = getROB_OBJ_K(master_PARAMS, 0, k_LOW_in, k_HIGH_in, b_in, tau_ext_limit_in); // role = 0 for master - VERY IMPORTANT
+		SLAVE = getROB_OBJ_K(slave_PARAMS, 1, k_LOW_in, k_HIGH_in, b_in, tau_ext_limit_in); // role = 1 for slave - VERY IMPORTANT
 	}
 };
