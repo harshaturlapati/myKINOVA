@@ -300,7 +300,11 @@ public:
         {
             wprintf(L"Received no datagrams...\n");
             // if no UDP communication occurred, set UDP_q should not change.
-            
+
+            // if no UDP communication occurred, set UDP_tau should be reset to 0.
+            for (int i = 0; i < 7; i++) {
+                UDP_tau[i] = 0;
+            }
         }
 
         // UDP part - end
