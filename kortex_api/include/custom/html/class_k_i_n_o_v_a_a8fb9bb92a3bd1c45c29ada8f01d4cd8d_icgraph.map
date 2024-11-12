@@ -1,0 +1,21 @@
+<map id="KINOVA::get_router" name="KINOVA::get_router">
+<area shape="rect" id="Node000001" title=" " alt="" coords="1102,56,1238,83"/>
+<area shape="rect" id="Node000002" href="$classmy_k_i_n_o_v_a.html#afbc6e4b0efa47da6effd62ffaec590db" title=" " alt="" coords="852,5,1054,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1094,54,1013,35,1014,30,1095,49"/>
+<area shape="rect" id="Node000008" href="$classmy_k_i_n_o_v_a.html#ab049d1ea8aacd25711758837700d5dee" title=" " alt="" coords="878,56,1028,83"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="1086,72,1028,72,1028,67,1086,67"/>
+<area shape="rect" id="Node000009" href="$classmy_k_i_n_o_v_a.html#aa0fccf809f65440836c15fcc636ceef8" title=" " alt="" coords="861,107,1045,133"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="1095,89,1014,109,1013,103,1094,84"/>
+<area shape="rect" id="Node000003" href="$classmy_k_i_n_o_v_a.html#a8821ab94665ea1f1206c50a7cf2fb9e3" title=" " alt="" coords="647,56,804,83"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="875,39,789,58,788,53,874,33"/>
+<area shape="rect" id="Node000004" href="$classmy_k_i_n_o_v_a.html#a4bd9b9215f2fcdd44a27061acfc0bb5d" title=" " alt="" coords="429,56,599,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="632,72,600,72,600,67,632,67"/>
+<area shape="rect" id="Node000005" href="$classmy_t_e_l_e_o_p.html#a086a2ec560c44dcc96bebcee5013ba6d" title=" " alt="" coords="230,19,367,61"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="413,58,367,52,367,47,414,53"/>
+<area shape="rect" id="Node000007" href="$classmy_k_i_n_o_v_a.html#a0248b3aa1d7d6df9b4846d4652da9d16" title=" " alt="" coords="216,85,381,112"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="414,86,382,90,381,85,413,80"/>
+<area shape="rect" id="Node000006" href="$classmy_t_e_l_e_o_p.html#a69158afc9816c59b4139c3c35f4ea4ba" title=" " alt="" coords="5,27,168,53"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="215,43,168,43,168,37,215,37"/>
+<area shape="poly" id="edge8_Node000008_Node000003" title=" " alt="" coords="863,72,804,72,804,67,863,67"/>
+<area shape="poly" id="edge10_Node000009_Node000003" title=" " alt="" coords="874,105,788,86,789,81,875,100"/>
+</map>

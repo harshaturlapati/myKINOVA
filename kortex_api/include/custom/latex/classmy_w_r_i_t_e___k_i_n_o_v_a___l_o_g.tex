@@ -1,0 +1,173 @@
+\doxysection{my\+WRITE\+\_\+\+KINOVA\+\_\+\+LOG Class Reference}
+\hypertarget{classmy_w_r_i_t_e___k_i_n_o_v_a___l_o_g}{}\label{classmy_w_r_i_t_e___k_i_n_o_v_a___l_o_g}\index{myWRITE\_KINOVA\_LOG@{myWRITE\_KINOVA\_LOG}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classmy_w_r_i_t_e___k_i_n_o_v_a___l_o_g_a1e07f30386d17acc1d32e2b24508619e}{Get\+Timestamp}} (time\+\_\+t now)
+\item 
+TCHAR \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classmy_w_r_i_t_e___k_i_n_o_v_a___l_o_g_a74a1efcac9d76905d7f97fb382a2d213}{Get\+EXEpath}} ()
+\item 
+void \mbox{\hyperlink{classmy_w_r_i_t_e___k_i_n_o_v_a___l_o_g_a7af75df7ee76763526c7f28272f8e9ff}{replace\+\_\+all}} (std\+::string \&s, std\+::string const \&to\+Replace, std\+::string const \&replace\+With)
+\item 
+void \mbox{\hyperlink{classmy_w_r_i_t_e___k_i_n_o_v_a___l_o_g_a16ab0bba0d99fdae53e0985ba1baf366}{get\+\_\+exp\+\_\+folder\+\_\+v2}} ()
+\item 
+void \mbox{\hyperlink{classmy_w_r_i_t_e___k_i_n_o_v_a___l_o_g_a5ca90bd11bcafd0d9b402264ab0a32ef}{write2\+FILE}} (\mbox{\hyperlink{classmy_k_i_n_o_v_a___l_o_g}{my\+KINOVA\+\_\+\+LOG}} DATA, std\+::shared\+\_\+ptr$<$ rl\+::mdl\+::\+Model $>$ model)
+\item 
+\mbox{\hyperlink{classmy_w_r_i_t_e___k_i_n_o_v_a___l_o_g_ae900dd8094103c8061c44fa511c4a8e3}{my\+WRITE\+\_\+\+KINOVA\+\_\+\+LOG}} (int duration\+\_\+in, std\+::string ROBOT\+\_\+\+IP\+\_\+in, int data\+\_\+count\+\_\+final\+\_\+in)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classmy_w_r_i_t_e___k_i_n_o_v_a___l_o_g_ac6701c7b5ee2f7b9e46afe401a96f4c4}{duration}}
+\item 
+std\+::string \mbox{\hyperlink{classmy_w_r_i_t_e___k_i_n_o_v_a___l_o_g_ae0c885141fd599356679bcccdd7a6b48}{exp\+\_\+folder}}
+\item 
+char \mbox{\hyperlink{classmy_w_r_i_t_e___k_i_n_o_v_a___l_o_g_a8df3611c14124a8be895ef2aa8ac04c1}{EXEPATH}} \mbox{[}MAX\+\_\+\+PATH\mbox{]}
+\item 
+std\+::string \mbox{\hyperlink{classmy_w_r_i_t_e___k_i_n_o_v_a___l_o_g_a5d0423454a7a32ca0b0d2ea26718c004}{ROBOT\+\_\+\+IP}}
+\item 
+int \mbox{\hyperlink{classmy_w_r_i_t_e___k_i_n_o_v_a___l_o_g_ac34d3f77d439bcbe7afe6393ff07a5e0}{ACTUATOR\+\_\+\+COUNT}} = 7
+\item 
+int \mbox{\hyperlink{classmy_w_r_i_t_e___k_i_n_o_v_a___l_o_g_ac96c0bec413740248172aae38a5da973}{data\+\_\+count\+\_\+final}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source_l00288}{288}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source}{my\+KINOVA\+\_\+\+LOGGING.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classmy_w_r_i_t_e___k_i_n_o_v_a___l_o_g_ae900dd8094103c8061c44fa511c4a8e3}\label{classmy_w_r_i_t_e___k_i_n_o_v_a___l_o_g_ae900dd8094103c8061c44fa511c4a8e3} 
+\index{myWRITE\_KINOVA\_LOG@{myWRITE\_KINOVA\_LOG}!myWRITE\_KINOVA\_LOG@{myWRITE\_KINOVA\_LOG}}
+\index{myWRITE\_KINOVA\_LOG@{myWRITE\_KINOVA\_LOG}!myWRITE\_KINOVA\_LOG@{myWRITE\_KINOVA\_LOG}}
+\doxysubsubsection{\texorpdfstring{myWRITE\_KINOVA\_LOG()}{myWRITE\_KINOVA\_LOG()}}
+{\footnotesize\ttfamily my\+WRITE\+\_\+\+KINOVA\+\_\+\+LOG\+::my\+WRITE\+\_\+\+KINOVA\+\_\+\+LOG (\begin{DoxyParamCaption}\item[{int}]{duration\+\_\+in,  }\item[{std\+::string}]{ROBOT\+\_\+\+IP\+\_\+in,  }\item[{int}]{data\+\_\+count\+\_\+final\+\_\+in }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source_l00589}{589}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source}{my\+KINOVA\+\_\+\+LOGGING.\+h}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classmy_w_r_i_t_e___k_i_n_o_v_a___l_o_g_a16ab0bba0d99fdae53e0985ba1baf366}\label{classmy_w_r_i_t_e___k_i_n_o_v_a___l_o_g_a16ab0bba0d99fdae53e0985ba1baf366} 
+\index{myWRITE\_KINOVA\_LOG@{myWRITE\_KINOVA\_LOG}!get\_exp\_folder\_v2@{get\_exp\_folder\_v2}}
+\index{get\_exp\_folder\_v2@{get\_exp\_folder\_v2}!myWRITE\_KINOVA\_LOG@{myWRITE\_KINOVA\_LOG}}
+\doxysubsubsection{\texorpdfstring{get\_exp\_folder\_v2()}{get\_exp\_folder\_v2()}}
+{\footnotesize\ttfamily void my\+WRITE\+\_\+\+KINOVA\+\_\+\+LOG\+::get\+\_\+exp\+\_\+folder\+\_\+v2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source_l00345}{345}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source}{my\+KINOVA\+\_\+\+LOGGING.\+h}}.
+
+\Hypertarget{classmy_w_r_i_t_e___k_i_n_o_v_a___l_o_g_a74a1efcac9d76905d7f97fb382a2d213}\label{classmy_w_r_i_t_e___k_i_n_o_v_a___l_o_g_a74a1efcac9d76905d7f97fb382a2d213} 
+\index{myWRITE\_KINOVA\_LOG@{myWRITE\_KINOVA\_LOG}!GetEXEpath@{GetEXEpath}}
+\index{GetEXEpath@{GetEXEpath}!myWRITE\_KINOVA\_LOG@{myWRITE\_KINOVA\_LOG}}
+\doxysubsubsection{\texorpdfstring{GetEXEpath()}{GetEXEpath()}}
+{\footnotesize\ttfamily TCHAR \texorpdfstring{$\ast$}{*} my\+WRITE\+\_\+\+KINOVA\+\_\+\+LOG\+::\+Get\+EXEpath (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source_l00310}{310}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source}{my\+KINOVA\+\_\+\+LOGGING.\+h}}.
+
+\Hypertarget{classmy_w_r_i_t_e___k_i_n_o_v_a___l_o_g_a1e07f30386d17acc1d32e2b24508619e}\label{classmy_w_r_i_t_e___k_i_n_o_v_a___l_o_g_a1e07f30386d17acc1d32e2b24508619e} 
+\index{myWRITE\_KINOVA\_LOG@{myWRITE\_KINOVA\_LOG}!GetTimestamp@{GetTimestamp}}
+\index{GetTimestamp@{GetTimestamp}!myWRITE\_KINOVA\_LOG@{myWRITE\_KINOVA\_LOG}}
+\doxysubsubsection{\texorpdfstring{GetTimestamp()}{GetTimestamp()}}
+{\footnotesize\ttfamily std\+::string my\+WRITE\+\_\+\+KINOVA\+\_\+\+LOG\+::\+Get\+Timestamp (\begin{DoxyParamCaption}\item[{time\+\_\+t}]{now }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source_l00298}{298}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source}{my\+KINOVA\+\_\+\+LOGGING.\+h}}.
+
+\Hypertarget{classmy_w_r_i_t_e___k_i_n_o_v_a___l_o_g_a7af75df7ee76763526c7f28272f8e9ff}\label{classmy_w_r_i_t_e___k_i_n_o_v_a___l_o_g_a7af75df7ee76763526c7f28272f8e9ff} 
+\index{myWRITE\_KINOVA\_LOG@{myWRITE\_KINOVA\_LOG}!replace\_all@{replace\_all}}
+\index{replace\_all@{replace\_all}!myWRITE\_KINOVA\_LOG@{myWRITE\_KINOVA\_LOG}}
+\doxysubsubsection{\texorpdfstring{replace\_all()}{replace\_all()}}
+{\footnotesize\ttfamily void my\+WRITE\+\_\+\+KINOVA\+\_\+\+LOG\+::replace\+\_\+all (\begin{DoxyParamCaption}\item[{std\+::string \&}]{s,  }\item[{std\+::string const \&}]{to\+Replace,  }\item[{std\+::string const \&}]{replace\+With }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source_l00319}{319}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source}{my\+KINOVA\+\_\+\+LOGGING.\+h}}.
+
+\Hypertarget{classmy_w_r_i_t_e___k_i_n_o_v_a___l_o_g_a5ca90bd11bcafd0d9b402264ab0a32ef}\label{classmy_w_r_i_t_e___k_i_n_o_v_a___l_o_g_a5ca90bd11bcafd0d9b402264ab0a32ef} 
+\index{myWRITE\_KINOVA\_LOG@{myWRITE\_KINOVA\_LOG}!write2FILE@{write2FILE}}
+\index{write2FILE@{write2FILE}!myWRITE\_KINOVA\_LOG@{myWRITE\_KINOVA\_LOG}}
+\doxysubsubsection{\texorpdfstring{write2FILE()}{write2FILE()}}
+{\footnotesize\ttfamily void my\+WRITE\+\_\+\+KINOVA\+\_\+\+LOG\+::write2\+FILE (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmy_k_i_n_o_v_a___l_o_g}{my\+KINOVA\+\_\+\+LOG}}}]{DATA,  }\item[{std\+::shared\+\_\+ptr$<$ rl\+::mdl\+::\+Model $>$}]{model }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source_l00385}{385}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source}{my\+KINOVA\+\_\+\+LOGGING.\+h}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classmy_w_r_i_t_e___k_i_n_o_v_a___l_o_g_ac34d3f77d439bcbe7afe6393ff07a5e0}\label{classmy_w_r_i_t_e___k_i_n_o_v_a___l_o_g_ac34d3f77d439bcbe7afe6393ff07a5e0} 
+\index{myWRITE\_KINOVA\_LOG@{myWRITE\_KINOVA\_LOG}!ACTUATOR\_COUNT@{ACTUATOR\_COUNT}}
+\index{ACTUATOR\_COUNT@{ACTUATOR\_COUNT}!myWRITE\_KINOVA\_LOG@{myWRITE\_KINOVA\_LOG}}
+\doxysubsubsection{\texorpdfstring{ACTUATOR\_COUNT}{ACTUATOR\_COUNT}}
+{\footnotesize\ttfamily int my\+WRITE\+\_\+\+KINOVA\+\_\+\+LOG\+::\+ACTUATOR\+\_\+\+COUNT = 7}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source_l00295}{295}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source}{my\+KINOVA\+\_\+\+LOGGING.\+h}}.
+
+\Hypertarget{classmy_w_r_i_t_e___k_i_n_o_v_a___l_o_g_ac96c0bec413740248172aae38a5da973}\label{classmy_w_r_i_t_e___k_i_n_o_v_a___l_o_g_ac96c0bec413740248172aae38a5da973} 
+\index{myWRITE\_KINOVA\_LOG@{myWRITE\_KINOVA\_LOG}!data\_count\_final@{data\_count\_final}}
+\index{data\_count\_final@{data\_count\_final}!myWRITE\_KINOVA\_LOG@{myWRITE\_KINOVA\_LOG}}
+\doxysubsubsection{\texorpdfstring{data\_count\_final}{data\_count\_final}}
+{\footnotesize\ttfamily int my\+WRITE\+\_\+\+KINOVA\+\_\+\+LOG\+::data\+\_\+count\+\_\+final}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source_l00296}{296}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source}{my\+KINOVA\+\_\+\+LOGGING.\+h}}.
+
+\Hypertarget{classmy_w_r_i_t_e___k_i_n_o_v_a___l_o_g_ac6701c7b5ee2f7b9e46afe401a96f4c4}\label{classmy_w_r_i_t_e___k_i_n_o_v_a___l_o_g_ac6701c7b5ee2f7b9e46afe401a96f4c4} 
+\index{myWRITE\_KINOVA\_LOG@{myWRITE\_KINOVA\_LOG}!duration@{duration}}
+\index{duration@{duration}!myWRITE\_KINOVA\_LOG@{myWRITE\_KINOVA\_LOG}}
+\doxysubsubsection{\texorpdfstring{duration}{duration}}
+{\footnotesize\ttfamily int my\+WRITE\+\_\+\+KINOVA\+\_\+\+LOG\+::duration}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source_l00291}{291}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source}{my\+KINOVA\+\_\+\+LOGGING.\+h}}.
+
+\Hypertarget{classmy_w_r_i_t_e___k_i_n_o_v_a___l_o_g_a8df3611c14124a8be895ef2aa8ac04c1}\label{classmy_w_r_i_t_e___k_i_n_o_v_a___l_o_g_a8df3611c14124a8be895ef2aa8ac04c1} 
+\index{myWRITE\_KINOVA\_LOG@{myWRITE\_KINOVA\_LOG}!EXEPATH@{EXEPATH}}
+\index{EXEPATH@{EXEPATH}!myWRITE\_KINOVA\_LOG@{myWRITE\_KINOVA\_LOG}}
+\doxysubsubsection{\texorpdfstring{EXEPATH}{EXEPATH}}
+{\footnotesize\ttfamily char my\+WRITE\+\_\+\+KINOVA\+\_\+\+LOG\+::\+EXEPATH\mbox{[}MAX\+\_\+\+PATH\mbox{]}}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source_l00293}{293}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source}{my\+KINOVA\+\_\+\+LOGGING.\+h}}.
+
+\Hypertarget{classmy_w_r_i_t_e___k_i_n_o_v_a___l_o_g_ae0c885141fd599356679bcccdd7a6b48}\label{classmy_w_r_i_t_e___k_i_n_o_v_a___l_o_g_ae0c885141fd599356679bcccdd7a6b48} 
+\index{myWRITE\_KINOVA\_LOG@{myWRITE\_KINOVA\_LOG}!exp\_folder@{exp\_folder}}
+\index{exp\_folder@{exp\_folder}!myWRITE\_KINOVA\_LOG@{myWRITE\_KINOVA\_LOG}}
+\doxysubsubsection{\texorpdfstring{exp\_folder}{exp\_folder}}
+{\footnotesize\ttfamily std\+::string my\+WRITE\+\_\+\+KINOVA\+\_\+\+LOG\+::exp\+\_\+folder}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source_l00292}{292}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source}{my\+KINOVA\+\_\+\+LOGGING.\+h}}.
+
+\Hypertarget{classmy_w_r_i_t_e___k_i_n_o_v_a___l_o_g_a5d0423454a7a32ca0b0d2ea26718c004}\label{classmy_w_r_i_t_e___k_i_n_o_v_a___l_o_g_a5d0423454a7a32ca0b0d2ea26718c004} 
+\index{myWRITE\_KINOVA\_LOG@{myWRITE\_KINOVA\_LOG}!ROBOT\_IP@{ROBOT\_IP}}
+\index{ROBOT\_IP@{ROBOT\_IP}!myWRITE\_KINOVA\_LOG@{myWRITE\_KINOVA\_LOG}}
+\doxysubsubsection{\texorpdfstring{ROBOT\_IP}{ROBOT\_IP}}
+{\footnotesize\ttfamily std\+::string my\+WRITE\+\_\+\+KINOVA\+\_\+\+LOG\+::\+ROBOT\+\_\+\+IP}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source_l00294}{294}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source}{my\+KINOVA\+\_\+\+LOGGING.\+h}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+my\+KINOVA\+\_\+\+LOGGING.\+h\end{DoxyCompactItemize}

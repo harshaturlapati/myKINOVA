@@ -1,0 +1,7 @@
+<map id="myTELEOP::TELEOP_GETFBK" name="myTELEOP::TELEOP_GETFBK">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,214,32"/>
+<area shape="rect" id="Node000002" href="$classmy_k_i_n_o_v_a.html#a53bae8ebef572613e2cb89db88eec627" title=" " alt="" coords="262,5,402,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="214,16,246,16,246,21,214,21"/>
+<area shape="rect" id="Node000003" href="$classmy_k_i_n_o_v_a.html#a8eecd39b26711396f3148009023975cc" title=" " alt="" coords="450,5,591,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="402,16,435,16,435,21,402,21"/>
+</map>

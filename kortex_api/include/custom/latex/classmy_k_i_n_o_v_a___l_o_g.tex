@@ -1,0 +1,327 @@
+\doxysection{my\+KINOVA\+\_\+\+LOG Class Reference}
+\hypertarget{classmy_k_i_n_o_v_a___l_o_g}{}\label{classmy_k_i_n_o_v_a___l_o_g}\index{myKINOVA\_LOG@{myKINOVA\_LOG}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int64\+\_\+t \mbox{\hyperlink{classmy_k_i_n_o_v_a___l_o_g_a5e4c139e04dea51f7522c626c106bce4}{Get\+Tick\+Us}} ()
+\item 
+void \mbox{\hyperlink{classmy_k_i_n_o_v_a___l_o_g_a2315db70911c30cba1d25bba87c563fd}{write2\+LOG}} (int data\+\_\+count\+\_\+in, k\+\_\+api\+::\+Base\+Cyclic\+::\+Feedback base\+\_\+feedback, float ext\+\_\+tau\mbox{[}7\mbox{]}, float UDP\+\_\+q\mbox{[}7\mbox{]}, float UDP\+\_\+tau\mbox{[}7\mbox{]}, float tau\+\_\+cmd\mbox{[}7\mbox{]})
+\item 
+void \mbox{\hyperlink{classmy_k_i_n_o_v_a___l_o_g_aa95db942d805f324133de648c5ef4829}{define\+\_\+n\+D\+\_\+array}} (float \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}pointer, int arr\+\_\+length, int my\+\_\+dim)
+\item 
+float \mbox{\hyperlink{classmy_k_i_n_o_v_a___l_o_g_ab0e6840cb2672b3d49af80834caca8eb}{access\+\_\+my\+\_\+nD}} (float \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}pointer, int i, int j)
+\item 
+\mbox{\hyperlink{classmy_k_i_n_o_v_a___l_o_g_a2d1ff0fc29dcab91c1c35a83e0926203}{my\+KINOVA\+\_\+\+LOG}} (int duration\+\_\+in)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classmy_k_i_n_o_v_a___l_o_g_a6ca33652979979610a4dedbb6d538a9a}{i}}
+\item 
+int \mbox{\hyperlink{classmy_k_i_n_o_v_a___l_o_g_adf9084c4f30c1bce0523d76269536ae5}{timer\+\_\+count}} = 0
+\item 
+int64\+\_\+t \mbox{\hyperlink{classmy_k_i_n_o_v_a___l_o_g_af302f15a76595ff2086c45813219cb3c}{now}} = 0
+\item 
+int64\+\_\+t \mbox{\hyperlink{classmy_k_i_n_o_v_a___l_o_g_a7a10172321d652393d0ed02683bc8d17}{last}} = 0
+\item 
+int \mbox{\hyperlink{classmy_k_i_n_o_v_a___l_o_g_ab528112184a4dadf97a351456125a01f}{logging}} = 1
+\item 
+int \mbox{\hyperlink{classmy_k_i_n_o_v_a___l_o_g_a12c8f574b480687f94efa924fa5e4615}{focus}} = 0
+\item 
+int \mbox{\hyperlink{classmy_k_i_n_o_v_a___l_o_g_ac3bab30324d2e4f85a4dbe6d6add4f7b}{data\+\_\+count\+\_\+final}}
+\item 
+int \mbox{\hyperlink{classmy_k_i_n_o_v_a___l_o_g_a190035eb7fe2b0f030e801f7379aa49a}{data\+\_\+count}} = 0
+\item 
+int \mbox{\hyperlink{classmy_k_i_n_o_v_a___l_o_g_ad7fa4406d839e1bc4f874e0c4db878e6}{ACTUATOR\+\_\+\+COUNT}} = 7
+\item 
+int64\+\_\+t \mbox{\hyperlink{classmy_k_i_n_o_v_a___l_o_g_a49c4c2d1590eb61ca832abc610483f19}{timestamp}}
+\item 
+int \mbox{\hyperlink{classmy_k_i_n_o_v_a___l_o_g_a0072b0b45ae1cde936852d1bd5c1bccd}{DURATION}}
+\item 
+int \mbox{\hyperlink{classmy_k_i_n_o_v_a___l_o_g_a28bd5781d7fed4b7eafe3c89dd6c7987}{arr\+\_\+length}}
+\item 
+double \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classmy_k_i_n_o_v_a___l_o_g_ad7ae2b24a0c273778f3364e96d8a4df9}{time\+\_\+log}}
+\item 
+int64\+\_\+t \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classmy_k_i_n_o_v_a___l_o_g_a74d7cb05f7525437a51ec749bd39fff9}{unix\+\_\+epoch}}
+\item 
+float \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classmy_k_i_n_o_v_a___l_o_g_afce32f047e4a00a4f7450114d4f6ece4}{UDP\+\_\+q\+\_\+log}}
+\item 
+float \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classmy_k_i_n_o_v_a___l_o_g_aa365caf1b3bd29d2271bf275f3d0b6ca}{UDP\+\_\+tau\+\_\+log}}
+\item 
+float \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classmy_k_i_n_o_v_a___l_o_g_a3813e151b58bfdef546ea09b2901cb6a}{ext\+\_\+tau\+\_\+log}}
+\item 
+float \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classmy_k_i_n_o_v_a___l_o_g_ad43714077eb25cbc74baff9f1e8556d1}{tau\+\_\+cmd\+\_\+log}}
+\item 
+k\+\_\+api\+::\+Base\+Cyclic\+::\+Feedback \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classmy_k_i_n_o_v_a___l_o_g_aad11f710a1ca280110b179bb3e8a39be}{data\+\_\+log}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source_l00164}{164}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source}{my\+KINOVA\+\_\+\+LOGGING.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classmy_k_i_n_o_v_a___l_o_g_a495cadeae7c6865a4d8a8b9c2ed48c42}\label{classmy_k_i_n_o_v_a___l_o_g_a495cadeae7c6865a4d8a8b9c2ed48c42} 
+\index{myKINOVA\_LOG@{myKINOVA\_LOG}!myKINOVA\_LOG@{myKINOVA\_LOG}}
+\index{myKINOVA\_LOG@{myKINOVA\_LOG}!myKINOVA\_LOG@{myKINOVA\_LOG}}
+\doxysubsubsection{\texorpdfstring{myKINOVA\_LOG()}{myKINOVA\_LOG()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily my\+KINOVA\+\_\+\+LOG\+::my\+KINOVA\+\_\+\+LOG (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source_l00255}{255}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source}{my\+KINOVA\+\_\+\+LOGGING.\+h}}.
+
+\Hypertarget{classmy_k_i_n_o_v_a___l_o_g_a2d1ff0fc29dcab91c1c35a83e0926203}\label{classmy_k_i_n_o_v_a___l_o_g_a2d1ff0fc29dcab91c1c35a83e0926203} 
+\index{myKINOVA\_LOG@{myKINOVA\_LOG}!myKINOVA\_LOG@{myKINOVA\_LOG}}
+\index{myKINOVA\_LOG@{myKINOVA\_LOG}!myKINOVA\_LOG@{myKINOVA\_LOG}}
+\doxysubsubsection{\texorpdfstring{myKINOVA\_LOG()}{myKINOVA\_LOG()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily my\+KINOVA\+\_\+\+LOG\+::my\+KINOVA\+\_\+\+LOG (\begin{DoxyParamCaption}\item[{int}]{duration\+\_\+in }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source_l00259}{259}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source}{my\+KINOVA\+\_\+\+LOGGING.\+h}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classmy_k_i_n_o_v_a___l_o_g_ab0e6840cb2672b3d49af80834caca8eb}\label{classmy_k_i_n_o_v_a___l_o_g_ab0e6840cb2672b3d49af80834caca8eb} 
+\index{myKINOVA\_LOG@{myKINOVA\_LOG}!access\_my\_nD@{access\_my\_nD}}
+\index{access\_my\_nD@{access\_my\_nD}!myKINOVA\_LOG@{myKINOVA\_LOG}}
+\doxysubsubsection{\texorpdfstring{access\_my\_nD()}{access\_my\_nD()}}
+{\footnotesize\ttfamily float my\+KINOVA\+\_\+\+LOG\+::access\+\_\+my\+\_\+nD (\begin{DoxyParamCaption}\item[{float \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{pointer,  }\item[{int}]{i,  }\item[{int}]{j }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source_l00251}{251}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source}{my\+KINOVA\+\_\+\+LOGGING.\+h}}.
+
+\Hypertarget{classmy_k_i_n_o_v_a___l_o_g_aa95db942d805f324133de648c5ef4829}\label{classmy_k_i_n_o_v_a___l_o_g_aa95db942d805f324133de648c5ef4829} 
+\index{myKINOVA\_LOG@{myKINOVA\_LOG}!define\_nD\_array@{define\_nD\_array}}
+\index{define\_nD\_array@{define\_nD\_array}!myKINOVA\_LOG@{myKINOVA\_LOG}}
+\doxysubsubsection{\texorpdfstring{define\_nD\_array()}{define\_nD\_array()}}
+{\footnotesize\ttfamily void my\+KINOVA\+\_\+\+LOG\+::define\+\_\+n\+D\+\_\+array (\begin{DoxyParamCaption}\item[{float \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{pointer,  }\item[{int}]{arr\+\_\+length,  }\item[{int}]{my\+\_\+dim }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source_l00244}{244}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source}{my\+KINOVA\+\_\+\+LOGGING.\+h}}.
+
+\Hypertarget{classmy_k_i_n_o_v_a___l_o_g_a5e4c139e04dea51f7522c626c106bce4}\label{classmy_k_i_n_o_v_a___l_o_g_a5e4c139e04dea51f7522c626c106bce4} 
+\index{myKINOVA\_LOG@{myKINOVA\_LOG}!GetTickUs@{GetTickUs}}
+\index{GetTickUs@{GetTickUs}!myKINOVA\_LOG@{myKINOVA\_LOG}}
+\doxysubsubsection{\texorpdfstring{GetTickUs()}{GetTickUs()}}
+{\footnotesize\ttfamily int64\+\_\+t my\+KINOVA\+\_\+\+LOG\+::\+Get\+Tick\+Us (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source_l00195}{195}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source}{my\+KINOVA\+\_\+\+LOGGING.\+h}}.
+
+\Hypertarget{classmy_k_i_n_o_v_a___l_o_g_a2315db70911c30cba1d25bba87c563fd}\label{classmy_k_i_n_o_v_a___l_o_g_a2315db70911c30cba1d25bba87c563fd} 
+\index{myKINOVA\_LOG@{myKINOVA\_LOG}!write2LOG@{write2LOG}}
+\index{write2LOG@{write2LOG}!myKINOVA\_LOG@{myKINOVA\_LOG}}
+\doxysubsubsection{\texorpdfstring{write2LOG()}{write2LOG()}}
+{\footnotesize\ttfamily void my\+KINOVA\+\_\+\+LOG\+::write2\+LOG (\begin{DoxyParamCaption}\item[{int}]{data\+\_\+count\+\_\+in,  }\item[{k\+\_\+api\+::\+Base\+Cyclic\+::\+Feedback}]{base\+\_\+feedback,  }\item[{float}]{ext\+\_\+tau\mbox{[}7\mbox{]},  }\item[{float}]{UDP\+\_\+q\mbox{[}7\mbox{]},  }\item[{float}]{UDP\+\_\+tau\mbox{[}7\mbox{]},  }\item[{float}]{tau\+\_\+cmd\mbox{[}7\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source_l00215}{215}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source}{my\+KINOVA\+\_\+\+LOGGING.\+h}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classmy_k_i_n_o_v_a___l_o_g_ad7fa4406d839e1bc4f874e0c4db878e6}\label{classmy_k_i_n_o_v_a___l_o_g_ad7fa4406d839e1bc4f874e0c4db878e6} 
+\index{myKINOVA\_LOG@{myKINOVA\_LOG}!ACTUATOR\_COUNT@{ACTUATOR\_COUNT}}
+\index{ACTUATOR\_COUNT@{ACTUATOR\_COUNT}!myKINOVA\_LOG@{myKINOVA\_LOG}}
+\doxysubsubsection{\texorpdfstring{ACTUATOR\_COUNT}{ACTUATOR\_COUNT}}
+{\footnotesize\ttfamily int my\+KINOVA\+\_\+\+LOG\+::\+ACTUATOR\+\_\+\+COUNT = 7}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source_l00180}{180}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source}{my\+KINOVA\+\_\+\+LOGGING.\+h}}.
+
+\Hypertarget{classmy_k_i_n_o_v_a___l_o_g_a28bd5781d7fed4b7eafe3c89dd6c7987}\label{classmy_k_i_n_o_v_a___l_o_g_a28bd5781d7fed4b7eafe3c89dd6c7987} 
+\index{myKINOVA\_LOG@{myKINOVA\_LOG}!arr\_length@{arr\_length}}
+\index{arr\_length@{arr\_length}!myKINOVA\_LOG@{myKINOVA\_LOG}}
+\doxysubsubsection{\texorpdfstring{arr\_length}{arr\_length}}
+{\footnotesize\ttfamily int my\+KINOVA\+\_\+\+LOG\+::arr\+\_\+length}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source_l00186}{186}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source}{my\+KINOVA\+\_\+\+LOGGING.\+h}}.
+
+\Hypertarget{classmy_k_i_n_o_v_a___l_o_g_a190035eb7fe2b0f030e801f7379aa49a}\label{classmy_k_i_n_o_v_a___l_o_g_a190035eb7fe2b0f030e801f7379aa49a} 
+\index{myKINOVA\_LOG@{myKINOVA\_LOG}!data\_count@{data\_count}}
+\index{data\_count@{data\_count}!myKINOVA\_LOG@{myKINOVA\_LOG}}
+\doxysubsubsection{\texorpdfstring{data\_count}{data\_count}}
+{\footnotesize\ttfamily int my\+KINOVA\+\_\+\+LOG\+::data\+\_\+count = 0}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source_l00179}{179}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source}{my\+KINOVA\+\_\+\+LOGGING.\+h}}.
+
+\Hypertarget{classmy_k_i_n_o_v_a___l_o_g_ac3bab30324d2e4f85a4dbe6d6add4f7b}\label{classmy_k_i_n_o_v_a___l_o_g_ac3bab30324d2e4f85a4dbe6d6add4f7b} 
+\index{myKINOVA\_LOG@{myKINOVA\_LOG}!data\_count\_final@{data\_count\_final}}
+\index{data\_count\_final@{data\_count\_final}!myKINOVA\_LOG@{myKINOVA\_LOG}}
+\doxysubsubsection{\texorpdfstring{data\_count\_final}{data\_count\_final}}
+{\footnotesize\ttfamily int my\+KINOVA\+\_\+\+LOG\+::data\+\_\+count\+\_\+final}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source_l00176}{176}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source}{my\+KINOVA\+\_\+\+LOGGING.\+h}}.
+
+\Hypertarget{classmy_k_i_n_o_v_a___l_o_g_aad11f710a1ca280110b179bb3e8a39be}\label{classmy_k_i_n_o_v_a___l_o_g_aad11f710a1ca280110b179bb3e8a39be} 
+\index{myKINOVA\_LOG@{myKINOVA\_LOG}!data\_log@{data\_log}}
+\index{data\_log@{data\_log}!myKINOVA\_LOG@{myKINOVA\_LOG}}
+\doxysubsubsection{\texorpdfstring{data\_log}{data\_log}}
+{\footnotesize\ttfamily k\+\_\+api\+::\+Base\+Cyclic\+::\+Feedback\texorpdfstring{$\ast$}{*} my\+KINOVA\+\_\+\+LOG\+::data\+\_\+log}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source_l00193}{193}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source}{my\+KINOVA\+\_\+\+LOGGING.\+h}}.
+
+\Hypertarget{classmy_k_i_n_o_v_a___l_o_g_a0072b0b45ae1cde936852d1bd5c1bccd}\label{classmy_k_i_n_o_v_a___l_o_g_a0072b0b45ae1cde936852d1bd5c1bccd} 
+\index{myKINOVA\_LOG@{myKINOVA\_LOG}!DURATION@{DURATION}}
+\index{DURATION@{DURATION}!myKINOVA\_LOG@{myKINOVA\_LOG}}
+\doxysubsubsection{\texorpdfstring{DURATION}{DURATION}}
+{\footnotesize\ttfamily int my\+KINOVA\+\_\+\+LOG\+::\+DURATION}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source_l00185}{185}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source}{my\+KINOVA\+\_\+\+LOGGING.\+h}}.
+
+\Hypertarget{classmy_k_i_n_o_v_a___l_o_g_a3813e151b58bfdef546ea09b2901cb6a}\label{classmy_k_i_n_o_v_a___l_o_g_a3813e151b58bfdef546ea09b2901cb6a} 
+\index{myKINOVA\_LOG@{myKINOVA\_LOG}!ext\_tau\_log@{ext\_tau\_log}}
+\index{ext\_tau\_log@{ext\_tau\_log}!myKINOVA\_LOG@{myKINOVA\_LOG}}
+\doxysubsubsection{\texorpdfstring{ext\_tau\_log}{ext\_tau\_log}}
+{\footnotesize\ttfamily float\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} my\+KINOVA\+\_\+\+LOG\+::ext\+\_\+tau\+\_\+log}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source_l00191}{191}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source}{my\+KINOVA\+\_\+\+LOGGING.\+h}}.
+
+\Hypertarget{classmy_k_i_n_o_v_a___l_o_g_a12c8f574b480687f94efa924fa5e4615}\label{classmy_k_i_n_o_v_a___l_o_g_a12c8f574b480687f94efa924fa5e4615} 
+\index{myKINOVA\_LOG@{myKINOVA\_LOG}!focus@{focus}}
+\index{focus@{focus}!myKINOVA\_LOG@{myKINOVA\_LOG}}
+\doxysubsubsection{\texorpdfstring{focus}{focus}}
+{\footnotesize\ttfamily int my\+KINOVA\+\_\+\+LOG\+::focus = 0}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source_l00175}{175}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source}{my\+KINOVA\+\_\+\+LOGGING.\+h}}.
+
+\Hypertarget{classmy_k_i_n_o_v_a___l_o_g_a6ca33652979979610a4dedbb6d538a9a}\label{classmy_k_i_n_o_v_a___l_o_g_a6ca33652979979610a4dedbb6d538a9a} 
+\index{myKINOVA\_LOG@{myKINOVA\_LOG}!i@{i}}
+\index{i@{i}!myKINOVA\_LOG@{myKINOVA\_LOG}}
+\doxysubsubsection{\texorpdfstring{i}{i}}
+{\footnotesize\ttfamily int my\+KINOVA\+\_\+\+LOG\+::i}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source_l00169}{169}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source}{my\+KINOVA\+\_\+\+LOGGING.\+h}}.
+
+\Hypertarget{classmy_k_i_n_o_v_a___l_o_g_a7a10172321d652393d0ed02683bc8d17}\label{classmy_k_i_n_o_v_a___l_o_g_a7a10172321d652393d0ed02683bc8d17} 
+\index{myKINOVA\_LOG@{myKINOVA\_LOG}!last@{last}}
+\index{last@{last}!myKINOVA\_LOG@{myKINOVA\_LOG}}
+\doxysubsubsection{\texorpdfstring{last}{last}}
+{\footnotesize\ttfamily int64\+\_\+t my\+KINOVA\+\_\+\+LOG\+::last = 0}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source_l00172}{172}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source}{my\+KINOVA\+\_\+\+LOGGING.\+h}}.
+
+\Hypertarget{classmy_k_i_n_o_v_a___l_o_g_ab528112184a4dadf97a351456125a01f}\label{classmy_k_i_n_o_v_a___l_o_g_ab528112184a4dadf97a351456125a01f} 
+\index{myKINOVA\_LOG@{myKINOVA\_LOG}!logging@{logging}}
+\index{logging@{logging}!myKINOVA\_LOG@{myKINOVA\_LOG}}
+\doxysubsubsection{\texorpdfstring{logging}{logging}}
+{\footnotesize\ttfamily int my\+KINOVA\+\_\+\+LOG\+::logging = 1}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source_l00174}{174}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source}{my\+KINOVA\+\_\+\+LOGGING.\+h}}.
+
+\Hypertarget{classmy_k_i_n_o_v_a___l_o_g_af302f15a76595ff2086c45813219cb3c}\label{classmy_k_i_n_o_v_a___l_o_g_af302f15a76595ff2086c45813219cb3c} 
+\index{myKINOVA\_LOG@{myKINOVA\_LOG}!now@{now}}
+\index{now@{now}!myKINOVA\_LOG@{myKINOVA\_LOG}}
+\doxysubsubsection{\texorpdfstring{now}{now}}
+{\footnotesize\ttfamily int64\+\_\+t my\+KINOVA\+\_\+\+LOG\+::now = 0}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source_l00171}{171}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source}{my\+KINOVA\+\_\+\+LOGGING.\+h}}.
+
+\Hypertarget{classmy_k_i_n_o_v_a___l_o_g_ad43714077eb25cbc74baff9f1e8556d1}\label{classmy_k_i_n_o_v_a___l_o_g_ad43714077eb25cbc74baff9f1e8556d1} 
+\index{myKINOVA\_LOG@{myKINOVA\_LOG}!tau\_cmd\_log@{tau\_cmd\_log}}
+\index{tau\_cmd\_log@{tau\_cmd\_log}!myKINOVA\_LOG@{myKINOVA\_LOG}}
+\doxysubsubsection{\texorpdfstring{tau\_cmd\_log}{tau\_cmd\_log}}
+{\footnotesize\ttfamily float\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} my\+KINOVA\+\_\+\+LOG\+::tau\+\_\+cmd\+\_\+log}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source_l00192}{192}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source}{my\+KINOVA\+\_\+\+LOGGING.\+h}}.
+
+\Hypertarget{classmy_k_i_n_o_v_a___l_o_g_ad7ae2b24a0c273778f3364e96d8a4df9}\label{classmy_k_i_n_o_v_a___l_o_g_ad7ae2b24a0c273778f3364e96d8a4df9} 
+\index{myKINOVA\_LOG@{myKINOVA\_LOG}!time\_log@{time\_log}}
+\index{time\_log@{time\_log}!myKINOVA\_LOG@{myKINOVA\_LOG}}
+\doxysubsubsection{\texorpdfstring{time\_log}{time\_log}}
+{\footnotesize\ttfamily double\texorpdfstring{$\ast$}{*} my\+KINOVA\+\_\+\+LOG\+::time\+\_\+log}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source_l00187}{187}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source}{my\+KINOVA\+\_\+\+LOGGING.\+h}}.
+
+\Hypertarget{classmy_k_i_n_o_v_a___l_o_g_adf9084c4f30c1bce0523d76269536ae5}\label{classmy_k_i_n_o_v_a___l_o_g_adf9084c4f30c1bce0523d76269536ae5} 
+\index{myKINOVA\_LOG@{myKINOVA\_LOG}!timer\_count@{timer\_count}}
+\index{timer\_count@{timer\_count}!myKINOVA\_LOG@{myKINOVA\_LOG}}
+\doxysubsubsection{\texorpdfstring{timer\_count}{timer\_count}}
+{\footnotesize\ttfamily int my\+KINOVA\+\_\+\+LOG\+::timer\+\_\+count = 0}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source_l00170}{170}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source}{my\+KINOVA\+\_\+\+LOGGING.\+h}}.
+
+\Hypertarget{classmy_k_i_n_o_v_a___l_o_g_a49c4c2d1590eb61ca832abc610483f19}\label{classmy_k_i_n_o_v_a___l_o_g_a49c4c2d1590eb61ca832abc610483f19} 
+\index{myKINOVA\_LOG@{myKINOVA\_LOG}!timestamp@{timestamp}}
+\index{timestamp@{timestamp}!myKINOVA\_LOG@{myKINOVA\_LOG}}
+\doxysubsubsection{\texorpdfstring{timestamp}{timestamp}}
+{\footnotesize\ttfamily int64\+\_\+t my\+KINOVA\+\_\+\+LOG\+::timestamp}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source_l00181}{181}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source}{my\+KINOVA\+\_\+\+LOGGING.\+h}}.
+
+\Hypertarget{classmy_k_i_n_o_v_a___l_o_g_afce32f047e4a00a4f7450114d4f6ece4}\label{classmy_k_i_n_o_v_a___l_o_g_afce32f047e4a00a4f7450114d4f6ece4} 
+\index{myKINOVA\_LOG@{myKINOVA\_LOG}!UDP\_q\_log@{UDP\_q\_log}}
+\index{UDP\_q\_log@{UDP\_q\_log}!myKINOVA\_LOG@{myKINOVA\_LOG}}
+\doxysubsubsection{\texorpdfstring{UDP\_q\_log}{UDP\_q\_log}}
+{\footnotesize\ttfamily float\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} my\+KINOVA\+\_\+\+LOG\+::\+UDP\+\_\+q\+\_\+log}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source_l00189}{189}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source}{my\+KINOVA\+\_\+\+LOGGING.\+h}}.
+
+\Hypertarget{classmy_k_i_n_o_v_a___l_o_g_aa365caf1b3bd29d2271bf275f3d0b6ca}\label{classmy_k_i_n_o_v_a___l_o_g_aa365caf1b3bd29d2271bf275f3d0b6ca} 
+\index{myKINOVA\_LOG@{myKINOVA\_LOG}!UDP\_tau\_log@{UDP\_tau\_log}}
+\index{UDP\_tau\_log@{UDP\_tau\_log}!myKINOVA\_LOG@{myKINOVA\_LOG}}
+\doxysubsubsection{\texorpdfstring{UDP\_tau\_log}{UDP\_tau\_log}}
+{\footnotesize\ttfamily float\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} my\+KINOVA\+\_\+\+LOG\+::\+UDP\+\_\+tau\+\_\+log}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source_l00190}{190}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source}{my\+KINOVA\+\_\+\+LOGGING.\+h}}.
+
+\Hypertarget{classmy_k_i_n_o_v_a___l_o_g_a74d7cb05f7525437a51ec749bd39fff9}\label{classmy_k_i_n_o_v_a___l_o_g_a74d7cb05f7525437a51ec749bd39fff9} 
+\index{myKINOVA\_LOG@{myKINOVA\_LOG}!unix\_epoch@{unix\_epoch}}
+\index{unix\_epoch@{unix\_epoch}!myKINOVA\_LOG@{myKINOVA\_LOG}}
+\doxysubsubsection{\texorpdfstring{unix\_epoch}{unix\_epoch}}
+{\footnotesize\ttfamily int64\+\_\+t\texorpdfstring{$\ast$}{*} my\+KINOVA\+\_\+\+LOG\+::unix\+\_\+epoch}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source_l00188}{188}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___l_o_g_g_i_n_g_8h_source}{my\+KINOVA\+\_\+\+LOGGING.\+h}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+my\+KINOVA\+\_\+\+LOGGING.\+h\end{DoxyCompactItemize}

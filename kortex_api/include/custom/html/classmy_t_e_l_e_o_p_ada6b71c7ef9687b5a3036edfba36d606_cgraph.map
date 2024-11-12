@@ -1,0 +1,19 @@
+<map id="myTELEOP::TELEOP_sendCMD" name="myTELEOP::TELEOP_sendCMD">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,64,219,91"/>
+<area shape="rect" id="Node000002" href="$classmy_k_i_n_o_v_a.html#ae0030c158fc406046e4514710005df48" title=" " alt="" coords="267,64,420,91"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="219,75,251,75,251,80,219,80"/>
+<area shape="rect" id="Node000003" href="$classmy_k_i_n_o_v_a___l_o_g.html#a5e4c139e04dea51f7522c626c106bce4" title=" " alt="" coords="468,5,659,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="396,61,467,41,495,34,497,39,469,47,397,66"/>
+<area shape="rect" id="Node000004" href="$classmy_k_i_n_o_v_a.html#a81cb0e9169e2350b4165ca9b5189585d" title=" " alt="" coords="478,56,649,99"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="420,75,462,75,462,80,420,80"/>
+<area shape="rect" id="Node000005" href="$classmy_k_i_n_o_v_a.html#a50bbd2edfe3d8f59aed74a14ef6b8b12" title=" " alt="" coords="476,123,651,149"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="397,89,469,108,497,116,495,121,467,113,396,94"/>
+<area shape="rect" id="Node000006" href="$classmy_k_i_n_o_v_a.html#acd6b1fa30c0694f5b5e7802653eb6984" title=" " alt="" coords="736,31,884,73"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="624,120,658,108,682,96,706,83,722,77,724,82,708,88,685,101,660,113,626,125"/>
+<area shape="rect" id="Node000007" href="$classmy_k_i_n_o_v_a.html#ad760cc36f7ae1d54dedd654cdf26b5d2" title=" " alt="" coords="712,97,908,124"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="652,124,696,120,697,125,652,130"/>
+<area shape="rect" id="Node000008" href="$classmy_k_i_n_o_v_a.html#a39cabc0aeaae7d4afed36719810588c6" title=" " alt="" coords="707,148,913,175"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="652,142,692,147,691,152,652,148"/>
+<area shape="rect" id="Node000009" href="$classmy_k_i_n_o_v_a.html#ac1e3d77388dc3e449487b1e05adfeeeb" title=" " alt="" coords="714,199,906,225"/>
+<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="602,147,708,184,735,192,734,197,707,189,600,152"/>
+</map>

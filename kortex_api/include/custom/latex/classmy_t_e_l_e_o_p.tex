@@ -1,0 +1,265 @@
+\doxysection{my\+TELEOP Class Reference}
+\hypertarget{classmy_t_e_l_e_o_p}{}\label{classmy_t_e_l_e_o_p}\index{myTELEOP@{myTELEOP}}
+
+
+Collaboration diagram for my\+TELEOP\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmy_t_e_l_e_o_p__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmy_k_i_n_o_v_a}{my\+KINOVA}} \mbox{\hyperlink{classmy_t_e_l_e_o_p_a290133a6002320cf7718ff90a2a725af}{get\+ROB\+\_\+\+OBJ}} (\mbox{\hyperlink{structmy_p_a_r_a_m_s}{my\+PARAMS}} PARAMS\+\_\+\+IN, int role\+\_\+in)
+\item 
+\mbox{\hyperlink{classmy_k_i_n_o_v_a}{my\+KINOVA}} \mbox{\hyperlink{classmy_t_e_l_e_o_p_a3f73a738c0026d50167bff9a477f62bd}{get\+ROB\+\_\+\+OBJ\+\_\+K}} (\mbox{\hyperlink{structmy_p_a_r_a_m_s}{my\+PARAMS}} PARAMS\+\_\+\+IN, int role\+\_\+in, float k\+\_\+in)
+\item 
+bool \mbox{\hyperlink{classmy_t_e_l_e_o_p_a69158afc9816c59b4139c3c35f4ea4ba}{teleoperate}} (bool gripper\+\_\+in)
+\item 
+void \mbox{\hyperlink{classmy_t_e_l_e_o_p_a87fa85b1e7a57395e9fd9aff1180f94b}{set\+TELEOP\+\_\+\+CMD}} ()
+\item 
+void \mbox{\hyperlink{classmy_t_e_l_e_o_p_a086a2ec560c44dcc96bebcee5013ba6d}{initiate\+\_\+robots}} ()
+\item 
+void \mbox{\hyperlink{classmy_t_e_l_e_o_p_a460c47dc36919feb66ba8a70d71b5b62}{INIT\+\_\+\+LOWLEVELn\+UDP}} ()
+\item 
+void \mbox{\hyperlink{classmy_t_e_l_e_o_p_aeb107865ff3199bdcb69d81b883f3507}{TELEOP\+\_\+\+GETFBK}} ()
+\item 
+void \mbox{\hyperlink{classmy_t_e_l_e_o_p_a0b511772917a84437e6ec0a62872cb8b}{TELEOP\+\_\+\+LOGIT}} ()
+\item 
+void \mbox{\hyperlink{classmy_t_e_l_e_o_p_ada6b71c7ef9687b5a3036edfba36d606}{TELEOP\+\_\+send\+CMD}} ()
+\item 
+void \mbox{\hyperlink{classmy_t_e_l_e_o_p_a1bfe136920704ca0ca7f496fac2c5e0e}{CLEANUP}} ()
+\item 
+\mbox{\hyperlink{classmy_t_e_l_e_o_p_a21d255b7c0bbd325db45c44c52e63d94}{my\+TELEOP}} (\mbox{\hyperlink{structmy_p_a_r_a_m_s}{my\+PARAMS}} M\+\_\+\+PARAMS\+\_\+\+IN, \mbox{\hyperlink{structmy_p_a_r_a_m_s}{my\+PARAMS}} S\+\_\+\+PARAMS\+\_\+\+IN)
+\item 
+\mbox{\hyperlink{classmy_t_e_l_e_o_p_a16928670adffe15b0dd01e830fc34f69}{my\+TELEOP}} (\mbox{\hyperlink{structmy_p_a_r_a_m_s}{my\+PARAMS}} M\+\_\+\+PARAMS\+\_\+\+IN, \mbox{\hyperlink{structmy_p_a_r_a_m_s}{my\+PARAMS}} S\+\_\+\+PARAMS\+\_\+\+IN, float k\+\_\+in)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmy_k_i_n_o_v_a}{my\+KINOVA}} \mbox{\hyperlink{classmy_t_e_l_e_o_p_a676f39a70a25ec96fb2de97f39a17fb4}{MASTER}}
+\item 
+\mbox{\hyperlink{classmy_k_i_n_o_v_a}{my\+KINOVA}} \mbox{\hyperlink{classmy_t_e_l_e_o_p_a25effbb66bf20d2a230fbd65ff84d799}{SLAVE}}
+\item 
+\mbox{\hyperlink{structmy_p_a_r_a_m_s}{my\+PARAMS}} \mbox{\hyperlink{classmy_t_e_l_e_o_p_a924f91d4e9b07b7b6e6c6a7a318d3515}{master\+\_\+\+PARAMS}}
+\item 
+\mbox{\hyperlink{structmy_p_a_r_a_m_s}{my\+PARAMS}} \mbox{\hyperlink{classmy_t_e_l_e_o_p_a98c6c28f77b7183fc1ae78a4ab8f76cd}{slave\+\_\+\+PARAMS}}
+\item 
+int \mbox{\hyperlink{classmy_t_e_l_e_o_p_ae3149e30a9d128e1b1175461ed441c07}{i}}
+\item 
+float \mbox{\hyperlink{classmy_t_e_l_e_o_p_a4fbacd5b946a7218c206ad7ee1e29202}{tau\+\_\+cmd\+\_\+master}} \mbox{[}7\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{my_t_e_l_e_o_p_8h_source_l00002}{2}} of file \mbox{\hyperlink{my_t_e_l_e_o_p_8h_source}{my\+TELEOP.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classmy_t_e_l_e_o_p_af2e936cff7764a1ffc272bb23071064d}\label{classmy_t_e_l_e_o_p_af2e936cff7764a1ffc272bb23071064d} 
+\index{myTELEOP@{myTELEOP}!myTELEOP@{myTELEOP}}
+\index{myTELEOP@{myTELEOP}!myTELEOP@{myTELEOP}}
+\doxysubsubsection{\texorpdfstring{myTELEOP()}{myTELEOP()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily my\+TELEOP\+::my\+TELEOP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{my_t_e_l_e_o_p_8h_source_l00143}{143}} of file \mbox{\hyperlink{my_t_e_l_e_o_p_8h_source}{my\+TELEOP.\+h}}.
+
+\Hypertarget{classmy_t_e_l_e_o_p_a21d255b7c0bbd325db45c44c52e63d94}\label{classmy_t_e_l_e_o_p_a21d255b7c0bbd325db45c44c52e63d94} 
+\index{myTELEOP@{myTELEOP}!myTELEOP@{myTELEOP}}
+\index{myTELEOP@{myTELEOP}!myTELEOP@{myTELEOP}}
+\doxysubsubsection{\texorpdfstring{myTELEOP()}{myTELEOP()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily my\+TELEOP\+::my\+TELEOP (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structmy_p_a_r_a_m_s}{my\+PARAMS}}}]{M\+\_\+\+PARAMS\+\_\+\+IN,  }\item[{\mbox{\hyperlink{structmy_p_a_r_a_m_s}{my\+PARAMS}}}]{S\+\_\+\+PARAMS\+\_\+\+IN }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{my_t_e_l_e_o_p_8h_source_l00147}{147}} of file \mbox{\hyperlink{my_t_e_l_e_o_p_8h_source}{my\+TELEOP.\+h}}.
+
+\Hypertarget{classmy_t_e_l_e_o_p_a16928670adffe15b0dd01e830fc34f69}\label{classmy_t_e_l_e_o_p_a16928670adffe15b0dd01e830fc34f69} 
+\index{myTELEOP@{myTELEOP}!myTELEOP@{myTELEOP}}
+\index{myTELEOP@{myTELEOP}!myTELEOP@{myTELEOP}}
+\doxysubsubsection{\texorpdfstring{myTELEOP()}{myTELEOP()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily my\+TELEOP\+::my\+TELEOP (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structmy_p_a_r_a_m_s}{my\+PARAMS}}}]{M\+\_\+\+PARAMS\+\_\+\+IN,  }\item[{\mbox{\hyperlink{structmy_p_a_r_a_m_s}{my\+PARAMS}}}]{S\+\_\+\+PARAMS\+\_\+\+IN,  }\item[{float}]{k\+\_\+in }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{my_t_e_l_e_o_p_8h_source_l00154}{154}} of file \mbox{\hyperlink{my_t_e_l_e_o_p_8h_source}{my\+TELEOP.\+h}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classmy_t_e_l_e_o_p_a1bfe136920704ca0ca7f496fac2c5e0e}\label{classmy_t_e_l_e_o_p_a1bfe136920704ca0ca7f496fac2c5e0e} 
+\index{myTELEOP@{myTELEOP}!CLEANUP@{CLEANUP}}
+\index{CLEANUP@{CLEANUP}!myTELEOP@{myTELEOP}}
+\doxysubsubsection{\texorpdfstring{CLEANUP()}{CLEANUP()}}
+{\footnotesize\ttfamily void my\+TELEOP\+::\+CLEANUP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{my_t_e_l_e_o_p_8h_source_l00109}{109}} of file \mbox{\hyperlink{my_t_e_l_e_o_p_8h_source}{my\+TELEOP.\+h}}.
+
+\Hypertarget{classmy_t_e_l_e_o_p_a290133a6002320cf7718ff90a2a725af}\label{classmy_t_e_l_e_o_p_a290133a6002320cf7718ff90a2a725af} 
+\index{myTELEOP@{myTELEOP}!getROB\_OBJ@{getROB\_OBJ}}
+\index{getROB\_OBJ@{getROB\_OBJ}!myTELEOP@{myTELEOP}}
+\doxysubsubsection{\texorpdfstring{getROB\_OBJ()}{getROB\_OBJ()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmy_k_i_n_o_v_a}{my\+KINOVA}} my\+TELEOP\+::get\+ROB\+\_\+\+OBJ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structmy_p_a_r_a_m_s}{my\+PARAMS}}}]{PARAMS\+\_\+\+IN,  }\item[{int}]{role\+\_\+in }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{my_t_e_l_e_o_p_8h_source_l00012}{12}} of file \mbox{\hyperlink{my_t_e_l_e_o_p_8h_source}{my\+TELEOP.\+h}}.
+
+\Hypertarget{classmy_t_e_l_e_o_p_a3f73a738c0026d50167bff9a477f62bd}\label{classmy_t_e_l_e_o_p_a3f73a738c0026d50167bff9a477f62bd} 
+\index{myTELEOP@{myTELEOP}!getROB\_OBJ\_K@{getROB\_OBJ\_K}}
+\index{getROB\_OBJ\_K@{getROB\_OBJ\_K}!myTELEOP@{myTELEOP}}
+\doxysubsubsection{\texorpdfstring{getROB\_OBJ\_K()}{getROB\_OBJ\_K()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmy_k_i_n_o_v_a}{my\+KINOVA}} my\+TELEOP\+::get\+ROB\+\_\+\+OBJ\+\_\+K (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structmy_p_a_r_a_m_s}{my\+PARAMS}}}]{PARAMS\+\_\+\+IN,  }\item[{int}]{role\+\_\+in,  }\item[{float}]{k\+\_\+in }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{my_t_e_l_e_o_p_8h_source_l00017}{17}} of file \mbox{\hyperlink{my_t_e_l_e_o_p_8h_source}{my\+TELEOP.\+h}}.
+
+\Hypertarget{classmy_t_e_l_e_o_p_a460c47dc36919feb66ba8a70d71b5b62}\label{classmy_t_e_l_e_o_p_a460c47dc36919feb66ba8a70d71b5b62} 
+\index{myTELEOP@{myTELEOP}!INIT\_LOWLEVELnUDP@{INIT\_LOWLEVELnUDP}}
+\index{INIT\_LOWLEVELnUDP@{INIT\_LOWLEVELnUDP}!myTELEOP@{myTELEOP}}
+\doxysubsubsection{\texorpdfstring{INIT\_LOWLEVELnUDP()}{INIT\_LOWLEVELnUDP()}}
+{\footnotesize\ttfamily void my\+TELEOP\+::\+INIT\+\_\+\+LOWLEVELn\+UDP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{my_t_e_l_e_o_p_8h_source_l00086}{86}} of file \mbox{\hyperlink{my_t_e_l_e_o_p_8h_source}{my\+TELEOP.\+h}}.
+
+\Hypertarget{classmy_t_e_l_e_o_p_a086a2ec560c44dcc96bebcee5013ba6d}\label{classmy_t_e_l_e_o_p_a086a2ec560c44dcc96bebcee5013ba6d} 
+\index{myTELEOP@{myTELEOP}!initiate\_robots@{initiate\_robots}}
+\index{initiate\_robots@{initiate\_robots}!myTELEOP@{myTELEOP}}
+\doxysubsubsection{\texorpdfstring{initiate\_robots()}{initiate\_robots()}}
+{\footnotesize\ttfamily void my\+TELEOP\+::initiate\+\_\+robots (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{my_t_e_l_e_o_p_8h_source_l00078}{78}} of file \mbox{\hyperlink{my_t_e_l_e_o_p_8h_source}{my\+TELEOP.\+h}}.
+
+\Hypertarget{classmy_t_e_l_e_o_p_a87fa85b1e7a57395e9fd9aff1180f94b}\label{classmy_t_e_l_e_o_p_a87fa85b1e7a57395e9fd9aff1180f94b} 
+\index{myTELEOP@{myTELEOP}!setTELEOP\_CMD@{setTELEOP\_CMD}}
+\index{setTELEOP\_CMD@{setTELEOP\_CMD}!myTELEOP@{myTELEOP}}
+\doxysubsubsection{\texorpdfstring{setTELEOP\_CMD()}{setTELEOP\_CMD()}}
+{\footnotesize\ttfamily void my\+TELEOP\+::set\+TELEOP\+\_\+\+CMD (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{my_t_e_l_e_o_p_8h_source_l00069}{69}} of file \mbox{\hyperlink{my_t_e_l_e_o_p_8h_source}{my\+TELEOP.\+h}}.
+
+\Hypertarget{classmy_t_e_l_e_o_p_aeb107865ff3199bdcb69d81b883f3507}\label{classmy_t_e_l_e_o_p_aeb107865ff3199bdcb69d81b883f3507} 
+\index{myTELEOP@{myTELEOP}!TELEOP\_GETFBK@{TELEOP\_GETFBK}}
+\index{TELEOP\_GETFBK@{TELEOP\_GETFBK}!myTELEOP@{myTELEOP}}
+\doxysubsubsection{\texorpdfstring{TELEOP\_GETFBK()}{TELEOP\_GETFBK()}}
+{\footnotesize\ttfamily void my\+TELEOP\+::\+TELEOP\+\_\+\+GETFBK (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{my_t_e_l_e_o_p_8h_source_l00094}{94}} of file \mbox{\hyperlink{my_t_e_l_e_o_p_8h_source}{my\+TELEOP.\+h}}.
+
+\Hypertarget{classmy_t_e_l_e_o_p_a0b511772917a84437e6ec0a62872cb8b}\label{classmy_t_e_l_e_o_p_a0b511772917a84437e6ec0a62872cb8b} 
+\index{myTELEOP@{myTELEOP}!TELEOP\_LOGIT@{TELEOP\_LOGIT}}
+\index{TELEOP\_LOGIT@{TELEOP\_LOGIT}!myTELEOP@{myTELEOP}}
+\doxysubsubsection{\texorpdfstring{TELEOP\_LOGIT()}{TELEOP\_LOGIT()}}
+{\footnotesize\ttfamily void my\+TELEOP\+::\+TELEOP\+\_\+\+LOGIT (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{my_t_e_l_e_o_p_8h_source_l00099}{99}} of file \mbox{\hyperlink{my_t_e_l_e_o_p_8h_source}{my\+TELEOP.\+h}}.
+
+\Hypertarget{classmy_t_e_l_e_o_p_ada6b71c7ef9687b5a3036edfba36d606}\label{classmy_t_e_l_e_o_p_ada6b71c7ef9687b5a3036edfba36d606} 
+\index{myTELEOP@{myTELEOP}!TELEOP\_sendCMD@{TELEOP\_sendCMD}}
+\index{TELEOP\_sendCMD@{TELEOP\_sendCMD}!myTELEOP@{myTELEOP}}
+\doxysubsubsection{\texorpdfstring{TELEOP\_sendCMD()}{TELEOP\_sendCMD()}}
+{\footnotesize\ttfamily void my\+TELEOP\+::\+TELEOP\+\_\+send\+CMD (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{my_t_e_l_e_o_p_8h_source_l00104}{104}} of file \mbox{\hyperlink{my_t_e_l_e_o_p_8h_source}{my\+TELEOP.\+h}}.
+
+\Hypertarget{classmy_t_e_l_e_o_p_a69158afc9816c59b4139c3c35f4ea4ba}\label{classmy_t_e_l_e_o_p_a69158afc9816c59b4139c3c35f4ea4ba} 
+\index{myTELEOP@{myTELEOP}!teleoperate@{teleoperate}}
+\index{teleoperate@{teleoperate}!myTELEOP@{myTELEOP}}
+\doxysubsubsection{\texorpdfstring{teleoperate()}{teleoperate()}}
+{\footnotesize\ttfamily bool my\+TELEOP\+::teleoperate (\begin{DoxyParamCaption}\item[{bool}]{gripper\+\_\+in }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{my_t_e_l_e_o_p_8h_source_l00022}{22}} of file \mbox{\hyperlink{my_t_e_l_e_o_p_8h_source}{my\+TELEOP.\+h}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classmy_t_e_l_e_o_p_ae3149e30a9d128e1b1175461ed441c07}\label{classmy_t_e_l_e_o_p_ae3149e30a9d128e1b1175461ed441c07} 
+\index{myTELEOP@{myTELEOP}!i@{i}}
+\index{i@{i}!myTELEOP@{myTELEOP}}
+\doxysubsubsection{\texorpdfstring{i}{i}}
+{\footnotesize\ttfamily int my\+TELEOP\+::i}
+
+
+
+Definition at line \mbox{\hyperlink{my_t_e_l_e_o_p_8h_source_l00009}{9}} of file \mbox{\hyperlink{my_t_e_l_e_o_p_8h_source}{my\+TELEOP.\+h}}.
+
+\Hypertarget{classmy_t_e_l_e_o_p_a676f39a70a25ec96fb2de97f39a17fb4}\label{classmy_t_e_l_e_o_p_a676f39a70a25ec96fb2de97f39a17fb4} 
+\index{myTELEOP@{myTELEOP}!MASTER@{MASTER}}
+\index{MASTER@{MASTER}!myTELEOP@{myTELEOP}}
+\doxysubsubsection{\texorpdfstring{MASTER}{MASTER}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmy_k_i_n_o_v_a}{my\+KINOVA}} my\+TELEOP\+::\+MASTER}
+
+
+
+Definition at line \mbox{\hyperlink{my_t_e_l_e_o_p_8h_source_l00005}{5}} of file \mbox{\hyperlink{my_t_e_l_e_o_p_8h_source}{my\+TELEOP.\+h}}.
+
+\Hypertarget{classmy_t_e_l_e_o_p_a924f91d4e9b07b7b6e6c6a7a318d3515}\label{classmy_t_e_l_e_o_p_a924f91d4e9b07b7b6e6c6a7a318d3515} 
+\index{myTELEOP@{myTELEOP}!master\_PARAMS@{master\_PARAMS}}
+\index{master\_PARAMS@{master\_PARAMS}!myTELEOP@{myTELEOP}}
+\doxysubsubsection{\texorpdfstring{master\_PARAMS}{master\_PARAMS}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structmy_p_a_r_a_m_s}{my\+PARAMS}} my\+TELEOP\+::master\+\_\+\+PARAMS}
+
+
+
+Definition at line \mbox{\hyperlink{my_t_e_l_e_o_p_8h_source_l00007}{7}} of file \mbox{\hyperlink{my_t_e_l_e_o_p_8h_source}{my\+TELEOP.\+h}}.
+
+\Hypertarget{classmy_t_e_l_e_o_p_a25effbb66bf20d2a230fbd65ff84d799}\label{classmy_t_e_l_e_o_p_a25effbb66bf20d2a230fbd65ff84d799} 
+\index{myTELEOP@{myTELEOP}!SLAVE@{SLAVE}}
+\index{SLAVE@{SLAVE}!myTELEOP@{myTELEOP}}
+\doxysubsubsection{\texorpdfstring{SLAVE}{SLAVE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmy_k_i_n_o_v_a}{my\+KINOVA}} my\+TELEOP\+::\+SLAVE}
+
+
+
+Definition at line \mbox{\hyperlink{my_t_e_l_e_o_p_8h_source_l00006}{6}} of file \mbox{\hyperlink{my_t_e_l_e_o_p_8h_source}{my\+TELEOP.\+h}}.
+
+\Hypertarget{classmy_t_e_l_e_o_p_a98c6c28f77b7183fc1ae78a4ab8f76cd}\label{classmy_t_e_l_e_o_p_a98c6c28f77b7183fc1ae78a4ab8f76cd} 
+\index{myTELEOP@{myTELEOP}!slave\_PARAMS@{slave\_PARAMS}}
+\index{slave\_PARAMS@{slave\_PARAMS}!myTELEOP@{myTELEOP}}
+\doxysubsubsection{\texorpdfstring{slave\_PARAMS}{slave\_PARAMS}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structmy_p_a_r_a_m_s}{my\+PARAMS}} my\+TELEOP\+::slave\+\_\+\+PARAMS}
+
+
+
+Definition at line \mbox{\hyperlink{my_t_e_l_e_o_p_8h_source_l00008}{8}} of file \mbox{\hyperlink{my_t_e_l_e_o_p_8h_source}{my\+TELEOP.\+h}}.
+
+\Hypertarget{classmy_t_e_l_e_o_p_a4fbacd5b946a7218c206ad7ee1e29202}\label{classmy_t_e_l_e_o_p_a4fbacd5b946a7218c206ad7ee1e29202} 
+\index{myTELEOP@{myTELEOP}!tau\_cmd\_master@{tau\_cmd\_master}}
+\index{tau\_cmd\_master@{tau\_cmd\_master}!myTELEOP@{myTELEOP}}
+\doxysubsubsection{\texorpdfstring{tau\_cmd\_master}{tau\_cmd\_master}}
+{\footnotesize\ttfamily float my\+TELEOP\+::tau\+\_\+cmd\+\_\+master\mbox{[}7\mbox{]}}
+
+
+
+Definition at line \mbox{\hyperlink{my_t_e_l_e_o_p_8h_source_l00010}{10}} of file \mbox{\hyperlink{my_t_e_l_e_o_p_8h_source}{my\+TELEOP.\+h}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+my\+TELEOP.\+h\end{DoxyCompactItemize}

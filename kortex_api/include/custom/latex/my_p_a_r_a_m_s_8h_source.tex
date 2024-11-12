@@ -1,0 +1,63 @@
+\doxysection{my\+PARAMS.\+h}
+\hypertarget{my_p_a_r_a_m_s_8h_source}{}\label{my_p_a_r_a_m_s_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{my_p_a_r_a_m_s_8h_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{my_p_a_r_a_m_s_8h_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{my_p_a_r_a_m_s_8h_source_l00003}00003\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structmy_p_a_r_a_m_s}{myPARAMS}}\ \{}
+\DoxyCodeLine{\Hypertarget{my_p_a_r_a_m_s_8h_source_l00004}00004\ \ \ \ \ std::string\ robot\_model;}
+\DoxyCodeLine{\Hypertarget{my_p_a_r_a_m_s_8h_source_l00005}00005\ \ \ \ \ std::string\ ROBOT\_IP;}
+\DoxyCodeLine{\Hypertarget{my_p_a_r_a_m_s_8h_source_l00006}00006\ \ \ \ \ \textcolor{keywordtype}{int}\ DURATION;}
+\DoxyCodeLine{\Hypertarget{my_p_a_r_a_m_s_8h_source_l00007}00007\ \ \ \ \ \textcolor{keywordtype}{bool}\ gripper\_val;}
+\DoxyCodeLine{\Hypertarget{my_p_a_r_a_m_s_8h_source_l00008}00008\ \ \ \ \ u\_short\ SEND\_PORT;}
+\DoxyCodeLine{\Hypertarget{my_p_a_r_a_m_s_8h_source_l00009}00009\ \ \ \ \ u\_short\ RECV\_PORT;}
+\DoxyCodeLine{\Hypertarget{my_p_a_r_a_m_s_8h_source_l00010}00010\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ SEND\_IP\_ADDRESS;}
+\DoxyCodeLine{\Hypertarget{my_p_a_r_a_m_s_8h_source_l00011}00011\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ RECV\_IP\_ADDRESS;}
+\DoxyCodeLine{\Hypertarget{my_p_a_r_a_m_s_8h_source_l00012}00012\ \ \ \ \ \textcolor{keywordtype}{int}\ CTRL\_MODE;}
+\DoxyCodeLine{\Hypertarget{my_p_a_r_a_m_s_8h_source_l00013}00013\ \};}
+\DoxyCodeLine{\Hypertarget{my_p_a_r_a_m_s_8h_source_l00014}00014\ }
+\DoxyCodeLine{\Hypertarget{my_p_a_r_a_m_s_8h_source_l00015}00015\ \mbox{\hyperlink{structmy_p_a_r_a_m_s}{myPARAMS}}\ setPARAMS(std::string\ robot\_model\_in,\ std::string\ ROBOT\_IP\_in,\ \textcolor{keywordtype}{int}\ CTRL\_MODE\_IN,\ u\_short\ SEND\_PORT\_IN,\ u\_short\ RECV\_PORT\_IN,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ SEND\_IP\_ADDRESS\_IN,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ RECV\_IP\_ADDRESS\_IN,\ \textcolor{keywordtype}{int}\ DURATION\_IN,\ \textcolor{keywordtype}{bool}\ gripper\_val\_in)}
+\DoxyCodeLine{\Hypertarget{my_p_a_r_a_m_s_8h_source_l00016}00016\ \{}
+\DoxyCodeLine{\Hypertarget{my_p_a_r_a_m_s_8h_source_l00017}00017\ \ \ \ \ \mbox{\hyperlink{structmy_p_a_r_a_m_s}{myPARAMS}}\ params\_struct;}
+\DoxyCodeLine{\Hypertarget{my_p_a_r_a_m_s_8h_source_l00018}00018\ \ \ \ \ params\_struct.robot\_model\ =\ robot\_model\_in;}
+\DoxyCodeLine{\Hypertarget{my_p_a_r_a_m_s_8h_source_l00019}00019\ \ \ \ \ params\_struct.ROBOT\_IP\ =\ ROBOT\_IP\_in;}
+\DoxyCodeLine{\Hypertarget{my_p_a_r_a_m_s_8h_source_l00020}00020\ \ \ \ \ params\_struct.DURATION\ =\ DURATION\_IN;}
+\DoxyCodeLine{\Hypertarget{my_p_a_r_a_m_s_8h_source_l00021}00021\ \ \ \ \ params\_struct.gripper\_val\ =\ gripper\_val\_in;}
+\DoxyCodeLine{\Hypertarget{my_p_a_r_a_m_s_8h_source_l00022}00022\ \ \ \ \ params\_struct.SEND\_IP\_ADDRESS\ =\ SEND\_IP\_ADDRESS\_IN;}
+\DoxyCodeLine{\Hypertarget{my_p_a_r_a_m_s_8h_source_l00023}00023\ \ \ \ \ params\_struct.RECV\_IP\_ADDRESS\ =\ RECV\_IP\_ADDRESS\_IN;}
+\DoxyCodeLine{\Hypertarget{my_p_a_r_a_m_s_8h_source_l00024}00024\ \ \ \ \ params\_struct.SEND\_PORT\ =\ SEND\_PORT\_IN;}
+\DoxyCodeLine{\Hypertarget{my_p_a_r_a_m_s_8h_source_l00025}00025\ \ \ \ \ params\_struct.RECV\_PORT\ =\ RECV\_PORT\_IN;}
+\DoxyCodeLine{\Hypertarget{my_p_a_r_a_m_s_8h_source_l00026}00026\ \ \ \ \ params\_struct.CTRL\_MODE\ =\ CTRL\_MODE\_IN;}
+\DoxyCodeLine{\Hypertarget{my_p_a_r_a_m_s_8h_source_l00027}00027\ \ \ \ \ \textcolor{keywordflow}{return}\ params\_struct;}
+\DoxyCodeLine{\Hypertarget{my_p_a_r_a_m_s_8h_source_l00028}00028\ \}}
+\DoxyCodeLine{\Hypertarget{my_p_a_r_a_m_s_8h_source_l00029}00029\ }
+\DoxyCodeLine{\Hypertarget{my_p_a_r_a_m_s_8h_source_l00030}00030\ }
+\DoxyCodeLine{\Hypertarget{my_p_a_r_a_m_s_8h_source_l00031}\mbox{\hyperlink{classmy_r_o_b___p_a_r_a_m_s}{00031}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classmy_r_o_b___p_a_r_a_m_s}{myROB\_PARAMS}}\ \{}
+\DoxyCodeLine{\Hypertarget{my_p_a_r_a_m_s_8h_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{my_p_a_r_a_m_s_8h_source_l00033}00033\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{my_p_a_r_a_m_s_8h_source_l00034}00034\ \ \ \ \ std::string\ robot\_model;}
+\DoxyCodeLine{\Hypertarget{my_p_a_r_a_m_s_8h_source_l00035}00035\ \ \ \ \ std::string\ ROBOT\_IP;}
+\DoxyCodeLine{\Hypertarget{my_p_a_r_a_m_s_8h_source_l00036}00036\ \ \ \ \ \textcolor{keywordtype}{int}\ DURATION;}
+\DoxyCodeLine{\Hypertarget{my_p_a_r_a_m_s_8h_source_l00037}00037\ \ \ \ \ \textcolor{keywordtype}{bool}\ gripper\_val;}
+\DoxyCodeLine{\Hypertarget{my_p_a_r_a_m_s_8h_source_l00038}00038\ \ \ \ \ u\_short\ SEND\_PORT;}
+\DoxyCodeLine{\Hypertarget{my_p_a_r_a_m_s_8h_source_l00039}00039\ \ \ \ \ u\_short\ RECV\_PORT;}
+\DoxyCodeLine{\Hypertarget{my_p_a_r_a_m_s_8h_source_l00040}00040\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ SEND\_IP\_ADDRESS;}
+\DoxyCodeLine{\Hypertarget{my_p_a_r_a_m_s_8h_source_l00041}00041\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ RECV\_IP\_ADDRESS;}
+\DoxyCodeLine{\Hypertarget{my_p_a_r_a_m_s_8h_source_l00042}00042\ \ \ \ \ \textcolor{keywordtype}{int}\ CTRL\_MODE;}
+\DoxyCodeLine{\Hypertarget{my_p_a_r_a_m_s_8h_source_l00043}00043\ }
+\DoxyCodeLine{\Hypertarget{my_p_a_r_a_m_s_8h_source_l00044}00044\ }
+\DoxyCodeLine{\Hypertarget{my_p_a_r_a_m_s_8h_source_l00045}00045\ \ \ \ \ \mbox{\hyperlink{classmy_r_o_b___p_a_r_a_m_s}{myROB\_PARAMS}}()\ \{}
+\DoxyCodeLine{\Hypertarget{my_p_a_r_a_m_s_8h_source_l00046}00046\ }
+\DoxyCodeLine{\Hypertarget{my_p_a_r_a_m_s_8h_source_l00047}00047\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{my_p_a_r_a_m_s_8h_source_l00048}00048\ \ \ \ \ \mbox{\hyperlink{classmy_r_o_b___p_a_r_a_m_s}{myROB\_PARAMS}}(\mbox{\hyperlink{structmy_p_a_r_a_m_s}{myPARAMS}}\ PARAMS\_IN)\ \{}
+\DoxyCodeLine{\Hypertarget{my_p_a_r_a_m_s_8h_source_l00049}00049\ \ \ \ \ \ \ \ \ robot\_model\ =\ PARAMS\_IN.robot\_model;}
+\DoxyCodeLine{\Hypertarget{my_p_a_r_a_m_s_8h_source_l00050}00050\ \ \ \ \ \ \ \ \ ROBOT\_IP\ =\ PARAMS\_IN.ROBOT\_IP;}
+\DoxyCodeLine{\Hypertarget{my_p_a_r_a_m_s_8h_source_l00051}00051\ \ \ \ \ \ \ \ \ DURATION\ =\ PARAMS\_IN.DURATION;}
+\DoxyCodeLine{\Hypertarget{my_p_a_r_a_m_s_8h_source_l00052}00052\ \ \ \ \ \ \ \ \ SEND\_IP\_ADDRESS\ =\ PARAMS\_IN.SEND\_IP\_ADDRESS;}
+\DoxyCodeLine{\Hypertarget{my_p_a_r_a_m_s_8h_source_l00053}00053\ \ \ \ \ \ \ \ \ RECV\_IP\_ADDRESS\ =\ PARAMS\_IN.RECV\_IP\_ADDRESS;}
+\DoxyCodeLine{\Hypertarget{my_p_a_r_a_m_s_8h_source_l00054}00054\ \ \ \ \ \ \ \ \ SEND\_PORT\ =\ PARAMS\_IN.SEND\_PORT;}
+\DoxyCodeLine{\Hypertarget{my_p_a_r_a_m_s_8h_source_l00055}00055\ \ \ \ \ \ \ \ \ RECV\_PORT\ =\ PARAMS\_IN.RECV\_PORT;}
+\DoxyCodeLine{\Hypertarget{my_p_a_r_a_m_s_8h_source_l00056}00056\ \ \ \ \ \ \ \ \ CTRL\_MODE\ =\ PARAMS\_IN.CTRL\_MODE;}
+\DoxyCodeLine{\Hypertarget{my_p_a_r_a_m_s_8h_source_l00057}00057\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{my_p_a_r_a_m_s_8h_source_l00058}00058\ \};}
+
+\end{DoxyCode}

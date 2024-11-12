@@ -1,0 +1,27 @@
+<map id="myKINOVA::quickSETUP" name="myKINOVA::quickSETUP">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,107,176,133"/>
+<area shape="rect" id="Node000002" href="$classmy_k_i_n_o_v_a.html#ab5e172875dacec87871d3b88b53c0089" title=" " alt="" coords="260,5,416,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="110,104,160,73,223,42,244,34,246,39,225,46,162,77,113,108"/>
+<area shape="rect" id="Node000003" href="$classmy_k_i_n_o_v_a.html#ad7a2c222f7c220e01df94378d39ba276" title=" " alt="" coords="260,56,416,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="159,103,254,84,255,89,160,109"/>
+<area shape="rect" id="Node000004" href="$classmy_k_i_n_o_v_a.html#ae4b42e242619811ca4dbeccb5cadbfc3" title=" " alt="" coords="242,107,434,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="176,117,227,117,227,123,176,123"/>
+<area shape="rect" id="Node000005" href="$classmy_k_i_n_o_v_a.html#ae281d64ac5bc9cd7cb01f64b8c953733" title=" " alt="" coords="224,157,452,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="160,131,255,151,254,156,159,137"/>
+<area shape="rect" id="Node000006" href="$classmy_k_i_n_o_v_a.html#a8821ab94665ea1f1206c50a7cf2fb9e3" title=" " alt="" coords="260,208,416,235"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="113,132,162,163,225,194,246,201,244,206,223,198,160,167,110,136"/>
+<area shape="rect" id="Node000007" href="$classmy_k_i_n_o_v_a.html#afbc6e4b0efa47da6effd62ffaec590db" title=" " alt="" coords="500,107,702,133"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="415,208,451,194,465,182,474,169,483,156,499,143,510,137,513,142,501,148,487,160,478,172,469,186,453,198,417,213"/>
+<area shape="rect" id="Node000009" href="$classmy_k_i_n_o_v_a.html#ab049d1ea8aacd25711758837700d5dee" title=" " alt="" coords="527,157,676,184"/>
+<area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="411,205,513,185,514,190,412,210"/>
+<area shape="rect" id="Node000010" href="$classmy_k_i_n_o_v_a.html#aa0fccf809f65440836c15fcc636ceef8" title=" " alt="" coords="510,208,693,235"/>
+<area shape="poly" id="edge10_Node000006_Node000010" title=" " alt="" coords="416,219,494,219,494,224,416,224"/>
+<area shape="rect" id="Node000011" href="$class_k_i_n_o_v_a.html#adffc886b7d6bd56c27215878d41baf2d" title=" " alt="" coords="538,259,665,285"/>
+<area shape="poly" id="edge12_Node000006_Node000011" title=" " alt="" coords="412,233,523,254,522,260,411,238"/>
+<area shape="rect" id="Node000012" href="$class_k_i_n_o_v_a.html#a54c8c6371f31a65dd2bbe6d511c080cd" title=" " alt="" coords="537,309,666,336"/>
+<area shape="poly" id="edge13_Node000006_Node000012" title=" " alt="" coords="366,233,427,263,501,295,523,302,522,307,499,300,424,268,363,238"/>
+<area shape="rect" id="Node000008" href="$class_k_i_n_o_v_a.html#a8fb9bb92a3bd1c45c29ada8f01d4cd8d" title=" " alt="" coords="750,157,887,184"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="662,131,744,151,743,156,661,137"/>
+<area shape="poly" id="edge9_Node000009_Node000008" title=" " alt="" coords="676,168,735,168,735,173,676,173"/>
+<area shape="poly" id="edge11_Node000010_Node000008" title=" " alt="" coords="661,205,743,186,744,191,662,210"/>
+</map>

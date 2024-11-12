@@ -1,0 +1,17 @@
+<map id="myTELEOP" name="myTELEOP">
+<area shape="rect" id="Node000001" title=" " alt="" coords="326,251,416,277"/>
+<area shape="rect" id="Node000002" href="$classmy_k_i_n_o_v_a.html" title=" " alt="" coords="270,144,358,171"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="326,184,345,225,362,249,358,252,340,228,321,186"/>
+<area shape="rect" id="Node000003" href="$class_k_i_n_o_v_a.html" title=" " alt="" coords="5,5,76,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="57,44,84,83,103,102,124,118,160,134,198,145,269,153,269,159,197,150,158,139,121,122,99,106,80,86,52,47"/>
+<area shape="rect" id="Node000004" href="$classmy_k_i_n_o_v_a___c_m_d.html" title=" " alt="" coords="100,5,224,32"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="179,44,206,81,242,118,282,141,279,146,239,122,202,85,175,47"/>
+<area shape="rect" id="Node000005" href="$classmy_r_o_b___p_a_r_a_m_s.html" title=" " alt="" coords="249,5,379,32"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="317,48,317,143,311,143,311,48"/>
+<area shape="rect" id="Node000006" href="$classmy_k_i_n_o_v_a___l_o_g.html" title=" " alt="" coords="403,5,526,32"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="459,48,443,86,431,105,415,122,392,134,359,146,357,141,390,130,412,118,427,102,438,83,455,46"/>
+<area shape="rect" id="Node000007" href="$classmy_k_i_n_o_v_a___u_d_p.html" title=" " alt="" coords="550,5,672,32"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="598,47,569,87,549,106,526,122,485,139,450,143,414,142,370,147,359,149,358,144,369,141,414,137,450,137,484,134,523,118,545,102,565,83,594,44"/>
+<area shape="rect" id="Node000008" href="$structmy_p_a_r_a_m_s.html" title=" " alt="" coords="382,144,478,171"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="423,186,403,228,385,252,380,249,398,225,418,184"/>
+</map>

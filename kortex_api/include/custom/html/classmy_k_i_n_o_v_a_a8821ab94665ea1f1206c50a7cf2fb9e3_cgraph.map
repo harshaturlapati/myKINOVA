@@ -1,0 +1,17 @@
+<map id="myKINOVA::setupROB" name="myKINOVA::setupROB">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,107,162,133"/>
+<area shape="rect" id="Node000002" href="$classmy_k_i_n_o_v_a.html#afbc6e4b0efa47da6effd62ffaec590db" title=" " alt="" coords="210,5,412,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="102,104,149,73,209,42,228,34,230,39,211,46,152,77,105,109"/>
+<area shape="rect" id="Node000004" href="$classmy_k_i_n_o_v_a.html#ab049d1ea8aacd25711758837700d5dee" title=" " alt="" coords="236,56,386,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="146,103,232,84,234,89,147,109"/>
+<area shape="rect" id="Node000005" href="$classmy_k_i_n_o_v_a.html#aa0fccf809f65440836c15fcc636ceef8" title=" " alt="" coords="219,107,403,133"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="162,117,204,117,204,123,162,123"/>
+<area shape="rect" id="Node000006" href="$class_k_i_n_o_v_a.html#adffc886b7d6bd56c27215878d41baf2d" title=" " alt="" coords="247,157,375,184"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="147,131,234,151,232,156,146,137"/>
+<area shape="rect" id="Node000007" href="$class_k_i_n_o_v_a.html#a54c8c6371f31a65dd2bbe6d511c080cd" title=" " alt="" coords="246,208,376,235"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="105,131,152,163,211,194,232,201,230,206,209,198,149,167,102,136"/>
+<area shape="rect" id="Node000003" href="$class_k_i_n_o_v_a.html#a8fb9bb92a3bd1c45c29ada8f01d4cd8d" title=" " alt="" coords="460,56,596,83"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="372,30,454,49,452,54,371,35"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="386,67,445,67,445,72,386,72"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="371,103,452,84,454,89,372,109"/>
+</map>

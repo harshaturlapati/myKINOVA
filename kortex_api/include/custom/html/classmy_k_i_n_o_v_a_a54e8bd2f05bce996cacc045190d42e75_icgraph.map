@@ -1,0 +1,17 @@
+<map id="myKINOVA::set_ROB_CMD" name="myKINOVA::set_ROB_CMD">
+<area shape="rect" id="Node000001" title=" " alt="" coords="217,157,402,184"/>
+<area shape="rect" id="Node000002" href="$classmy_k_i_n_o_v_a.html#aa5d3f5611f5233797e6e74c1e0713276" title=" " alt="" coords="5,5,169,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="285,147,234,96,202,69,167,46,143,35,145,30,170,42,205,65,238,92,288,143"/>
+<area shape="rect" id="Node000003" href="$classmy_k_i_n_o_v_a.html#a55105028382b7a684c429adbcfc70610" title=" " alt="" coords="5,56,169,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="272,151,223,124,168,97,137,86,139,81,170,92,226,119,274,147"/>
+<area shape="rect" id="Node000004" href="$classmy_k_i_n_o_v_a.html#ad4ebabafe9edb96ce6e3cc550f8b2b6c" title=" " alt="" coords="5,107,169,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="232,156,148,137,149,131,233,151"/>
+<area shape="rect" id="Node000005" href="$classmy_k_i_n_o_v_a.html#a2394443dd91c8aeaa34bfa6ff1809ac5" title=" " alt="" coords="5,157,169,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="201,173,169,173,169,168,201,168"/>
+<area shape="rect" id="Node000006" href="$classmy_k_i_n_o_v_a.html#a5a053ca92bf63560e05ff28979a02a7c" title=" " alt="" coords="5,208,169,235"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="233,191,149,210,148,205,232,185"/>
+<area shape="rect" id="Node000007" href="$classmy_k_i_n_o_v_a.html#a4d10e2455552ef9de7fac3e4d87c9972" title=" " alt="" coords="5,259,169,285"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="274,194,226,222,170,249,139,261,137,256,168,244,223,217,272,190"/>
+<area shape="rect" id="Node000008" href="$classmy_k_i_n_o_v_a.html#a9a2b53a16f35afdee9aa84fd215de4ba" title=" " alt="" coords="5,309,169,336"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="288,198,238,249,205,276,170,300,145,311,143,306,167,295,202,272,234,245,285,194"/>
+</map>

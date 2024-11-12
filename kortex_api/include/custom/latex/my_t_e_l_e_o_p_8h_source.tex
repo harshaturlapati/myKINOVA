@@ -1,0 +1,165 @@
+\doxysection{my\+TELEOP.\+h}
+\hypertarget{my_t_e_l_e_o_p_8h_source}{}\label{my_t_e_l_e_o_p_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00002}\mbox{\hyperlink{classmy_t_e_l_e_o_p}{00002}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classmy_t_e_l_e_o_p}{myTELEOP}}\ \{}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00004}00004\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00005}00005\ \ \ \ \ \mbox{\hyperlink{classmy_k_i_n_o_v_a}{myKINOVA}}\ MASTER;}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00006}00006\ \ \ \ \ \mbox{\hyperlink{classmy_k_i_n_o_v_a}{myKINOVA}}\ SLAVE;}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00007}00007\ \ \ \ \ \mbox{\hyperlink{structmy_p_a_r_a_m_s}{myPARAMS}}\ master\_PARAMS;}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00008}00008\ \ \ \ \ \mbox{\hyperlink{structmy_p_a_r_a_m_s}{myPARAMS}}\ slave\_PARAMS;}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00009}00009\ \ \ \ \ \textcolor{keywordtype}{int}\ i;}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00010}00010\ \ \ \ \ \textcolor{keywordtype}{float}\ tau\_cmd\_master[7];}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00012}00012\ \ \ \ \ \mbox{\hyperlink{classmy_k_i_n_o_v_a}{myKINOVA}}\ getROB\_OBJ(\mbox{\hyperlink{structmy_p_a_r_a_m_s}{myPARAMS}}\ PARAMS\_IN,\ \textcolor{keywordtype}{int}\ role\_in)\ \{}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00013}00013\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classmy_k_i_n_o_v_a}{myKINOVA}}\ myROB(PARAMS\_IN,\ role\_in);}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00014}00014\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ myROB;}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00015}00015\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00016}00016\ }
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00017}00017\ \ \ \ \ \mbox{\hyperlink{classmy_k_i_n_o_v_a}{myKINOVA}}\ getROB\_OBJ\_K(\mbox{\hyperlink{structmy_p_a_r_a_m_s}{myPARAMS}}\ PARAMS\_IN,\ \textcolor{keywordtype}{int}\ role\_in,\ \textcolor{keywordtype}{float}\ k\_in)\ \{}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00018}00018\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classmy_k_i_n_o_v_a}{myKINOVA}}\ myROB(PARAMS\_IN,\ role\_in,\ k\_in);}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00019}00019\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ myROB;}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00020}00020\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00022}00022\ \ \ \ \ \textcolor{keywordtype}{bool}\ teleoperate(\textcolor{keywordtype}{bool}\ gripper\_in)\ \{}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00023}00023\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ gripper\ =\ gripper\_in;}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00024}00024\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00025}00025\ \ \ \ \ \ \ \ \ initiate\_robots();}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00026}00026\ }
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00027}00027\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00028}00028\ \ \ \ \ \ \ \ \ \{\textcolor{comment}{//\ initialize\ low\ level\ torque\ control\ and\ UDP\ communication}}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00029}00029\ \ \ \ \ \ \ \ \ \ \ \ \ INIT\_LOWLEVELnUDP();}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00030}00030\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00031}00031\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//Realtime\ control\ loop.\ Press\ "{}Q"{}\ key\ to\ exit\ loop.}}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00032}00032\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (!(GetKeyState(\textcolor{charliteral}{'Q'})\ \&\ 0x8000))}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00033}00033\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00034}00034\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ MASTER.ROB\_LOG.now\ =\ MASTER.ROB\_LOG.GetTickUs();}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00035}00035\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (MASTER.ROB\_LOG.now\ -\/\ MASTER.ROB\_LOG.last\ >=\ 1000)}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00036}00036\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00037}00037\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\///}}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00038}00038\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ MASTER.base\_feedback\ =\ MASTER.base\_feedback\_async.get();}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00039}00039\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ SLAVE.base\_feedback\ =\ SLAVE.base\_feedback\_async.get();}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00040}00040\ }
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00041}00041\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ TELEOP\_LOGIT();}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00042}00042\ }
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00043}00043\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ TELEOP\_GETFBK();}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00044}00044\ }
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00045}00045\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ setTELEOP\_CMD();\ \textcolor{comment}{//\ take\ the\ getFBK\ results\ and\ put\ them\ in\ their\ respective\ ROB\_CMD\ tumblers}}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00046}00046\ }
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00047}00047\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ TELEOP\_sendCMD();}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00048}00048\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00049}00049\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00050}00050\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00051}00051\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (k\_api::KDetailedException\&\ ex)}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00052}00052\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00053}00053\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}API\ error:\ "{}}\ <<\ ex.what()\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00054}00054\ \ \ \ \ \ \ \ \ \ \ \ \ MASTER.return\_status\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00055}00055\ \ \ \ \ \ \ \ \ \ \ \ \ SLAVE.return\_status\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00056}00056\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00057}00057\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (std::runtime\_error\&\ ex2)}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00058}00058\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00059}00059\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Error:\ "{}}\ <<\ ex2.what()\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00060}00060\ \ \ \ \ \ \ \ \ \ \ \ \ MASTER.return\_status\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00061}00061\ \ \ \ \ \ \ \ \ \ \ \ \ SLAVE.return\_status\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00062}00062\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00063}00063\ }
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00064}00064\ \ \ \ \ \ \ \ \ CLEANUP();}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00065}00065\ }
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00066}00066\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ MASTER.return\_status;}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00067}00067\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00068}00068\ }
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00069}00069\ \ \ \ \ \textcolor{keywordtype}{void}\ setTELEOP\_CMD()\ \{}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00070}00070\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;\ i\ <\ MASTER.ACTUATOR\_COUNT;\ i++)}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00071}00071\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00072}00072\ \ \ \ \ \ \ \ \ \ \ \ \ SLAVE.ROB\_CMD.des\_q[i]\ =\ MASTER.q[i];\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ slave\ expects\ a\ position\ command\ from\ master}}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00073}00073\ \ \ \ \ \ \ \ \ \ \ \ \ MASTER.ROB\_CMD.tau\_ctrl[i]\ =\ SLAVE.tau\_fbk[i]\ +\ SLAVE.Gq[i];\ \ \ \ \ \ \ \ \textcolor{comment}{//\ master\ expects\ a\ torque\ feedback\ from\ slave}}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00074}00074\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00075}00075\ \ \ \ \ \ \ \ \ \textcolor{comment}{//SLAVE.setCMD(SLAVE.ROB\_CMD.des\_q);}}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00076}00076\ \ \ \ \ \ \ \ \ \textcolor{comment}{//MASTER.setCMD(MASTER.ROB\_CMD.des\_q);}}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00077}00077\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00078}00078\ \ \ \ \ \textcolor{keywordtype}{void}\ initiate\_robots()\ \{}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00079}00079\ \ \ \ \ \ \ \ \ MASTER.quickSETUP();}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00080}00080\ \ \ \ \ \ \ \ \ SLAVE.quickSETUP();}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00081}00081\ }
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00082}00082\ \ \ \ \ \ \ \ \ MASTER.init\_LOG();}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00083}00083\ \ \ \ \ \ \ \ \ SLAVE.init\_LOG();}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00084}00084\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00085}00085\ }
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00086}00086\ \ \ \ \ \textcolor{keywordtype}{void}\ INIT\_LOWLEVELnUDP()\ \{}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00087}00087\ \ \ \ \ \ \ \ \ MASTER.initialize\_torque\_control();}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00088}00088\ \ \ \ \ \ \ \ \ SLAVE.initialize\_torque\_control();}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00089}00089\ }
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00090}00090\ \ \ \ \ \ \ \ \ MASTER.init\_UDP();}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00091}00091\ \ \ \ \ \ \ \ \ SLAVE.init\_UDP();}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00092}00092\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00093}00093\ }
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00094}00094\ \ \ \ \ \textcolor{keywordtype}{void}\ TELEOP\_GETFBK()\ \{}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00095}00095\ \ \ \ \ \ \ \ \ MASTER.getFBK();}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00096}00096\ \ \ \ \ \ \ \ \ SLAVE.getFBK();}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00097}00097\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00098}00098\ }
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00099}00099\ \ \ \ \ \textcolor{keywordtype}{void}\ TELEOP\_LOGIT()\ \{}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00100}00100\ \ \ \ \ \ \ \ \ MASTER.LOG\_IT();}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00101}00101\ \ \ \ \ \ \ \ \ SLAVE.LOG\_IT();}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00102}00102\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00103}00103\ }
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00104}00104\ \ \ \ \ \textcolor{keywordtype}{void}\ TELEOP\_sendCMD()\ \{}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00105}00105\ \ \ \ \ \ \ \ \ MASTER.sendCMD();}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00106}00106\ \ \ \ \ \ \ \ \ SLAVE.sendCMD();}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00107}00107\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00108}00108\ }
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00109}00109\ \ \ \ \ \textcolor{keywordtype}{void}\ CLEANUP()\ \{}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00110}00110\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ As\ opposed\ to\ using\ myKINOVA::myCLEANUP();\ -\/\ the\ iterative\ shutdown\ of\ the\ actuators\ manipulator\ by\ manipulator\ takes\ time}}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00111}00111\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Instead\ one\ should\ ensure\ the\ resetservoing\ mode\ is\ done\ actuator\ by\ actuator\ for\ all\ manipulators,\ and\ NOT\ manipulator\ by\ manipulator.}}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00112}00112\ \ \ \ \ \ \ \ \ SLAVE.ROB\_LOG.data\_count\_final\ =\ SLAVE.ROB\_LOG.data\_count;}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00113}00113\ \ \ \ \ \ \ \ \ MASTER.ROB\_LOG.data\_count\_final\ =\ MASTER.ROB\_LOG.data\_count;}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00114}00114\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00115}00115\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Ending\ Gravity\ Compensation"{}}\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00116}00116\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Change\ Control\ Mode\ -\/\ Position"{}}\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00117}00117\ }
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00118}00118\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ control\_mode\_message\ =\ k\_api::ActuatorConfig::ControlModeInformation();}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00119}00119\ \ \ \ \ \ \ \ \ control\_mode\_message.set\_control\_mode(k\_api::ActuatorConfig::ControlMode::POSITION);}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00120}00120\ }
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00121}00121\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;\ i\ <\ MASTER.ACTUATOR\_COUNT;\ i++)}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00122}00122\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00123}00123\ \ \ \ \ \ \ \ \ \ \ \ \ MASTER.actuator\_config-\/>SetControlMode(control\_mode\_message,\ i\ +\ 1);}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00124}00124\ \ \ \ \ \ \ \ \ \ \ \ \ SLAVE.actuator\_config-\/>SetControlMode(control\_mode\_message,\ i\ +\ 1);}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00125}00125\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00126}00126\ }
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00127}00127\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Setting\ single\ level\ servoing"{}}\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00128}00128\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Set\ the\ servoing\ mode\ back\ to\ Single\ Level}}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00129}00129\ \ \ \ \ \ \ \ \ MASTER.servoing\_mode.set\_servoing\_mode(k\_api::Base::ServoingMode::SINGLE\_LEVEL\_SERVOING);}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00130}00130\ \ \ \ \ \ \ \ \ SLAVE.servoing\_mode.set\_servoing\_mode(k\_api::Base::ServoingMode::SINGLE\_LEVEL\_SERVOING);}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00131}00131\ \ \ \ \ \ \ \ \ MASTER.base-\/>SetServoingMode(MASTER.servoing\_mode);}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00132}00132\ \ \ \ \ \ \ \ \ SLAVE.base-\/>SetServoingMode(SLAVE.servoing\_mode);}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00133}00133\ }
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00134}00134\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ UDP\ clean\ up}}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00135}00135\ \ \ \ \ \ \ \ \ MASTER.ROB\_UDP.cleanup();}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00136}00136\ \ \ \ \ \ \ \ \ SLAVE.ROB\_UDP.cleanup();}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00137}00137\ }
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00138}00138\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ write\ logs}}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00139}00139\ \ \ \ \ \ \ \ \ MASTER.myWRITE();}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00140}00140\ \ \ \ \ \ \ \ \ SLAVE.myWRITE();}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00141}00141\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00142}00142\ }
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00143}00143\ \ \ \ \ \mbox{\hyperlink{classmy_t_e_l_e_o_p}{myTELEOP}}()\ \{\textcolor{comment}{//\ default\ constructors}}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00144}00144\ }
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00145}00145\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00146}00146\ }
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00147}00147\ \ \ \ \ \mbox{\hyperlink{classmy_t_e_l_e_o_p}{myTELEOP}}(\mbox{\hyperlink{structmy_p_a_r_a_m_s}{myPARAMS}}\ M\_PARAMS\_IN,\ \mbox{\hyperlink{structmy_p_a_r_a_m_s}{myPARAMS}}\ S\_PARAMS\_IN)\ \{}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00148}00148\ \ \ \ \ \ \ \ \ master\_PARAMS\ =\ M\_PARAMS\_IN;}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00149}00149\ \ \ \ \ \ \ \ \ slave\_PARAMS\ =\ S\_PARAMS\_IN;}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00150}00150\ \ \ \ \ \ \ \ \ MASTER\ =\ getROB\_OBJ(master\_PARAMS,\ 0);\ \textcolor{comment}{//\ role\ =\ 0\ for\ master\ -\/\ VERY\ IMPORTANT}}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00151}00151\ \ \ \ \ \ \ \ \ SLAVE\ =\ getROB\_OBJ(slave\_PARAMS,\ 1);\ \textcolor{comment}{//\ role\ =\ 1\ for\ slave\ -\/\ VERY\ IMPORTANT}}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00152}00152\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00153}00153\ }
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00154}00154\ \ \ \ \ \mbox{\hyperlink{classmy_t_e_l_e_o_p}{myTELEOP}}(\mbox{\hyperlink{structmy_p_a_r_a_m_s}{myPARAMS}}\ M\_PARAMS\_IN,\ \mbox{\hyperlink{structmy_p_a_r_a_m_s}{myPARAMS}}\ S\_PARAMS\_IN,\ \textcolor{keywordtype}{float}\ k\_in)\ \{}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00155}00155\ \ \ \ \ \ \ \ \ master\_PARAMS\ =\ M\_PARAMS\_IN;}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00156}00156\ \ \ \ \ \ \ \ \ slave\_PARAMS\ =\ S\_PARAMS\_IN;}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00157}00157\ \ \ \ \ \ \ \ \ MASTER\ =\ getROB\_OBJ\_K(master\_PARAMS,\ 0,\ k\_in);\ \textcolor{comment}{//\ role\ =\ 0\ for\ master\ -\/\ VERY\ IMPORTANT}}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00158}00158\ \ \ \ \ \ \ \ \ SLAVE\ =\ getROB\_OBJ\_K(slave\_PARAMS,\ 1,\ k\_in);\ \textcolor{comment}{//\ role\ =\ 1\ for\ slave\ -\/\ VERY\ IMPORTANT}}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00159}00159\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{my_t_e_l_e_o_p_8h_source_l00160}00160\ \};}
+
+\end{DoxyCode}

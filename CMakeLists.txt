@@ -161,7 +161,8 @@ include_directories(${KORTEX_DIR}include/common)
 include_directories(${KORTEX_DIR}include/messages)
 include_directories(${KORTEX_DIR}include/client_stubs)
 include_directories(${KORTEX_DIR}include/custom)
-
+include_directories(${KORTEX_DIR}include/custom/Eigen)          # added on 2024-11-12
+include_directories(${KORTEX_DIR}include/custom/myGEOMETRY)     # added on 2024-11-12
 
 # link other libs
 if(UNIX)

@@ -1,0 +1,12 @@
+<map id="myKINOVA_UDP::setup_UDP" name="myKINOVA_UDP::setup_UDP">
+<area shape="rect" id="Node000001" title=" " alt="" coords="691,31,888,57"/>
+<area shape="rect" id="Node000002" href="$classmy_k_i_n_o_v_a.html#a5275c1653afacdf53acda8c913a7ba2e" title=" " alt="" coords="496,5,643,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="676,34,644,30,644,25,676,28"/>
+<area shape="rect" id="Node000005" href="$classmy_k_i_n_o_v_a.html#a0248b3aa1d7d6df9b4846d4652da9d16" title=" " alt="" coords="249,56,415,83"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="676,53,415,67,415,62,676,48"/>
+<area shape="rect" id="Node000003" href="$classmy_t_e_l_e_o_p.html#a460c47dc36919feb66ba8a70d71b5b62" title=" " alt="" coords="216,5,448,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="481,21,449,21,449,16,481,16"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="489,38,398,58,397,53,488,33"/>
+<area shape="rect" id="Node000004" href="$classmy_t_e_l_e_o_p.html#a69158afc9816c59b4139c3c35f4ea4ba" title=" " alt="" coords="5,5,168,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="200,21,168,21,168,16,200,16"/>
+</map>

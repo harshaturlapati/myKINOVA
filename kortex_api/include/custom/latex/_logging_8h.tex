@@ -1,0 +1,182 @@
+\doxysection{Logging.\+h File Reference}
+\hypertarget{_logging_8h}{}\label{_logging_8h}\index{Logging.h@{Logging.h}}
+{\ttfamily \#include $<$Base\+Client\+Rpc.\+h$>$}\newline
+{\ttfamily \#include $<$Base\+Cyclic\+Client\+Rpc.\+h$>$}\newline
+{\ttfamily \#include $<$Actuator\+Config\+Client\+Rpc.\+h$>$}\newline
+{\ttfamily \#include $<$rl/math/\+Transform.\+h$>$}\newline
+{\ttfamily \#include $<$rl/math/\+Unit.\+h$>$}\newline
+{\ttfamily \#include $<$rl/mdl/\+Kinematic.\+h$>$}\newline
+{\ttfamily \#include $<$rl/mdl/\+Dynamic.\+h$>$}\newline
+{\ttfamily \#include $<$rl/mdl/\+Model.\+h$>$}\newline
+{\ttfamily \#include $<$rl/mdl/\+Urdf\+Factory.\+h$>$}\newline
+{\ttfamily \#include $<$rl/mdl/\+Xml\+Factory.\+h$>$}\newline
+{\ttfamily \#include $<$boost/lexical\+\_\+cast.\+hpp$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$conio.\+h$>$}\newline
+Include dependency graph for Logging.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_logging_8h__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_logging_8h_a3189ffad6a1bb9a624be40964830eba9}{ACTUATOR\+\_\+\+COUNT}}~7
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{_logging_8h_a3513dddfcf94abd9a2c9ac880368075d}{Get\+Timestamp}} (time\+\_\+t now)
+\item 
+string \mbox{\hyperlink{_logging_8h_a3c62def33190517fc0f6851901050cd7}{Get\+Symbol\+\_\+\+Joint\+Angles}} (char type)
+\item 
+string \mbox{\hyperlink{_logging_8h_a2bd957b10400bab283a21f2a6ced2286}{Get\+Symbol\+\_\+\+Joint\+Angles\+\_\+\+Master}} (char type)
+\item 
+string \mbox{\hyperlink{_logging_8h_a1d1a35fbbd0fac7de387b8fdfaec95a4}{Get\+Symbol\+\_\+\+Joint\+Angles\+\_\+\+Slave}} (char type)
+\item 
+string \mbox{\hyperlink{_logging_8h_a7dc706ea3da576a01d05a32a468e38af}{Get\+Symbol\+\_\+\+Joint\+Velocity}} (char type)
+\item 
+string \mbox{\hyperlink{_logging_8h_a9027bb1c9e4aae99a6fc78fd2f647e5b}{Get\+Symbol\+\_\+\+Joint\+Velocity\+\_\+\+Master}} (char type)
+\item 
+string \mbox{\hyperlink{_logging_8h_a1a778c7464c3d7b7e05fc31b484fd8ab}{Get\+Symbol\+\_\+\+Joint\+Velocity\+\_\+\+Slave}} (char type)
+\item 
+string \mbox{\hyperlink{_logging_8h_ab8c78268015a6e17b1b25571550c612b}{Get\+Symbol\+\_\+\+Joint\+Torque}} (char type)
+\item 
+string \mbox{\hyperlink{_logging_8h_ad3222a2788aa91591bc1f9e3859d2dcb}{Get\+Symbol\+\_\+\+Joint\+Torque\+\_\+\+Master}} (char type)
+\item 
+string \mbox{\hyperlink{_logging_8h_a1b48555d8e92f0ebd884dfcde243a868}{Get\+Symbol\+\_\+\+Joint\+Torque\+\_\+\+Slave}} (char type)
+\item 
+string \mbox{\hyperlink{_logging_8h_ab53a8bb511bdfdf7d42cbe7564a01a70}{Get\+Symbol\+\_\+\+Joint\+Damping}} ()
+\item 
+string \mbox{\hyperlink{_logging_8h_a06d96167e32d4a27082df69c5a84c98d}{Get\+Symbol\+\_\+\+Joint\+Damping\+\_\+\+Master}} ()
+\item 
+string \mbox{\hyperlink{_logging_8h_a1c86399a0eed2cb5e6a4c75e25c2b54e}{Get\+Symbol\+\_\+\+Joint\+Damping\+\_\+\+Slave}} ()
+\item 
+string \mbox{\hyperlink{_logging_8h_a2daee180003547ba8c9540feb42ede46}{Get\+Symbol\+\_\+\+Joint\+Offset}} ()
+\item 
+string \mbox{\hyperlink{_logging_8h_a00672b564087c5907a34b5f46525621e}{Get\+Symbol\+\_\+\+Joint\+Offset\+\_\+\+Master}} ()
+\item 
+string \mbox{\hyperlink{_logging_8h_a78de7de5f50390837827943d0d65d192}{Get\+Symbol\+\_\+\+Joint\+Offset\+\_\+\+Slave}} ()
+\item 
+string \mbox{\hyperlink{_logging_8h_aeb42d0f909962bc85fbe1b569d81971a}{get\+Current\+Torque}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_logging_8h_a3189ffad6a1bb9a624be40964830eba9}\label{_logging_8h_a3189ffad6a1bb9a624be40964830eba9} 
+\index{Logging.h@{Logging.h}!ACTUATOR\_COUNT@{ACTUATOR\_COUNT}}
+\index{ACTUATOR\_COUNT@{ACTUATOR\_COUNT}!Logging.h@{Logging.h}}
+\doxysubsubsection{\texorpdfstring{ACTUATOR\_COUNT}{ACTUATOR\_COUNT}}
+{\footnotesize\ttfamily \#define ACTUATOR\+\_\+\+COUNT~7}
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_logging_8h_aeb42d0f909962bc85fbe1b569d81971a}\label{_logging_8h_aeb42d0f909962bc85fbe1b569d81971a} 
+\index{Logging.h@{Logging.h}!getCurrentTorque@{getCurrentTorque}}
+\index{getCurrentTorque@{getCurrentTorque}!Logging.h@{Logging.h}}
+\doxysubsubsection{\texorpdfstring{getCurrentTorque()}{getCurrentTorque()}}
+{\footnotesize\ttfamily string get\+Current\+Torque (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_logging_8h_a3c62def33190517fc0f6851901050cd7}\label{_logging_8h_a3c62def33190517fc0f6851901050cd7} 
+\index{Logging.h@{Logging.h}!GetSymbol\_JointAngles@{GetSymbol\_JointAngles}}
+\index{GetSymbol\_JointAngles@{GetSymbol\_JointAngles}!Logging.h@{Logging.h}}
+\doxysubsubsection{\texorpdfstring{GetSymbol\_JointAngles()}{GetSymbol\_JointAngles()}}
+{\footnotesize\ttfamily string Get\+Symbol\+\_\+\+Joint\+Angles (\begin{DoxyParamCaption}\item[{char}]{type }\end{DoxyParamCaption})}
+
+\Hypertarget{_logging_8h_a2bd957b10400bab283a21f2a6ced2286}\label{_logging_8h_a2bd957b10400bab283a21f2a6ced2286} 
+\index{Logging.h@{Logging.h}!GetSymbol\_JointAngles\_Master@{GetSymbol\_JointAngles\_Master}}
+\index{GetSymbol\_JointAngles\_Master@{GetSymbol\_JointAngles\_Master}!Logging.h@{Logging.h}}
+\doxysubsubsection{\texorpdfstring{GetSymbol\_JointAngles\_Master()}{GetSymbol\_JointAngles\_Master()}}
+{\footnotesize\ttfamily string Get\+Symbol\+\_\+\+Joint\+Angles\+\_\+\+Master (\begin{DoxyParamCaption}\item[{char}]{type }\end{DoxyParamCaption})}
+
+\Hypertarget{_logging_8h_a1d1a35fbbd0fac7de387b8fdfaec95a4}\label{_logging_8h_a1d1a35fbbd0fac7de387b8fdfaec95a4} 
+\index{Logging.h@{Logging.h}!GetSymbol\_JointAngles\_Slave@{GetSymbol\_JointAngles\_Slave}}
+\index{GetSymbol\_JointAngles\_Slave@{GetSymbol\_JointAngles\_Slave}!Logging.h@{Logging.h}}
+\doxysubsubsection{\texorpdfstring{GetSymbol\_JointAngles\_Slave()}{GetSymbol\_JointAngles\_Slave()}}
+{\footnotesize\ttfamily string Get\+Symbol\+\_\+\+Joint\+Angles\+\_\+\+Slave (\begin{DoxyParamCaption}\item[{char}]{type }\end{DoxyParamCaption})}
+
+\Hypertarget{_logging_8h_ab53a8bb511bdfdf7d42cbe7564a01a70}\label{_logging_8h_ab53a8bb511bdfdf7d42cbe7564a01a70} 
+\index{Logging.h@{Logging.h}!GetSymbol\_JointDamping@{GetSymbol\_JointDamping}}
+\index{GetSymbol\_JointDamping@{GetSymbol\_JointDamping}!Logging.h@{Logging.h}}
+\doxysubsubsection{\texorpdfstring{GetSymbol\_JointDamping()}{GetSymbol\_JointDamping()}}
+{\footnotesize\ttfamily string Get\+Symbol\+\_\+\+Joint\+Damping (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_logging_8h_a06d96167e32d4a27082df69c5a84c98d}\label{_logging_8h_a06d96167e32d4a27082df69c5a84c98d} 
+\index{Logging.h@{Logging.h}!GetSymbol\_JointDamping\_Master@{GetSymbol\_JointDamping\_Master}}
+\index{GetSymbol\_JointDamping\_Master@{GetSymbol\_JointDamping\_Master}!Logging.h@{Logging.h}}
+\doxysubsubsection{\texorpdfstring{GetSymbol\_JointDamping\_Master()}{GetSymbol\_JointDamping\_Master()}}
+{\footnotesize\ttfamily string Get\+Symbol\+\_\+\+Joint\+Damping\+\_\+\+Master (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_logging_8h_a1c86399a0eed2cb5e6a4c75e25c2b54e}\label{_logging_8h_a1c86399a0eed2cb5e6a4c75e25c2b54e} 
+\index{Logging.h@{Logging.h}!GetSymbol\_JointDamping\_Slave@{GetSymbol\_JointDamping\_Slave}}
+\index{GetSymbol\_JointDamping\_Slave@{GetSymbol\_JointDamping\_Slave}!Logging.h@{Logging.h}}
+\doxysubsubsection{\texorpdfstring{GetSymbol\_JointDamping\_Slave()}{GetSymbol\_JointDamping\_Slave()}}
+{\footnotesize\ttfamily string Get\+Symbol\+\_\+\+Joint\+Damping\+\_\+\+Slave (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_logging_8h_a2daee180003547ba8c9540feb42ede46}\label{_logging_8h_a2daee180003547ba8c9540feb42ede46} 
+\index{Logging.h@{Logging.h}!GetSymbol\_JointOffset@{GetSymbol\_JointOffset}}
+\index{GetSymbol\_JointOffset@{GetSymbol\_JointOffset}!Logging.h@{Logging.h}}
+\doxysubsubsection{\texorpdfstring{GetSymbol\_JointOffset()}{GetSymbol\_JointOffset()}}
+{\footnotesize\ttfamily string Get\+Symbol\+\_\+\+Joint\+Offset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_logging_8h_a00672b564087c5907a34b5f46525621e}\label{_logging_8h_a00672b564087c5907a34b5f46525621e} 
+\index{Logging.h@{Logging.h}!GetSymbol\_JointOffset\_Master@{GetSymbol\_JointOffset\_Master}}
+\index{GetSymbol\_JointOffset\_Master@{GetSymbol\_JointOffset\_Master}!Logging.h@{Logging.h}}
+\doxysubsubsection{\texorpdfstring{GetSymbol\_JointOffset\_Master()}{GetSymbol\_JointOffset\_Master()}}
+{\footnotesize\ttfamily string Get\+Symbol\+\_\+\+Joint\+Offset\+\_\+\+Master (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_logging_8h_a78de7de5f50390837827943d0d65d192}\label{_logging_8h_a78de7de5f50390837827943d0d65d192} 
+\index{Logging.h@{Logging.h}!GetSymbol\_JointOffset\_Slave@{GetSymbol\_JointOffset\_Slave}}
+\index{GetSymbol\_JointOffset\_Slave@{GetSymbol\_JointOffset\_Slave}!Logging.h@{Logging.h}}
+\doxysubsubsection{\texorpdfstring{GetSymbol\_JointOffset\_Slave()}{GetSymbol\_JointOffset\_Slave()}}
+{\footnotesize\ttfamily string Get\+Symbol\+\_\+\+Joint\+Offset\+\_\+\+Slave (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_logging_8h_ab8c78268015a6e17b1b25571550c612b}\label{_logging_8h_ab8c78268015a6e17b1b25571550c612b} 
+\index{Logging.h@{Logging.h}!GetSymbol\_JointTorque@{GetSymbol\_JointTorque}}
+\index{GetSymbol\_JointTorque@{GetSymbol\_JointTorque}!Logging.h@{Logging.h}}
+\doxysubsubsection{\texorpdfstring{GetSymbol\_JointTorque()}{GetSymbol\_JointTorque()}}
+{\footnotesize\ttfamily string Get\+Symbol\+\_\+\+Joint\+Torque (\begin{DoxyParamCaption}\item[{char}]{type }\end{DoxyParamCaption})}
+
+\Hypertarget{_logging_8h_ad3222a2788aa91591bc1f9e3859d2dcb}\label{_logging_8h_ad3222a2788aa91591bc1f9e3859d2dcb} 
+\index{Logging.h@{Logging.h}!GetSymbol\_JointTorque\_Master@{GetSymbol\_JointTorque\_Master}}
+\index{GetSymbol\_JointTorque\_Master@{GetSymbol\_JointTorque\_Master}!Logging.h@{Logging.h}}
+\doxysubsubsection{\texorpdfstring{GetSymbol\_JointTorque\_Master()}{GetSymbol\_JointTorque\_Master()}}
+{\footnotesize\ttfamily string Get\+Symbol\+\_\+\+Joint\+Torque\+\_\+\+Master (\begin{DoxyParamCaption}\item[{char}]{type }\end{DoxyParamCaption})}
+
+\Hypertarget{_logging_8h_a1b48555d8e92f0ebd884dfcde243a868}\label{_logging_8h_a1b48555d8e92f0ebd884dfcde243a868} 
+\index{Logging.h@{Logging.h}!GetSymbol\_JointTorque\_Slave@{GetSymbol\_JointTorque\_Slave}}
+\index{GetSymbol\_JointTorque\_Slave@{GetSymbol\_JointTorque\_Slave}!Logging.h@{Logging.h}}
+\doxysubsubsection{\texorpdfstring{GetSymbol\_JointTorque\_Slave()}{GetSymbol\_JointTorque\_Slave()}}
+{\footnotesize\ttfamily string Get\+Symbol\+\_\+\+Joint\+Torque\+\_\+\+Slave (\begin{DoxyParamCaption}\item[{char}]{type }\end{DoxyParamCaption})}
+
+\Hypertarget{_logging_8h_a7dc706ea3da576a01d05a32a468e38af}\label{_logging_8h_a7dc706ea3da576a01d05a32a468e38af} 
+\index{Logging.h@{Logging.h}!GetSymbol\_JointVelocity@{GetSymbol\_JointVelocity}}
+\index{GetSymbol\_JointVelocity@{GetSymbol\_JointVelocity}!Logging.h@{Logging.h}}
+\doxysubsubsection{\texorpdfstring{GetSymbol\_JointVelocity()}{GetSymbol\_JointVelocity()}}
+{\footnotesize\ttfamily string Get\+Symbol\+\_\+\+Joint\+Velocity (\begin{DoxyParamCaption}\item[{char}]{type }\end{DoxyParamCaption})}
+
+\Hypertarget{_logging_8h_a9027bb1c9e4aae99a6fc78fd2f647e5b}\label{_logging_8h_a9027bb1c9e4aae99a6fc78fd2f647e5b} 
+\index{Logging.h@{Logging.h}!GetSymbol\_JointVelocity\_Master@{GetSymbol\_JointVelocity\_Master}}
+\index{GetSymbol\_JointVelocity\_Master@{GetSymbol\_JointVelocity\_Master}!Logging.h@{Logging.h}}
+\doxysubsubsection{\texorpdfstring{GetSymbol\_JointVelocity\_Master()}{GetSymbol\_JointVelocity\_Master()}}
+{\footnotesize\ttfamily string Get\+Symbol\+\_\+\+Joint\+Velocity\+\_\+\+Master (\begin{DoxyParamCaption}\item[{char}]{type }\end{DoxyParamCaption})}
+
+\Hypertarget{_logging_8h_a1a778c7464c3d7b7e05fc31b484fd8ab}\label{_logging_8h_a1a778c7464c3d7b7e05fc31b484fd8ab} 
+\index{Logging.h@{Logging.h}!GetSymbol\_JointVelocity\_Slave@{GetSymbol\_JointVelocity\_Slave}}
+\index{GetSymbol\_JointVelocity\_Slave@{GetSymbol\_JointVelocity\_Slave}!Logging.h@{Logging.h}}
+\doxysubsubsection{\texorpdfstring{GetSymbol\_JointVelocity\_Slave()}{GetSymbol\_JointVelocity\_Slave()}}
+{\footnotesize\ttfamily string Get\+Symbol\+\_\+\+Joint\+Velocity\+\_\+\+Slave (\begin{DoxyParamCaption}\item[{char}]{type }\end{DoxyParamCaption})}
+
+\Hypertarget{_logging_8h_a3513dddfcf94abd9a2c9ac880368075d}\label{_logging_8h_a3513dddfcf94abd9a2c9ac880368075d} 
+\index{Logging.h@{Logging.h}!GetTimestamp@{GetTimestamp}}
+\index{GetTimestamp@{GetTimestamp}!Logging.h@{Logging.h}}
+\doxysubsubsection{\texorpdfstring{GetTimestamp()}{GetTimestamp()}}
+{\footnotesize\ttfamily string Get\+Timestamp (\begin{DoxyParamCaption}\item[{time\+\_\+t}]{now }\end{DoxyParamCaption})}
+

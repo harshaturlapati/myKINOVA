@@ -1,0 +1,9 @@
+<map id="myKINOVA::initialize_torque_control" name="myKINOVA::initialize_torque_control">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,149,99"/>
+<area shape="rect" id="Node000002" href="$classmy_k_i_n_o_v_a.html#a07c16b770081f0bc80600dd5348a3353" title=" " alt="" coords="202,5,377,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,55,196,41,222,34,224,39,197,47,150,60"/>
+<area shape="rect" id="Node000003" href="$classmy_k_i_n_o_v_a.html#aed990b6578f8dd5d41d100b7360e12a7" title=" " alt="" coords="202,56,377,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="149,75,187,75,187,80,149,80"/>
+<area shape="rect" id="Node000004" href="$classmy_k_i_n_o_v_a.html#ac74dcfcb68cbd59368a95d8b35e19ece" title=" " alt="" coords="197,123,382,149"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="150,95,197,108,224,115,222,121,196,113,148,100"/>
+</map>

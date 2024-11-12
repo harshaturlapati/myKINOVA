@@ -1,0 +1,11 @@
+<map id="myKINOVA_LOGGING.h" name="myKINOVA_LOGGING.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="71,5,237,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,80,63,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,35,69,74,67,69,132,30"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="87,80,141,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="149,34,131,68,126,65,145,31"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="165,80,226,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="164,31,183,65,178,68,159,34"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="250,80,327,107"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="179,30,253,70,250,75,176,35"/>
+</map>

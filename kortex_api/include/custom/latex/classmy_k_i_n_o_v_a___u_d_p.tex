@@ -1,0 +1,495 @@
+\doxysection{my\+KINOVA\+\_\+\+UDP Class Reference}
+\hypertarget{classmy_k_i_n_o_v_a___u_d_p}{}\label{classmy_k_i_n_o_v_a___u_d_p}\index{myKINOVA\_UDP@{myKINOVA\_UDP}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classmy_k_i_n_o_v_a___u_d_p_a106b5dc78d8a56c07551a3838688a3f2}{setup\+\_\+\+UDP}} ()
+\item 
+int \mbox{\hyperlink{classmy_k_i_n_o_v_a___u_d_p_a062f27301570d91c5df1c586caa6eb4a}{initialize\+\_\+\+Winsock}} ()
+\item 
+void \mbox{\hyperlink{classmy_k_i_n_o_v_a___u_d_p_adfa342005136cdd865c7ade44f8a33ec}{UDP\+\_\+send\+\_\+recv\+\_\+v4}} (float \texorpdfstring{$\ast$}{*}input\+\_\+pos)
+\item 
+void \mbox{\hyperlink{classmy_k_i_n_o_v_a___u_d_p_a02b04f7aa792cf70a008d67bd7fe0305}{cleanup}} ()
+\item 
+\mbox{\hyperlink{classmy_k_i_n_o_v_a___u_d_p_a127033e6d1140169820e0278d571ec6b}{my\+KINOVA\+\_\+\+UDP}} (int CTRL\+\_\+\+MODE\+\_\+input, u\+\_\+short SEND\+\_\+\+PORT\+\_\+input, u\+\_\+short RECV\+\_\+\+PORT\+\_\+input, const char \texorpdfstring{$\ast$}{*}SEND\+\_\+\+IP\+\_\+input, const char \texorpdfstring{$\ast$}{*}RECV\+\_\+\+IP\+\_\+input)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classmy_k_i_n_o_v_a___u_d_p_a2e224d9d6f7ccb1efd7f0835dac8ef42}{UDPsendbuf}}
+\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classmy_k_i_n_o_v_a___u_d_p_a19bb45d1729fe1a7ccf057210817a288}{sendbuf3}}
+\item 
+float \mbox{\hyperlink{classmy_k_i_n_o_v_a___u_d_p_a2677a23881ae2dfcd1db6d75b040e4a7}{num\+\_\+\+TOSEND}} \mbox{[}7\mbox{]} = \{ 0.\+0f,0.\+0f,0.\+0f,0.\+0f,0.\+0f,0.\+0f,0.\+0f \}
+\item 
+int \mbox{\hyperlink{classmy_k_i_n_o_v_a___u_d_p_ae330ceff9652e48a311fd39263a3c613}{num\+\_\+\+TOSEND\+\_\+idx}}
+\item 
+std\+::string \mbox{\hyperlink{classmy_k_i_n_o_v_a___u_d_p_a17326636337b522554e8174e57ccb40b}{delimiter}} = "{}\texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|}"{}
+\item 
+float \mbox{\hyperlink{classmy_k_i_n_o_v_a___u_d_p_ad8925e614b3b81e3501111558b1f216e}{num\+\_\+float}}
+\item 
+size\+\_\+t \mbox{\hyperlink{classmy_k_i_n_o_v_a___u_d_p_a6ab15a138c62aba01672634b7017022d}{STRINGpos}}
+\item 
+std\+::string \mbox{\hyperlink{classmy_k_i_n_o_v_a___u_d_p_a07e93f78852da0814c7264ee7167ef78}{token}}
+\item 
+u\+\_\+short \mbox{\hyperlink{classmy_k_i_n_o_v_a___u_d_p_a0cfd7425f65762f53a7f427cf03f68b1}{SEND\+\_\+\+PORT}}
+\item 
+u\+\_\+short \mbox{\hyperlink{classmy_k_i_n_o_v_a___u_d_p_a7888c9fdd863aa74b90926e56ee68f91}{RECV\+\_\+\+PORT}}
+\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classmy_k_i_n_o_v_a___u_d_p_a6cac7cc27519aeb3794300a22f603b32}{SEND\+\_\+\+IP\+\_\+\+ADDRESS}}
+\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classmy_k_i_n_o_v_a___u_d_p_addc97765bc09ecd2fce2b2624b9112dc}{RECV\+\_\+\+IP\+\_\+\+ADDRESS}}
+\item 
+int \mbox{\hyperlink{classmy_k_i_n_o_v_a___u_d_p_aceb856f8bc2c72f4b0ab4399ec30d3b0}{CTRL\+\_\+\+MODE}} = 0
+\item 
+WSADATA \mbox{\hyperlink{classmy_k_i_n_o_v_a___u_d_p_a87e9faf8b0752dbbbe5d43e2a8c05830}{wsa\+Data}}
+\item 
+int \mbox{\hyperlink{classmy_k_i_n_o_v_a___u_d_p_a1975cd82eb9fee70718a5251175200b8}{i\+Result}}
+\item 
+SOCKET \mbox{\hyperlink{classmy_k_i_n_o_v_a___u_d_p_a0605926494a6dd4c667693465396cf5d}{Connect\+Socket}} = INVALID\+\_\+\+SOCKET
+\item 
+struct sockaddr\+\_\+in \mbox{\hyperlink{classmy_k_i_n_o_v_a___u_d_p_aa234473f0315f5571d54e65556321a07}{client\+Service}}
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classmy_k_i_n_o_v_a___u_d_p_a2dc773f2083cd0ac4afa80ae6cb0ded8}{sendbuf}} = "{}this is a test"{}
+\item 
+char \mbox{\hyperlink{classmy_k_i_n_o_v_a___u_d_p_a8a107d8cd9a8764c88f394a061988e44}{recvbuf}} \mbox{[}DEFAULT\+\_\+\+BUFLEN\mbox{]}
+\item 
+int \mbox{\hyperlink{classmy_k_i_n_o_v_a___u_d_p_a01e66e54d6b0af3d8556a844db38289b}{recvbuflen}} = DEFAULT\+\_\+\+BUFLEN
+\item 
+int \mbox{\hyperlink{classmy_k_i_n_o_v_a___u_d_p_a8878bc1b60511bed5ada842cc24d4bf4}{i\+Result2}} = 0
+\item 
+SOCKET \mbox{\hyperlink{classmy_k_i_n_o_v_a___u_d_p_a7a9c63250544e8576ce1494aa297197a}{Recv\+Socket}}
+\item 
+struct sockaddr\+\_\+in \mbox{\hyperlink{classmy_k_i_n_o_v_a___u_d_p_a6cef26a8c9221252db272978f5ea11c2}{Recv\+Addr}}
+\item 
+char \mbox{\hyperlink{classmy_k_i_n_o_v_a___u_d_p_a0e77c71488e135f0e8b206af6cb9d33d}{Recv\+Buf}} \mbox{[}1024\mbox{]}
+\item 
+int \mbox{\hyperlink{classmy_k_i_n_o_v_a___u_d_p_a8867e41fc81ea78a539b7d9208f409a0}{Buf\+Len}} = 1024
+\item 
+struct sockaddr\+\_\+in \mbox{\hyperlink{classmy_k_i_n_o_v_a___u_d_p_af269423ab07cf26689372c502945f5a2}{Sender\+Addr}}
+\item 
+int \mbox{\hyperlink{classmy_k_i_n_o_v_a___u_d_p_a5a5616e389b52f851c4a83f8041eaf75}{Sender\+Addr\+Size}} = sizeof(Sender\+Addr)
+\item 
+int \mbox{\hyperlink{classmy_k_i_n_o_v_a___u_d_p_a531c972ecbe0d3ec5dc3eb5330328280}{ret}}
+\item 
+int \mbox{\hyperlink{classmy_k_i_n_o_v_a___u_d_p_a4c438a7eb9806bbe130e8be67c0cf405}{i\+Val}} = 1
+\item 
+unsigned int \mbox{\hyperlink{classmy_k_i_n_o_v_a___u_d_p_aadf5de84eda2ab58632719cdcd4850d9}{sz}} = sizeof(i\+Val)
+\item 
+float \mbox{\hyperlink{classmy_k_i_n_o_v_a___u_d_p_a85e90b45c342b107752c33e949f16c4b}{UDP\+\_\+q}} \mbox{[}7\mbox{]} = \{ 0.\+0f,0.\+0f,0.\+0f,0.\+0f,0.\+0f,0.\+0f,0.\+0f\}
+\item 
+float \mbox{\hyperlink{classmy_k_i_n_o_v_a___u_d_p_a58083dbe0b95af31964a90e4070160c5}{UDP\+\_\+gripper}} = 0.\+0f
+\item 
+float \mbox{\hyperlink{classmy_k_i_n_o_v_a___u_d_p_a2c62b352cd859127771179b3efbb03ef}{UDP\+\_\+tau}} \mbox{[}7\mbox{]} = \{ 0.\+0f,0.\+0f,0.\+0f,0.\+0f,0.\+0f,0.\+0f,0.\+0f\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source_l00025}{25}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source}{my\+KINOVA\+\_\+\+UDP.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classmy_k_i_n_o_v_a___u_d_p_ab35f21ca738c5454f91d174739567ad2}\label{classmy_k_i_n_o_v_a___u_d_p_ab35f21ca738c5454f91d174739567ad2} 
+\index{myKINOVA\_UDP@{myKINOVA\_UDP}!myKINOVA\_UDP@{myKINOVA\_UDP}}
+\index{myKINOVA\_UDP@{myKINOVA\_UDP}!myKINOVA\_UDP@{myKINOVA\_UDP}}
+\doxysubsubsection{\texorpdfstring{myKINOVA\_UDP()}{myKINOVA\_UDP()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily my\+KINOVA\+\_\+\+UDP\+::my\+KINOVA\+\_\+\+UDP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source_l00316}{316}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source}{my\+KINOVA\+\_\+\+UDP.\+h}}.
+
+\Hypertarget{classmy_k_i_n_o_v_a___u_d_p_a127033e6d1140169820e0278d571ec6b}\label{classmy_k_i_n_o_v_a___u_d_p_a127033e6d1140169820e0278d571ec6b} 
+\index{myKINOVA\_UDP@{myKINOVA\_UDP}!myKINOVA\_UDP@{myKINOVA\_UDP}}
+\index{myKINOVA\_UDP@{myKINOVA\_UDP}!myKINOVA\_UDP@{myKINOVA\_UDP}}
+\doxysubsubsection{\texorpdfstring{myKINOVA\_UDP()}{myKINOVA\_UDP()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily my\+KINOVA\+\_\+\+UDP\+::my\+KINOVA\+\_\+\+UDP (\begin{DoxyParamCaption}\item[{int}]{CTRL\+\_\+\+MODE\+\_\+input,  }\item[{u\+\_\+short}]{SEND\+\_\+\+PORT\+\_\+input,  }\item[{u\+\_\+short}]{RECV\+\_\+\+PORT\+\_\+input,  }\item[{const char \texorpdfstring{$\ast$}{*}}]{SEND\+\_\+\+IP\+\_\+input,  }\item[{const char \texorpdfstring{$\ast$}{*}}]{RECV\+\_\+\+IP\+\_\+input }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source_l00319}{319}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source}{my\+KINOVA\+\_\+\+UDP.\+h}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classmy_k_i_n_o_v_a___u_d_p_a02b04f7aa792cf70a008d67bd7fe0305}\label{classmy_k_i_n_o_v_a___u_d_p_a02b04f7aa792cf70a008d67bd7fe0305} 
+\index{myKINOVA\_UDP@{myKINOVA\_UDP}!cleanup@{cleanup}}
+\index{cleanup@{cleanup}!myKINOVA\_UDP@{myKINOVA\_UDP}}
+\doxysubsubsection{\texorpdfstring{cleanup()}{cleanup()}}
+{\footnotesize\ttfamily void my\+KINOVA\+\_\+\+UDP\+::cleanup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source_l00306}{306}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source}{my\+KINOVA\+\_\+\+UDP.\+h}}.
+
+\Hypertarget{classmy_k_i_n_o_v_a___u_d_p_a062f27301570d91c5df1c586caa6eb4a}\label{classmy_k_i_n_o_v_a___u_d_p_a062f27301570d91c5df1c586caa6eb4a} 
+\index{myKINOVA\_UDP@{myKINOVA\_UDP}!initialize\_Winsock@{initialize\_Winsock}}
+\index{initialize\_Winsock@{initialize\_Winsock}!myKINOVA\_UDP@{myKINOVA\_UDP}}
+\doxysubsubsection{\texorpdfstring{initialize\_Winsock()}{initialize\_Winsock()}}
+{\footnotesize\ttfamily int my\+KINOVA\+\_\+\+UDP\+::initialize\+\_\+\+Winsock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source_l00098}{98}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source}{my\+KINOVA\+\_\+\+UDP.\+h}}.
+
+\Hypertarget{classmy_k_i_n_o_v_a___u_d_p_a106b5dc78d8a56c07551a3838688a3f2}\label{classmy_k_i_n_o_v_a___u_d_p_a106b5dc78d8a56c07551a3838688a3f2} 
+\index{myKINOVA\_UDP@{myKINOVA\_UDP}!setup\_UDP@{setup\_UDP}}
+\index{setup\_UDP@{setup\_UDP}!myKINOVA\_UDP@{myKINOVA\_UDP}}
+\doxysubsubsection{\texorpdfstring{setup\_UDP()}{setup\_UDP()}}
+{\footnotesize\ttfamily void my\+KINOVA\+\_\+\+UDP\+::setup\+\_\+\+UDP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source_l00079}{79}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source}{my\+KINOVA\+\_\+\+UDP.\+h}}.
+
+\Hypertarget{classmy_k_i_n_o_v_a___u_d_p_adfa342005136cdd865c7ade44f8a33ec}\label{classmy_k_i_n_o_v_a___u_d_p_adfa342005136cdd865c7ade44f8a33ec} 
+\index{myKINOVA\_UDP@{myKINOVA\_UDP}!UDP\_send\_recv\_v4@{UDP\_send\_recv\_v4}}
+\index{UDP\_send\_recv\_v4@{UDP\_send\_recv\_v4}!myKINOVA\_UDP@{myKINOVA\_UDP}}
+\doxysubsubsection{\texorpdfstring{UDP\_send\_recv\_v4()}{UDP\_send\_recv\_v4()}}
+{\footnotesize\ttfamily void my\+KINOVA\+\_\+\+UDP\+::\+UDP\+\_\+send\+\_\+recv\+\_\+v4 (\begin{DoxyParamCaption}\item[{float \texorpdfstring{$\ast$}{*}}]{input\+\_\+pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source_l00176}{176}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source}{my\+KINOVA\+\_\+\+UDP.\+h}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classmy_k_i_n_o_v_a___u_d_p_a8867e41fc81ea78a539b7d9208f409a0}\label{classmy_k_i_n_o_v_a___u_d_p_a8867e41fc81ea78a539b7d9208f409a0} 
+\index{myKINOVA\_UDP@{myKINOVA\_UDP}!BufLen@{BufLen}}
+\index{BufLen@{BufLen}!myKINOVA\_UDP@{myKINOVA\_UDP}}
+\doxysubsubsection{\texorpdfstring{BufLen}{BufLen}}
+{\footnotesize\ttfamily int my\+KINOVA\+\_\+\+UDP\+::\+Buf\+Len = 1024}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source_l00067}{67}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source}{my\+KINOVA\+\_\+\+UDP.\+h}}.
+
+\Hypertarget{classmy_k_i_n_o_v_a___u_d_p_aa234473f0315f5571d54e65556321a07}\label{classmy_k_i_n_o_v_a___u_d_p_aa234473f0315f5571d54e65556321a07} 
+\index{myKINOVA\_UDP@{myKINOVA\_UDP}!clientService@{clientService}}
+\index{clientService@{clientService}!myKINOVA\_UDP@{myKINOVA\_UDP}}
+\doxysubsubsection{\texorpdfstring{clientService}{clientService}}
+{\footnotesize\ttfamily struct sockaddr\+\_\+in my\+KINOVA\+\_\+\+UDP\+::client\+Service}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source_l00054}{54}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source}{my\+KINOVA\+\_\+\+UDP.\+h}}.
+
+\Hypertarget{classmy_k_i_n_o_v_a___u_d_p_a0605926494a6dd4c667693465396cf5d}\label{classmy_k_i_n_o_v_a___u_d_p_a0605926494a6dd4c667693465396cf5d} 
+\index{myKINOVA\_UDP@{myKINOVA\_UDP}!ConnectSocket@{ConnectSocket}}
+\index{ConnectSocket@{ConnectSocket}!myKINOVA\_UDP@{myKINOVA\_UDP}}
+\doxysubsubsection{\texorpdfstring{ConnectSocket}{ConnectSocket}}
+{\footnotesize\ttfamily SOCKET my\+KINOVA\+\_\+\+UDP\+::\+Connect\+Socket = INVALID\+\_\+\+SOCKET}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source_l00053}{53}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source}{my\+KINOVA\+\_\+\+UDP.\+h}}.
+
+\Hypertarget{classmy_k_i_n_o_v_a___u_d_p_aceb856f8bc2c72f4b0ab4399ec30d3b0}\label{classmy_k_i_n_o_v_a___u_d_p_aceb856f8bc2c72f4b0ab4399ec30d3b0} 
+\index{myKINOVA\_UDP@{myKINOVA\_UDP}!CTRL\_MODE@{CTRL\_MODE}}
+\index{CTRL\_MODE@{CTRL\_MODE}!myKINOVA\_UDP@{myKINOVA\_UDP}}
+\doxysubsubsection{\texorpdfstring{CTRL\_MODE}{CTRL\_MODE}}
+{\footnotesize\ttfamily int my\+KINOVA\+\_\+\+UDP\+::\+CTRL\+\_\+\+MODE = 0}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source_l00047}{47}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source}{my\+KINOVA\+\_\+\+UDP.\+h}}.
+
+\Hypertarget{classmy_k_i_n_o_v_a___u_d_p_a17326636337b522554e8174e57ccb40b}\label{classmy_k_i_n_o_v_a___u_d_p_a17326636337b522554e8174e57ccb40b} 
+\index{myKINOVA\_UDP@{myKINOVA\_UDP}!delimiter@{delimiter}}
+\index{delimiter@{delimiter}!myKINOVA\_UDP@{myKINOVA\_UDP}}
+\doxysubsubsection{\texorpdfstring{delimiter}{delimiter}}
+{\footnotesize\ttfamily std\+::string my\+KINOVA\+\_\+\+UDP\+::delimiter = "{}\texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|}"{}}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source_l00038}{38}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source}{my\+KINOVA\+\_\+\+UDP.\+h}}.
+
+\Hypertarget{classmy_k_i_n_o_v_a___u_d_p_a1975cd82eb9fee70718a5251175200b8}\label{classmy_k_i_n_o_v_a___u_d_p_a1975cd82eb9fee70718a5251175200b8} 
+\index{myKINOVA\_UDP@{myKINOVA\_UDP}!iResult@{iResult}}
+\index{iResult@{iResult}!myKINOVA\_UDP@{myKINOVA\_UDP}}
+\doxysubsubsection{\texorpdfstring{iResult}{iResult}}
+{\footnotesize\ttfamily int my\+KINOVA\+\_\+\+UDP\+::i\+Result}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source_l00051}{51}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source}{my\+KINOVA\+\_\+\+UDP.\+h}}.
+
+\Hypertarget{classmy_k_i_n_o_v_a___u_d_p_a8878bc1b60511bed5ada842cc24d4bf4}\label{classmy_k_i_n_o_v_a___u_d_p_a8878bc1b60511bed5ada842cc24d4bf4} 
+\index{myKINOVA\_UDP@{myKINOVA\_UDP}!iResult2@{iResult2}}
+\index{iResult2@{iResult2}!myKINOVA\_UDP@{myKINOVA\_UDP}}
+\doxysubsubsection{\texorpdfstring{iResult2}{iResult2}}
+{\footnotesize\ttfamily int my\+KINOVA\+\_\+\+UDP\+::i\+Result2 = 0}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source_l00061}{61}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source}{my\+KINOVA\+\_\+\+UDP.\+h}}.
+
+\Hypertarget{classmy_k_i_n_o_v_a___u_d_p_a4c438a7eb9806bbe130e8be67c0cf405}\label{classmy_k_i_n_o_v_a___u_d_p_a4c438a7eb9806bbe130e8be67c0cf405} 
+\index{myKINOVA\_UDP@{myKINOVA\_UDP}!iVal@{iVal}}
+\index{iVal@{iVal}!myKINOVA\_UDP@{myKINOVA\_UDP}}
+\doxysubsubsection{\texorpdfstring{iVal}{iVal}}
+{\footnotesize\ttfamily int my\+KINOVA\+\_\+\+UDP\+::i\+Val = 1}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source_l00072}{72}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source}{my\+KINOVA\+\_\+\+UDP.\+h}}.
+
+\Hypertarget{classmy_k_i_n_o_v_a___u_d_p_ad8925e614b3b81e3501111558b1f216e}\label{classmy_k_i_n_o_v_a___u_d_p_ad8925e614b3b81e3501111558b1f216e} 
+\index{myKINOVA\_UDP@{myKINOVA\_UDP}!num\_float@{num\_float}}
+\index{num\_float@{num\_float}!myKINOVA\_UDP@{myKINOVA\_UDP}}
+\doxysubsubsection{\texorpdfstring{num\_float}{num\_float}}
+{\footnotesize\ttfamily float my\+KINOVA\+\_\+\+UDP\+::num\+\_\+float}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source_l00039}{39}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source}{my\+KINOVA\+\_\+\+UDP.\+h}}.
+
+\Hypertarget{classmy_k_i_n_o_v_a___u_d_p_a2677a23881ae2dfcd1db6d75b040e4a7}\label{classmy_k_i_n_o_v_a___u_d_p_a2677a23881ae2dfcd1db6d75b040e4a7} 
+\index{myKINOVA\_UDP@{myKINOVA\_UDP}!num\_TOSEND@{num\_TOSEND}}
+\index{num\_TOSEND@{num\_TOSEND}!myKINOVA\_UDP@{myKINOVA\_UDP}}
+\doxysubsubsection{\texorpdfstring{num\_TOSEND}{num\_TOSEND}}
+{\footnotesize\ttfamily float my\+KINOVA\+\_\+\+UDP\+::num\+\_\+\+TOSEND\mbox{[}7\mbox{]} = \{ 0.\+0f,0.\+0f,0.\+0f,0.\+0f,0.\+0f,0.\+0f,0.\+0f \}}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source_l00036}{36}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source}{my\+KINOVA\+\_\+\+UDP.\+h}}.
+
+\Hypertarget{classmy_k_i_n_o_v_a___u_d_p_ae330ceff9652e48a311fd39263a3c613}\label{classmy_k_i_n_o_v_a___u_d_p_ae330ceff9652e48a311fd39263a3c613} 
+\index{myKINOVA\_UDP@{myKINOVA\_UDP}!num\_TOSEND\_idx@{num\_TOSEND\_idx}}
+\index{num\_TOSEND\_idx@{num\_TOSEND\_idx}!myKINOVA\_UDP@{myKINOVA\_UDP}}
+\doxysubsubsection{\texorpdfstring{num\_TOSEND\_idx}{num\_TOSEND\_idx}}
+{\footnotesize\ttfamily int my\+KINOVA\+\_\+\+UDP\+::num\+\_\+\+TOSEND\+\_\+idx}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source_l00037}{37}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source}{my\+KINOVA\+\_\+\+UDP.\+h}}.
+
+\Hypertarget{classmy_k_i_n_o_v_a___u_d_p_addc97765bc09ecd2fce2b2624b9112dc}\label{classmy_k_i_n_o_v_a___u_d_p_addc97765bc09ecd2fce2b2624b9112dc} 
+\index{myKINOVA\_UDP@{myKINOVA\_UDP}!RECV\_IP\_ADDRESS@{RECV\_IP\_ADDRESS}}
+\index{RECV\_IP\_ADDRESS@{RECV\_IP\_ADDRESS}!myKINOVA\_UDP@{myKINOVA\_UDP}}
+\doxysubsubsection{\texorpdfstring{RECV\_IP\_ADDRESS}{RECV\_IP\_ADDRESS}}
+{\footnotesize\ttfamily const char\texorpdfstring{$\ast$}{*} my\+KINOVA\+\_\+\+UDP\+::\+RECV\+\_\+\+IP\+\_\+\+ADDRESS}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source_l00046}{46}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source}{my\+KINOVA\+\_\+\+UDP.\+h}}.
+
+\Hypertarget{classmy_k_i_n_o_v_a___u_d_p_a7888c9fdd863aa74b90926e56ee68f91}\label{classmy_k_i_n_o_v_a___u_d_p_a7888c9fdd863aa74b90926e56ee68f91} 
+\index{myKINOVA\_UDP@{myKINOVA\_UDP}!RECV\_PORT@{RECV\_PORT}}
+\index{RECV\_PORT@{RECV\_PORT}!myKINOVA\_UDP@{myKINOVA\_UDP}}
+\doxysubsubsection{\texorpdfstring{RECV\_PORT}{RECV\_PORT}}
+{\footnotesize\ttfamily u\+\_\+short my\+KINOVA\+\_\+\+UDP\+::\+RECV\+\_\+\+PORT}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source_l00044}{44}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source}{my\+KINOVA\+\_\+\+UDP.\+h}}.
+
+\Hypertarget{classmy_k_i_n_o_v_a___u_d_p_a6cef26a8c9221252db272978f5ea11c2}\label{classmy_k_i_n_o_v_a___u_d_p_a6cef26a8c9221252db272978f5ea11c2} 
+\index{myKINOVA\_UDP@{myKINOVA\_UDP}!RecvAddr@{RecvAddr}}
+\index{RecvAddr@{RecvAddr}!myKINOVA\_UDP@{myKINOVA\_UDP}}
+\doxysubsubsection{\texorpdfstring{RecvAddr}{RecvAddr}}
+{\footnotesize\ttfamily struct sockaddr\+\_\+in my\+KINOVA\+\_\+\+UDP\+::\+Recv\+Addr}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source_l00064}{64}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source}{my\+KINOVA\+\_\+\+UDP.\+h}}.
+
+\Hypertarget{classmy_k_i_n_o_v_a___u_d_p_a0e77c71488e135f0e8b206af6cb9d33d}\label{classmy_k_i_n_o_v_a___u_d_p_a0e77c71488e135f0e8b206af6cb9d33d} 
+\index{myKINOVA\_UDP@{myKINOVA\_UDP}!RecvBuf@{RecvBuf}}
+\index{RecvBuf@{RecvBuf}!myKINOVA\_UDP@{myKINOVA\_UDP}}
+\doxysubsubsection{\texorpdfstring{RecvBuf}{RecvBuf}}
+{\footnotesize\ttfamily char my\+KINOVA\+\_\+\+UDP\+::\+Recv\+Buf\mbox{[}1024\mbox{]}}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source_l00066}{66}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source}{my\+KINOVA\+\_\+\+UDP.\+h}}.
+
+\Hypertarget{classmy_k_i_n_o_v_a___u_d_p_a8a107d8cd9a8764c88f394a061988e44}\label{classmy_k_i_n_o_v_a___u_d_p_a8a107d8cd9a8764c88f394a061988e44} 
+\index{myKINOVA\_UDP@{myKINOVA\_UDP}!recvbuf@{recvbuf}}
+\index{recvbuf@{recvbuf}!myKINOVA\_UDP@{myKINOVA\_UDP}}
+\doxysubsubsection{\texorpdfstring{recvbuf}{recvbuf}}
+{\footnotesize\ttfamily char my\+KINOVA\+\_\+\+UDP\+::recvbuf\mbox{[}DEFAULT\+\_\+\+BUFLEN\mbox{]}}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source_l00057}{57}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source}{my\+KINOVA\+\_\+\+UDP.\+h}}.
+
+\Hypertarget{classmy_k_i_n_o_v_a___u_d_p_a01e66e54d6b0af3d8556a844db38289b}\label{classmy_k_i_n_o_v_a___u_d_p_a01e66e54d6b0af3d8556a844db38289b} 
+\index{myKINOVA\_UDP@{myKINOVA\_UDP}!recvbuflen@{recvbuflen}}
+\index{recvbuflen@{recvbuflen}!myKINOVA\_UDP@{myKINOVA\_UDP}}
+\doxysubsubsection{\texorpdfstring{recvbuflen}{recvbuflen}}
+{\footnotesize\ttfamily int my\+KINOVA\+\_\+\+UDP\+::recvbuflen = DEFAULT\+\_\+\+BUFLEN}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source_l00058}{58}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source}{my\+KINOVA\+\_\+\+UDP.\+h}}.
+
+\Hypertarget{classmy_k_i_n_o_v_a___u_d_p_a7a9c63250544e8576ce1494aa297197a}\label{classmy_k_i_n_o_v_a___u_d_p_a7a9c63250544e8576ce1494aa297197a} 
+\index{myKINOVA\_UDP@{myKINOVA\_UDP}!RecvSocket@{RecvSocket}}
+\index{RecvSocket@{RecvSocket}!myKINOVA\_UDP@{myKINOVA\_UDP}}
+\doxysubsubsection{\texorpdfstring{RecvSocket}{RecvSocket}}
+{\footnotesize\ttfamily SOCKET my\+KINOVA\+\_\+\+UDP\+::\+Recv\+Socket}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source_l00063}{63}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source}{my\+KINOVA\+\_\+\+UDP.\+h}}.
+
+\Hypertarget{classmy_k_i_n_o_v_a___u_d_p_a531c972ecbe0d3ec5dc3eb5330328280}\label{classmy_k_i_n_o_v_a___u_d_p_a531c972ecbe0d3ec5dc3eb5330328280} 
+\index{myKINOVA\_UDP@{myKINOVA\_UDP}!ret@{ret}}
+\index{ret@{ret}!myKINOVA\_UDP@{myKINOVA\_UDP}}
+\doxysubsubsection{\texorpdfstring{ret}{ret}}
+{\footnotesize\ttfamily int my\+KINOVA\+\_\+\+UDP\+::ret}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source_l00072}{72}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source}{my\+KINOVA\+\_\+\+UDP.\+h}}.
+
+\Hypertarget{classmy_k_i_n_o_v_a___u_d_p_a6cac7cc27519aeb3794300a22f603b32}\label{classmy_k_i_n_o_v_a___u_d_p_a6cac7cc27519aeb3794300a22f603b32} 
+\index{myKINOVA\_UDP@{myKINOVA\_UDP}!SEND\_IP\_ADDRESS@{SEND\_IP\_ADDRESS}}
+\index{SEND\_IP\_ADDRESS@{SEND\_IP\_ADDRESS}!myKINOVA\_UDP@{myKINOVA\_UDP}}
+\doxysubsubsection{\texorpdfstring{SEND\_IP\_ADDRESS}{SEND\_IP\_ADDRESS}}
+{\footnotesize\ttfamily const char\texorpdfstring{$\ast$}{*} my\+KINOVA\+\_\+\+UDP\+::\+SEND\+\_\+\+IP\+\_\+\+ADDRESS}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source_l00045}{45}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source}{my\+KINOVA\+\_\+\+UDP.\+h}}.
+
+\Hypertarget{classmy_k_i_n_o_v_a___u_d_p_a0cfd7425f65762f53a7f427cf03f68b1}\label{classmy_k_i_n_o_v_a___u_d_p_a0cfd7425f65762f53a7f427cf03f68b1} 
+\index{myKINOVA\_UDP@{myKINOVA\_UDP}!SEND\_PORT@{SEND\_PORT}}
+\index{SEND\_PORT@{SEND\_PORT}!myKINOVA\_UDP@{myKINOVA\_UDP}}
+\doxysubsubsection{\texorpdfstring{SEND\_PORT}{SEND\_PORT}}
+{\footnotesize\ttfamily u\+\_\+short my\+KINOVA\+\_\+\+UDP\+::\+SEND\+\_\+\+PORT}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source_l00043}{43}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source}{my\+KINOVA\+\_\+\+UDP.\+h}}.
+
+\Hypertarget{classmy_k_i_n_o_v_a___u_d_p_a2dc773f2083cd0ac4afa80ae6cb0ded8}\label{classmy_k_i_n_o_v_a___u_d_p_a2dc773f2083cd0ac4afa80ae6cb0ded8} 
+\index{myKINOVA\_UDP@{myKINOVA\_UDP}!sendbuf@{sendbuf}}
+\index{sendbuf@{sendbuf}!myKINOVA\_UDP@{myKINOVA\_UDP}}
+\doxysubsubsection{\texorpdfstring{sendbuf}{sendbuf}}
+{\footnotesize\ttfamily char\texorpdfstring{$\ast$}{*} my\+KINOVA\+\_\+\+UDP\+::sendbuf = "{}this is a test"{}}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source_l00056}{56}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source}{my\+KINOVA\+\_\+\+UDP.\+h}}.
+
+\Hypertarget{classmy_k_i_n_o_v_a___u_d_p_a19bb45d1729fe1a7ccf057210817a288}\label{classmy_k_i_n_o_v_a___u_d_p_a19bb45d1729fe1a7ccf057210817a288} 
+\index{myKINOVA\_UDP@{myKINOVA\_UDP}!sendbuf3@{sendbuf3}}
+\index{sendbuf3@{sendbuf3}!myKINOVA\_UDP@{myKINOVA\_UDP}}
+\doxysubsubsection{\texorpdfstring{sendbuf3}{sendbuf3}}
+{\footnotesize\ttfamily const char\texorpdfstring{$\ast$}{*} my\+KINOVA\+\_\+\+UDP\+::sendbuf3}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source_l00035}{35}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source}{my\+KINOVA\+\_\+\+UDP.\+h}}.
+
+\Hypertarget{classmy_k_i_n_o_v_a___u_d_p_af269423ab07cf26689372c502945f5a2}\label{classmy_k_i_n_o_v_a___u_d_p_af269423ab07cf26689372c502945f5a2} 
+\index{myKINOVA\_UDP@{myKINOVA\_UDP}!SenderAddr@{SenderAddr}}
+\index{SenderAddr@{SenderAddr}!myKINOVA\_UDP@{myKINOVA\_UDP}}
+\doxysubsubsection{\texorpdfstring{SenderAddr}{SenderAddr}}
+{\footnotesize\ttfamily struct sockaddr\+\_\+in my\+KINOVA\+\_\+\+UDP\+::\+Sender\+Addr}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source_l00069}{69}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source}{my\+KINOVA\+\_\+\+UDP.\+h}}.
+
+\Hypertarget{classmy_k_i_n_o_v_a___u_d_p_a5a5616e389b52f851c4a83f8041eaf75}\label{classmy_k_i_n_o_v_a___u_d_p_a5a5616e389b52f851c4a83f8041eaf75} 
+\index{myKINOVA\_UDP@{myKINOVA\_UDP}!SenderAddrSize@{SenderAddrSize}}
+\index{SenderAddrSize@{SenderAddrSize}!myKINOVA\_UDP@{myKINOVA\_UDP}}
+\doxysubsubsection{\texorpdfstring{SenderAddrSize}{SenderAddrSize}}
+{\footnotesize\ttfamily int my\+KINOVA\+\_\+\+UDP\+::\+Sender\+Addr\+Size = sizeof(Sender\+Addr)}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source_l00070}{70}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source}{my\+KINOVA\+\_\+\+UDP.\+h}}.
+
+\Hypertarget{classmy_k_i_n_o_v_a___u_d_p_a6ab15a138c62aba01672634b7017022d}\label{classmy_k_i_n_o_v_a___u_d_p_a6ab15a138c62aba01672634b7017022d} 
+\index{myKINOVA\_UDP@{myKINOVA\_UDP}!STRINGpos@{STRINGpos}}
+\index{STRINGpos@{STRINGpos}!myKINOVA\_UDP@{myKINOVA\_UDP}}
+\doxysubsubsection{\texorpdfstring{STRINGpos}{STRINGpos}}
+{\footnotesize\ttfamily size\+\_\+t my\+KINOVA\+\_\+\+UDP\+::\+STRINGpos}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source_l00040}{40}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source}{my\+KINOVA\+\_\+\+UDP.\+h}}.
+
+\Hypertarget{classmy_k_i_n_o_v_a___u_d_p_aadf5de84eda2ab58632719cdcd4850d9}\label{classmy_k_i_n_o_v_a___u_d_p_aadf5de84eda2ab58632719cdcd4850d9} 
+\index{myKINOVA\_UDP@{myKINOVA\_UDP}!sz@{sz}}
+\index{sz@{sz}!myKINOVA\_UDP@{myKINOVA\_UDP}}
+\doxysubsubsection{\texorpdfstring{sz}{sz}}
+{\footnotesize\ttfamily unsigned int my\+KINOVA\+\_\+\+UDP\+::sz = sizeof(i\+Val)}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source_l00073}{73}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source}{my\+KINOVA\+\_\+\+UDP.\+h}}.
+
+\Hypertarget{classmy_k_i_n_o_v_a___u_d_p_a07e93f78852da0814c7264ee7167ef78}\label{classmy_k_i_n_o_v_a___u_d_p_a07e93f78852da0814c7264ee7167ef78} 
+\index{myKINOVA\_UDP@{myKINOVA\_UDP}!token@{token}}
+\index{token@{token}!myKINOVA\_UDP@{myKINOVA\_UDP}}
+\doxysubsubsection{\texorpdfstring{token}{token}}
+{\footnotesize\ttfamily std\+::string my\+KINOVA\+\_\+\+UDP\+::token}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source_l00041}{41}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source}{my\+KINOVA\+\_\+\+UDP.\+h}}.
+
+\Hypertarget{classmy_k_i_n_o_v_a___u_d_p_a58083dbe0b95af31964a90e4070160c5}\label{classmy_k_i_n_o_v_a___u_d_p_a58083dbe0b95af31964a90e4070160c5} 
+\index{myKINOVA\_UDP@{myKINOVA\_UDP}!UDP\_gripper@{UDP\_gripper}}
+\index{UDP\_gripper@{UDP\_gripper}!myKINOVA\_UDP@{myKINOVA\_UDP}}
+\doxysubsubsection{\texorpdfstring{UDP\_gripper}{UDP\_gripper}}
+{\footnotesize\ttfamily float my\+KINOVA\+\_\+\+UDP\+::\+UDP\+\_\+gripper = 0.\+0f}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source_l00076}{76}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source}{my\+KINOVA\+\_\+\+UDP.\+h}}.
+
+\Hypertarget{classmy_k_i_n_o_v_a___u_d_p_a85e90b45c342b107752c33e949f16c4b}\label{classmy_k_i_n_o_v_a___u_d_p_a85e90b45c342b107752c33e949f16c4b} 
+\index{myKINOVA\_UDP@{myKINOVA\_UDP}!UDP\_q@{UDP\_q}}
+\index{UDP\_q@{UDP\_q}!myKINOVA\_UDP@{myKINOVA\_UDP}}
+\doxysubsubsection{\texorpdfstring{UDP\_q}{UDP\_q}}
+{\footnotesize\ttfamily float my\+KINOVA\+\_\+\+UDP\+::\+UDP\+\_\+q\mbox{[}7\mbox{]} = \{ 0.\+0f,0.\+0f,0.\+0f,0.\+0f,0.\+0f,0.\+0f,0.\+0f\}}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source_l00075}{75}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source}{my\+KINOVA\+\_\+\+UDP.\+h}}.
+
+\Hypertarget{classmy_k_i_n_o_v_a___u_d_p_a2c62b352cd859127771179b3efbb03ef}\label{classmy_k_i_n_o_v_a___u_d_p_a2c62b352cd859127771179b3efbb03ef} 
+\index{myKINOVA\_UDP@{myKINOVA\_UDP}!UDP\_tau@{UDP\_tau}}
+\index{UDP\_tau@{UDP\_tau}!myKINOVA\_UDP@{myKINOVA\_UDP}}
+\doxysubsubsection{\texorpdfstring{UDP\_tau}{UDP\_tau}}
+{\footnotesize\ttfamily float my\+KINOVA\+\_\+\+UDP\+::\+UDP\+\_\+tau\mbox{[}7\mbox{]} = \{ 0.\+0f,0.\+0f,0.\+0f,0.\+0f,0.\+0f,0.\+0f,0.\+0f\}}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source_l00077}{77}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source}{my\+KINOVA\+\_\+\+UDP.\+h}}.
+
+\Hypertarget{classmy_k_i_n_o_v_a___u_d_p_a2e224d9d6f7ccb1efd7f0835dac8ef42}\label{classmy_k_i_n_o_v_a___u_d_p_a2e224d9d6f7ccb1efd7f0835dac8ef42} 
+\index{myKINOVA\_UDP@{myKINOVA\_UDP}!UDPsendbuf@{UDPsendbuf}}
+\index{UDPsendbuf@{UDPsendbuf}!myKINOVA\_UDP@{myKINOVA\_UDP}}
+\doxysubsubsection{\texorpdfstring{UDPsendbuf}{UDPsendbuf}}
+{\footnotesize\ttfamily std\+::string my\+KINOVA\+\_\+\+UDP\+::\+UDPsendbuf}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source_l00034}{34}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source}{my\+KINOVA\+\_\+\+UDP.\+h}}.
+
+\Hypertarget{classmy_k_i_n_o_v_a___u_d_p_a87e9faf8b0752dbbbe5d43e2a8c05830}\label{classmy_k_i_n_o_v_a___u_d_p_a87e9faf8b0752dbbbe5d43e2a8c05830} 
+\index{myKINOVA\_UDP@{myKINOVA\_UDP}!wsaData@{wsaData}}
+\index{wsaData@{wsaData}!myKINOVA\_UDP@{myKINOVA\_UDP}}
+\doxysubsubsection{\texorpdfstring{wsaData}{wsaData}}
+{\footnotesize\ttfamily WSADATA my\+KINOVA\+\_\+\+UDP\+::wsa\+Data}
+
+
+
+Definition at line \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source_l00050}{50}} of file \mbox{\hyperlink{my_k_i_n_o_v_a___u_d_p_8h_source}{my\+KINOVA\+\_\+\+UDP.\+h}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+my\+KINOVA\+\_\+\+UDP.\+h\end{DoxyCompactItemize}

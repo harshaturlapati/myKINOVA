@@ -1,0 +1,136 @@
+\doxysection{Kinova\+Init.\+h}
+\hypertarget{_kinova_init_8h_source}{}\label{_kinova_init_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00001}00001\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00003}00003\ \textcolor{preprocessor}{\#include\ <BaseClientRpc.h>}}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00004}00004\ \textcolor{preprocessor}{\#include\ <InterconnectConfigClientRpc.h>}}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00005}00005\ \textcolor{preprocessor}{\#include\ <SessionManager.h>}}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00006}00006\ \textcolor{preprocessor}{\#include\ <DeviceManagerClientRpc.h>}}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00008}00008\ \textcolor{preprocessor}{\#include\ <RouterClient.h>}}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00009}00009\ \textcolor{preprocessor}{\#include\ <TransportClientTcp.h>}}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00010}00010\ \textcolor{preprocessor}{\#include\ <TransportClientUdp.h>}}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00012}00012\ \textcolor{keyword}{namespace\ }k\_api\ =\ Kinova::Api;}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00014}\mbox{\hyperlink{class_k_i_n_o_v_a}{00014}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_k_i_n_o_v_a}{KINOVA}}}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00015}00015\ \{}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00016}00016\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00017}00017\ \ \ \ \ \mbox{\hyperlink{class_k_i_n_o_v_a}{KINOVA}}(\textcolor{keyword}{const}\ std::string\&\ ip\_address,\ \textcolor{keywordtype}{int}\ port,\ \textcolor{keyword}{const}\ std::string\&\ username\ =\ \textcolor{stringliteral}{"{}admin"{}},\ \textcolor{keyword}{const}\ std::string\&\ password\ =\ \textcolor{stringliteral}{"{}admin"{}}):}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00018}00018\ \ \ \ \ \ \ \ \ m\_ip\_address(ip\_address),\ m\_username(username),\ m\_password(password),\ m\_port(port)}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00019}00019\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00020}00020\ \ \ \ \ \ \ \ \ m\_router\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00021}00021\ \ \ \ \ \ \ \ \ m\_transport\_tcp\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00022}00022\ \ \ \ \ \ \ \ \ m\_session\_manager\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00023}00023\ \ \ \ \ \ \ \ \ m\_device\_manager\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00024}00024\ \ \ \ \ \ \ \ \ m\_base\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00026}00026\ \ \ \ \ \ \ \ \ m\_is\_init\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00027}00027\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00028}00028\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00029}00029\ \ \ \ \ \mbox{\hyperlink{class_k_i_n_o_v_a}{\string~KINOVA}}()\ }
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00030}00030\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00031}00031\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Close\ API\ session}}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00032}00032\ \ \ \ \ \ \ \ \ m\_session\_manager-\/>CloseSession();}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00033}00033\ }
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00034}00034\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Deactivate\ the\ router\ and\ cleanly\ disconnect\ from\ the\ transport\ object}}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00035}00035\ \ \ \ \ \ \ \ \ m\_router-\/>SetActivationStatus(\textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00036}00036\ \ \ \ \ \ \ \ \ m\_transport\_tcp-\/>disconnect();}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00037}00037\ }
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00038}00038\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Destroy\ the\ API}}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00039}00039\ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ m\_base;}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00040}00040\ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ m\_device\_manager;}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00041}00041\ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ m\_session\_manager;}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00042}00042\ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ m\_router;}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00043}00043\ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ m\_transport\_tcp;}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00044}00044\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00045}00045\ }
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00046}00046\ \ \ \ \ \textcolor{keywordtype}{void}\ Init\_TCP()}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00047}00047\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00048}00048\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (m\_is\_init)}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00049}00049\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00050}00050\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00051}00051\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00052}00052\ \ \ \ \ \ \ \ \ m\_transport\_tcp\ =\ \textcolor{keyword}{new}\ k\_api::TransportClientTcp();}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00053}00053\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (m\_port\ ==\ 10000)}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00054}00054\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00055}00055\ \ \ \ \ \ \ \ \ \ \ \ \ m\_transport\_tcp-\/>connect(m\_ip\_address,\ m\_port);}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00056}00056\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00057}00057\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00058}00058\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00059}00059\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Wrong\ port\ for\ TCP"{}}\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00060}00060\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00061}00061\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00062}00062\ \ \ \ \ \ \ \ \ m\_router\ =\ \textcolor{keyword}{new}\ k\_api::RouterClient(m\_transport\_tcp,\ [](k\_api::KError\ err)\ \{\ std::cout\ <<\ \textcolor{stringliteral}{"{}\_\_\_\_\_\_\_\_\_\ callback\ error\ \_\_\_\_\_\_\_\_\_"{}}\ <<\ err.toString();\ \});}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00063}00063\ }
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00064}00064\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Set\ session\ data\ connection\ information}}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00065}00065\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ createSessionInfo\ =\ k\_api::Session::CreateSessionInfo();}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00066}00066\ \ \ \ \ \ \ \ \ createSessionInfo.set\_username(m\_username);}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00067}00067\ \ \ \ \ \ \ \ \ createSessionInfo.set\_password(m\_password);}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00068}00068\ \ \ \ \ \ \ \ \ createSessionInfo.set\_session\_inactivity\_timeout(60000);\ \ \ \textcolor{comment}{//\ (milliseconds)}}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00069}00069\ \ \ \ \ \ \ \ \ createSessionInfo.set\_connection\_inactivity\_timeout(2000);\ \textcolor{comment}{//\ (milliseconds)}}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00070}00070\ }
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00071}00071\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Session\ manager\ service\ wrapper}}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00072}00072\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Creating\ TCP\ session\ for\ communication"{}}\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00073}00073\ \ \ \ \ \ \ \ \ m\_session\_manager\ =\ \textcolor{keyword}{new}\ k\_api::SessionManager(m\_router);}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00074}00074\ \ \ \ \ \ \ \ \ m\_session\_manager-\/>CreateSession(createSessionInfo);}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00075}00075\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}TCP\ Session\ created"{}}\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00076}00076\ }
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00077}00077\ \ \ \ \ \ \ \ \ m\_is\_init\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00078}00078\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00079}00079\ }
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00080}00080\ \ \ \ \ \textcolor{keywordtype}{void}\ Init\_UDP()}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00081}00081\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00082}00082\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (m\_is\_init)}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00083}00083\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00084}00084\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00085}00085\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00086}00086\ \ \ \ \ \ \ \ \ m\_transport\_udp\ =\ \textcolor{keyword}{new}\ k\_api::TransportClientUdp();}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00087}00087\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (m\_port\ ==\ 10001)}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00088}00088\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00089}00089\ \ \ \ \ \ \ \ \ \ \ \ \ m\_transport\_udp-\/>connect(m\_ip\_address,\ m\_port);}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00090}00090\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00091}00091\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00092}00092\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00093}00093\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Wrong\ port\ for\ UDP"{}}\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00094}00094\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00095}00095\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00096}00096\ \ \ \ \ \ \ \ \ m\_router\ =\ \textcolor{keyword}{new}\ k\_api::RouterClient(m\_transport\_udp,\ [](k\_api::KError\ err)\ \{\ std::cout\ <<\ \textcolor{stringliteral}{"{}\_\_\_\_\_\_\_\_\_\ callback\ error\ \_\_\_\_\_\_\_\_\_"{}}\ <<\ err.toString();\ \});}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00097}00097\ }
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00098}00098\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Set\ session\ data\ connection\ information}}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00099}00099\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ createSessionInfo\ =\ k\_api::Session::CreateSessionInfo();}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00100}00100\ \ \ \ \ \ \ \ \ createSessionInfo.set\_username(m\_username);}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00101}00101\ \ \ \ \ \ \ \ \ createSessionInfo.set\_password(m\_password);}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00102}00102\ \ \ \ \ \ \ \ \ createSessionInfo.set\_session\_inactivity\_timeout(60000);\ \ \ \textcolor{comment}{//\ (milliseconds)}}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00103}00103\ \ \ \ \ \ \ \ \ createSessionInfo.set\_connection\_inactivity\_timeout(2000);\ \textcolor{comment}{//\ (milliseconds)}}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00104}00104\ }
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00105}00105\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Session\ manager\ service\ wrapper}}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00106}00106\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Creating\ UDP\ session\ for\ communication"{}}\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00107}00107\ \ \ \ \ \ \ \ \ m\_session\_manager\ =\ \textcolor{keyword}{new}\ k\_api::SessionManager(m\_router);}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00108}00108\ \ \ \ \ \ \ \ \ m\_session\_manager-\/>CreateSession(createSessionInfo);}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00109}00109\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}UDP\ Session\ created"{}}\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00110}00110\ }
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00111}00111\ \ \ \ \ \ \ \ \ m\_is\_init\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00112}00112\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00113}00113\ }
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00114}00114\ \ \ \ \ k\_api::RouterClient*\ get\_router()}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00115}00115\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00116}00116\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ m\_router;}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00117}00117\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00118}00118\ }
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00119}00119\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00120}00120\ \ \ \ \ k\_api::RouterClient*\ m\_router;}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00121}00121\ \ \ \ \ k\_api::TransportClientTcp*\ m\_transport\_tcp;}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00122}00122\ \ \ \ \ k\_api::TransportClientUdp*\ m\_transport\_udp;}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00123}00123\ \ \ \ \ k\_api::SessionManager*\ m\_session\_manager;}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00124}00124\ \ \ \ \ k\_api::Base::BaseClient*\ m\_base;}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00125}00125\ \ \ \ \ k\_api::DeviceManager::DeviceManagerClient*\ m\_device\_manager;}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00126}00126\ \ \ \ \ \textcolor{keywordtype}{bool}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ m\_is\_init;}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00127}00127\ \ \ \ \ std::string\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ m\_username;}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00128}00128\ \ \ \ \ std::string\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ m\_password;}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00129}00129\ \ \ \ \ std::string\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ m\_ip\_address;}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00130}00130\ \ \ \ \ \textcolor{keywordtype}{int}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ m\_port;}
+\DoxyCodeLine{\Hypertarget{_kinova_init_8h_source_l00131}00131\ \};}
+
+\end{DoxyCode}

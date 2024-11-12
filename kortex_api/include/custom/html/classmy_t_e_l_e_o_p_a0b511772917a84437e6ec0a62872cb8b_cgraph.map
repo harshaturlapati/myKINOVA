@@ -1,0 +1,11 @@
+<map id="myTELEOP::TELEOP_LOGIT" name="myTELEOP::TELEOP_LOGIT">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,43,199,69"/>
+<area shape="rect" id="Node000002" href="$classmy_k_i_n_o_v_a.html#a8b9cae3d6bf59ea02b02f967a73b3546" title=" " alt="" coords="247,43,387,69"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,53,231,53,231,59,199,59"/>
+<area shape="rect" id="Node000003" href="$classmy_k_i_n_o_v_a___u_d_p.html#adfa342005136cdd865c7ade44f8a33ec" title=" " alt="" coords="435,5,627,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="387,44,419,39,420,45,388,49"/>
+<area shape="rect" id="Node000004" href="$classmy_k_i_n_o_v_a___l_o_g.html#a2315db70911c30cba1d25bba87c563fd" title=" " alt="" coords="436,72,627,99"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="388,63,420,67,420,73,387,68"/>
+<area shape="rect" id="Node000005" href="$classmy_k_i_n_o_v_a___l_o_g.html#a5e4c139e04dea51f7522c626c106bce4" title=" " alt="" coords="675,72,867,99"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="627,83,660,83,660,88,627,88"/>
+</map>

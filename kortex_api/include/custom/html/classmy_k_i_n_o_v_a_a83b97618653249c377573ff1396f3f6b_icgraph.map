@@ -1,0 +1,12 @@
+<map id="myKINOVA::reset_SERVOING_MODE" name="myKINOVA::reset_SERVOING_MODE">
+<area shape="rect" id="Node000001" title=" " alt="" coords="652,31,899,57"/>
+<area shape="rect" id="Node000002" href="$classmy_k_i_n_o_v_a.html#a2478b6d03fe5b02491d89df804a17e3a" title=" " alt="" coords="429,5,604,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="636,33,605,30,605,25,637,28"/>
+<area shape="rect" id="Node000005" href="$classmy_k_i_n_o_v_a.html#a0248b3aa1d7d6df9b4846d4652da9d16" title=" " alt="" coords="216,56,381,83"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="637,54,382,68,381,62,637,49"/>
+<area shape="rect" id="Node000003" href="$classmy_t_e_l_e_o_p.html#a1bfe136920704ca0ca7f496fac2c5e0e" title=" " alt="" coords="219,5,378,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="414,21,378,21,378,16,414,16"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="442,39,360,58,358,53,440,34"/>
+<area shape="rect" id="Node000004" href="$classmy_t_e_l_e_o_p.html#a69158afc9816c59b4139c3c35f4ea4ba" title=" " alt="" coords="5,5,168,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="203,21,168,21,168,16,203,16"/>
+</map>
