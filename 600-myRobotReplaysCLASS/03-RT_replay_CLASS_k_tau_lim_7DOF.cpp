@@ -4,28 +4,29 @@
 #include <myKINOVA_UDP.h>			// baked in
 #include <myKINOVA_LOGGING.h>		// baked in
 #include <myPARAMS.h>
-#include <myKINOVA.h>				// baked in
-#include <myKINEMATICS.h>			
-#include <myCONSTRAINTS.h>
+#include <myKINOVA.h>			// baked in
 
 int main()
 {
 	//printf("Enter IP Address of the robot\n");
 	//char myIP_input[20];
 	//scanf("%[^\n]%*c", myIP_input);
-	//printf("IP Address entered is : %s\n", myIP_input);q
+	//printf("IP Address entered is : %s\n", myIP_input);
 
-	std::string ROBOT_IP_in = "192.180.0.107";
+	std::string ROBOT_IP_in = "192.180.0.108";
 	//(myIP_input);
 
 	//Kinova with Robotiq 2f 85 Gripper
 	const std::string robot_model = "D:/myKinova_v2/Robot/GEN3_GRIPPER_2024.urdf";
-	int CTRL_MODE = 7;
+	int CTRL_MODE = 1;
 	int DURATION = 1000;
 	myPARAMS params_struct = setPARAMS(robot_model, ROBOT_IP_in, CTRL_MODE, 27015, 27016, "127.0.0.1", "127.0.0.1", DURATION, TRUE);
-	float myK = 20;
-	float myB = -20;
-	myKINOVA ROBOT(params_struct, myK, myB);
+	//float myK = 450;
+	float myB = 3;
+	float my_ext_tau_limit[7] = { 3.0f, 2.0f, 2.0f, 5.0f, 4.0f, 3.0f, 10.0f };
+	float my_K[7] = { 20.0f, 20.0f, 20.0f, 20.0f, 20.0f, 20.0f, 0.0f};
+
+	myKINOVA ROBOT(params_struct, my_K, myB, my_ext_tau_limit);
 
 	std::thread t1(&myKINOVA::ROBOT_Gq, &ROBOT, TRUE);
 

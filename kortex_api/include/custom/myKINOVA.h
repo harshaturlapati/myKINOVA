@@ -809,6 +809,21 @@ public:
 		}
 	}
 
+	myKINOVA(myPARAMS PARAMS_IN, float k_in[7], float b_in, float tau_ext_limit_in[7]) {
+		// adding a constructor that allows to arbitrarily change the joint torque command limit
+		ROB_CMD = set_ROB_CMD(PARAMS_IN.CTRL_MODE);
+		ROB_PARAMS = set_ROB_PARAMS(PARAMS_IN);
+		for (int i = 0; i < ACTUATOR_COUNT; i++)
+		{
+			myK_VEC[i] = k_in[i];
+		}
+		myB = b_in;
+		set_myK_VEC(myK);
+		for (int j = 0; j < 7; j++) {
+			tau_ext_limit_input[j] = tau_ext_limit_in[j];
+		}
+	}
+
 	myKINOVA(myPARAMS PARAMS_IN, int role_in, float k_LOW_in[7], float k_HIGH_in[7], float b_in, float tau_ext_limit_in[7]) {
 		// adding a constructor that allows to set two stiffness arrays to choose Kinova impedance control from - to allow for experiments that stiffen up or loosen down depending on the situation
 		ROB_CMD = set_ROB_CMD(PARAMS_IN.CTRL_MODE);
