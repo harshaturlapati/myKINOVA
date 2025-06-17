@@ -192,6 +192,7 @@ public:
     float** tau_cmd_log;
     k_api::BaseCyclic::Feedback* data_log;
 
+
     int64_t GetTickUs()
     {
 #if defined(_MSC_VER)

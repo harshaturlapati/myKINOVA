@@ -27,9 +27,15 @@
 #    $ nmake
 #
 # ----------------------------------------------------------------------------
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 3.10)
 
 project(kortexApiCppExamples VERSION 2.2.0 LANGUAGES CXX)
+
+include_directories("${PROJECT_SOURCE_DIR}/bota")
+include_directories("${PROJECT_SOURCE_DIR}/bota/bota_driver_cpp_win32/bin")
+include_directories("${PROJECT_SOURCE_DIR}/bota/bota_driver_cpp_win32/lib")
+include_directories("${PROJECT_SOURCE_DIR}/bota/bota_driver_cpp_win32/include")
+
 
 set(CMAKE_INCLUDE_CURRENT_DIR   ON)
 set(CMAKE_VERBOSE_MAKEFILE      ON)
@@ -50,6 +56,7 @@ option(DOWNLOAD_API "Automatically download the API if conan is not used" OFF)
 
 # Activate C++ 11
 set (CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 
 macro(configure_msvc_runtime)
@@ -188,5 +195,11 @@ foreach ( SRC_FILE ${EXE_LIST} )
   
   add_executable(${TARGET_EXE_NAME} ${SRC_FILE} utilities.cpp)
 
+  target_link_libraries(${TARGET_EXE_NAME} PUBLIC ${CMAKE_SOURCE_DIR}/bota/bota_driver_cpp_win32/lib/BotaDriver.lib)
+  add_custom_command(TARGET ${TARGET_EXE_NAME} POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+        "${CMAKE_SOURCE_DIR}/bota/bota_driver_cpp_win32/bin/BotaDriver.dll"
+        $<TARGET_FILE_DIR:${TARGET_EXE_NAME}>
+)
 
 endforeach()
